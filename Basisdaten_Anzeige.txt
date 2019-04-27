@@ -1,0 +1,4 @@
+1,2,48.2171,11.5127,'Verbr1: 0 km - Hausstr. 0, Bremen','Candidate', 'Kandidat',0,
+2,3,48.2071,11.5127,'Verbr1: 0 km - Hausstr. 0, Bremen','Company', 'Firma',0,
+3,3,48.2371,11.5127,'Verbr1: 0 km - Hausstr. 0, Bremen','Company', 'Firma',0,
+4,1,48.2471,11.5127,'Verbr1: 0 km - Hausstr. 0, Bremen','Centre','Mittelpunkt',7000,

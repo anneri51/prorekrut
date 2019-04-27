@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+  Show Candidate + Companies on Map - Version 1.0 - 2019/04/05
+</title>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+</head>
+
+<body>
+  <div id="map" style="width: 100%; height: 1000px; background: grey" />
+  <script  type="text/javascript" charset="UTF-8" >
+    
+/**
+ * Adds a circle over New Delhi with a radius of 1000 metres onto the map
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application 
+ */
+ 
+//map
+var platform;
+var map;
+var ui;
+var behavior;
+var defaultLayers;
+var pixelRatio ;
+
+
+
+//Mittelpunkt
+var lat_cntr;
+var lng_cntr ;
+var rad ;
+
+
+//Arrays
+var lineArr = new Array ;
+
+var lineArr_Kand_g= new Array();
+var lineArr_Firm_g= new Array(new Array());
+var lineArr_Mitt_g= new Array();
+
+var lineArr_Kand= new Array();
+var lineArr_Firm= new Array();
+var lineArr_Mitt= new Array();
+
+//Array Indizes - Positionen
+var all_ind = 0;   //index
+var ind = 1; 
+var data_type_ind = 2;  //data_index (Mittelpunkt, Kandidat, Firma)
+var lat_ind = 3;  
+var lng_ind = 4; 
+var descr_ind =5; //Description
+var data_type_descr_en_ind = 6;   //Datentypbeschreibung
+var data_type_descr_de_ind = 7;  //Datentypbeschreibung
+var rad_ind = 8;   // Radius für Umkreissuche
+
+var v_max_Col = 10;
+
+var ind = new Array(new Array);
+var org = new Array(new Array);
+
+
+var type_kand = '2';
+var type_firm = '3';
+var type_mit = '1';
+
+
+var p_route_cnt;
+
+var p_sp = ",";
+
+var v_wp_str_parts = new Array();
+var v_wp_str = new Array();
+var v_line_color = new Array();
+
+
+
+//andere globale Variablen
+var str_file_name="Basisdaten_Anzeige_V1.txt";
+var blob;
+
+function config() {
+  v_line_color[0] = 'blue';
+  v_line_color[1] = 'red';
+  v_line_color[2] = 'green';
+  v_line_color[3] = 'black';  
+  
+  for (i=1 ;i<= v_max_Col ; i++)
+  {
+    ind[i] = new Object;
+	org[i] = new Object;
+  }
+  
+   ind[0][0] = 0;  ind[1][0] = "all";
+   ind[0][1] = 1;  ind[1][1] = "ind";
+   ind[0][2] = 2;  ind[1][2] = "data_type";
+   ind[0][3] = 3;  ind[1][3] = "lat";
+   ind[0][4] = 4;  ind[1][4] = "lng";
+   ind[0][5] = 5;  ind[1][5] = "descr";
+   ind[0][6] = 6;  ind[1][6] = "descr type en";
+   ind[0][7] = 7;  ind[1][7] = "descr type de";
+   ind[0][8] = 8;  ind[1][8] = "rad";
+   
+   org[0][0]=1; org[1][0]='1'; org[2][0]= "Mittelpunkt";
+   org[0][1]=2; org[1][1]='2'; org[2][1]= "Kandidat";
+   org[0][2]=3; org[1][2]='3'; org[2][2]= "Firma";
+   
+
+   
+
+}
+
+ 
+function draw_map() {
+							/**
+							 * Boilerplate map initialization code starts below:
+							 */
+
+							//Step 1: initialize communication with the platform
+							// Instantiate a map and platform object:
+							 platform = new H.service.Platform({
+							  'app_id': 'hU8C4hi5HZZAA29CN1h5',
+							  'app_code': 'no8qak0DOkDF8O_oi1xqaw'
+							});
+
+							pixelRatio = window.devicePixelRatio || 1;
+							defaultLayers = platform.createDefaultLayers({
+							  tileSize: pixelRatio === 1 ? 256 : 512,
+							  ppi: pixelRatio === 1 ? undefined : 320
+							});
+
+							//Step 2: initialize a map - this map is centered over New Delhi
+							map = new H.Map(document.getElementById('map'),
+							  defaultLayers.normal.map,{
+							  center: {lat:lineArr_Mitt_g[lat_ind], lng:lineArr_Mitt_g[lng_ind]},
+							  zoom: 13,
+							  pixelRatio: pixelRatio
+							});
+
+							//map.setBaseLayer(defaultLayers.satellite.traffic);
+
+							//Step 3: make the map interactive
+							// MapEvents enables the event system
+							// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+							behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+							// Create the default UI components
+							ui = H.ui.UI.createDefault(map, defaultLayers);
+}
+
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest(); // XMLHttpRequest (often abbreviated as XHR) is a browser object accessible in JavaScript that provides data in XML, JSON, but also HTML format, or even a simple text using HTTP requests.
+    rawFile.open("GET", file, false); // open with method GET the file with the link file ,  false (synchronous)
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4) // readyState = 4: request finished and response is ready
+        {
+            if(rawFile.status === 200) // status 200: "OK"
+            {
+                var allText = rawFile.responseText; //  Returns the response data as a string
+                //console.log(allText); // display text on the console
+				
+                //alert(allText);
+                intoArray(allText);
+            }
+        }
+    }
+    rawFile.send(null); //Sends the request to the server Used for GET requests with param null
+}
+
+
+function intoArray (lines) {
+
+   lineArr = lines.split('\n'); 
+}
+
+function sp1 (p_arr_pos, p_sp, p_cnt, p_type, p_firm_pos,p_line) {
+
+  var pre = 0;
+  var post = 0;
+  var cnt=1;
+  var lin = new Array();
+  
+  
+
+  
+ 
+
+  
+ alert("sp1: type + line" + p_type+ " " + p_line + " " +" " +p_firm_pos);
+  
+  for (var i=0; i<= lineArr[p_arr_pos].length; i++) {
+    
+	 post = lineArr[p_arr_pos].indexOf(p_sp, pre+1);
+	 //alert("sp1: pos" + pre + " " + post + " " + i + " "+ " "+lineArr[p_arr_pos].length + " " + pre + " (" +  post   + ") " +  lineArr[p_arr_pos].substr(pre+1,post - pre-2  ));
+	 if (lin[cnt]=== undefined) {lin[cnt]="";}
+	 lin[cnt] = lin[cnt]+ lineArr[p_arr_pos].substr(pre+1,post - pre-1  );
+	 
+	 
+	 
+	 if (p_type === org[1][0])
+	 {
+	     cnt===lat_ind?lineArr_Mitt_g[lat_ind] = lin[lat_ind]:"";
+		 cnt===lng_ind?lineArr_Mitt_g[lng_ind] = lin[lng_ind]:"";
+		 cnt===rad_ind?lineArr_Mitt_g[rad_ind] = lin[rad_ind]:"";	 
+	 
+	 }
+	 
+	 if (p_type === org[1][2])
+	 {
+	     cnt===lat_ind?lineArr_Firm_g[p_firm_pos][lat_ind] = lin[lat_ind]:"";
+		 cnt===lng_ind?lineArr_Firm_g[p_firm_pos][lng_ind] = lin[lng_ind]:"";
+		 cnt===descr_ind?lineArr_Firm_g[p_firm_pos][descr_ind] = lin[descr_ind]:"";	 
+	     cnt===lat_ind?alert("firma1" + p_firm_pos + " " + lat_ind + lineArr_Firm_g[p_firm_pos][lat_ind]):"";
+	 }
+	 
+	 if (p_type === org[1][1])
+	 {
+	     cnt===lat_ind?lineArr_Kand_g[lat_ind] = lin[lat_ind]:"";
+		 cnt===lng_ind?lineArr_Kand_g[lng_ind] = lin[lng_ind]:"";
+		 cnt===descr_ind?lineArr_Kand_g[descr_ind] = lin[descr_ind]:"";	 
+	 
+	 }
+	 
+	 
+	 
+	 //alert(org[p_type] + " " + p_type +" " + ind[cnt][1] + " " + lin[cnt]);
+	 if (lineArr[p_arr_pos].substr(pre+1,1) === "'" & lineArr[p_arr_pos].substr(post-1,1) != "'") 
+	 {
+	   cnt = cnt;
+	 }
+	 else
+	 
+	 {
+	   cnt +=1;
+	 }
+	 pre = post;
+	 
+	 
+	 
+	
+	 // pre = lineArr[p_arr_pos].indexOf(p_sp, post+1);
+	 
+	 
+	 if (lineArr[p_arr_pos].indexOf(p_sp, post+1) === -1) {
+	   post = lineArr[p_arr_pos].length;
+	 }
+	 
+	 i = post;
+	// alert("i" + i);
+  
+  }
+
+}
+
+function sp (p_arr_pos, p_sp, p_cnt, p_type, p_firm_pos,p_line)
+{
+
+  var pre = 0;
+  var post = 0;
+  var str = "";
+  var p_txt=0;
+  var cnt = 0;
+  
+  alert("sp_neu: type + line" + p_type+ " " + p_line);
+  
+  
+  for (var i=0; i<= lineArr[p_arr_pos].length; i++) {
+  
+
+    alert("sp: type + line" + p_type+ " " + p_line + " " +  i);
+  
+    pre = post;
+	post = lineArr[p_arr_pos].indexOf( p_sp,pre+1) ;
+	
+	//i= post;
+	if (pre === 0) {pre = pre -1; }
+	
+	//alert("pos" + pre + " " + post + " " + i + " "+ " "+lineArr[p_arr_pos].length + " " +  lineArr[p_arr_pos] + " (" + lineArr[p_arr_pos].substr(pre, 5 ) +") " + lineArr[p_arr_pos].substr(pre+1,post-pre -1) );
+	
+	//if (i === post) { 
+
+		var pre1 = pre+1;
+		
+		if (lineArr[p_arr_pos].substr(pre+1, 1) === "'") {
+		
+			 p_txt = lineArr[p_arr_pos].indexOf("'",pre+2);
+			 pre=pre+1;
+			 post = p_txt+1;
+			 
+			if (p_type === type_mit) { 
+				lineArr_Mitt[descr_ind]=lineArr[p_arr_pos].substr(pre, post-pre +1);
+			}
+			
+			if (p_type === type_firm) {
+			  lineArr_Firm_g[p_firm_pos][descr_ind]=lineArr[p_arr_pos].substr(pre, post-pre +1);
+			}
+		
+			if (p_type === type_kand) {
+			  lineArr_Kand_g[descr_ind]=lineArr[p_arr_pos].substr(pre, post-pre +1);
+			}
+			
+		}
+		else {
+			   post=lineArr[p_arr_pos].indexOf(p_sp,post+1);
+			   lineArr_Mitt[cnt] = lineArr[p_arr_pos].substr(pre, post-pre +1);
+			
+			   if (p_type === type_mit ) {
+				 rad = lineArr_Mitt[rad_ind];
+			   }
+		}
+		
+		cnt = cnt+1;
+		
+	//}
+  } 
+
+}
+
+function sep_data(p_sp){
+
+    alert("sep_data begin");
+	
+	var v_type ;
+	var cnt_firm =-1;
+	var v_line;
+	
+	alert("lineArr" + lineArr.length);
+	
+	for (var i= 0; i< lineArr.length; i++) {
+	
+	
+
+		 //alert(lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1));
+		 v_type = lineArr[i].substr(lineArr[i].indexOf(p_sp,1)+1, lineArr[i].indexOf(p_sp,2)-lineArr[i].indexOf(p_sp,1)-1);
+		 v_line = lineArr[i].substr(0,1);
+		 alert("line" + v_line + " "+ v_type);
+		 
+		   
+		  if (v_type===type_firm) {
+		     alert("Firm");
+		        cnt_firm = cnt_firm +1;
+				
+					sp1(i, p_sp, 5,v_type,cnt_firm,v_line);
+		 }
+				
+		else {		
+		 
+		 sp1(i, p_sp, 5,v_type,0,v_line);
+		 }
+		 /*
+		 
+		 if (v_type===type_mit) {
+		 
+		  alert("Mit");
+		  
+		 
+                lineArr_Mitt_g[all_ind] = lineArr[i];
+		        alert("Mitt" +lineArr_Mitt_g[all_ind]);
+
+                var pos_lat_cntr_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_cntr_end = lineArr[i].indexOf(",",4);
+			
+				var pos_lat_mitt_st = lineArr[i].indexOf(",",6);
+				lat_cntr = lineArr[i].substr(pos_lat_cntr_st ,(pos_lat_cntr_end -pos_lat_cntr_st)-1);
+				lng_cntr = lineArr[i].substr(pos_lat_cntr_end+1, 7);	
+				
+				rad = lineArr[i].substr(pos_lat_mitt_st, 4);
+			
+				
+				
+				lineArr_Mitt_g[data_type_ind] = v_type;             
+				lineArr_Mitt_g[lat_ind] = lat_cntr; 			
+				lineArr_Mitt_g[lng_ind]= lng_cntr;
+				lineArr_Mitt_g[rad_ind]= rad;
+				
+			    alert("line" + v_line);
+				
+				sp(i, ',', 5,v_type,0,v_line);
+				
+				rad = rad.replace(",","");
+				rad = rad.replace(",","");
+
+			
+		 }
+		 
+		 
+	
+		 
+		  if (v_type===type_kand) {
+		       alert("Kand");
+		  
+				lineArr_Kand_g[all_ind] = lineArr[i];
+				
+				var pos_lat_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_end = lineArr[i].indexOf(",",4);
+				
+				
+				var pos_lat_st_1 = lineArr[i].indexOf(",",6);
+				lineArr_Kand_g[lat_ind] = lineArr[i].substr(pos_lat_st ,(pos_lat_end -pos_lat_st)-1);
+				lineArr_Kand_g[lng_ind] = lineArr[i].substr(pos_lat_end+1, 7);
+				
+				alert("line" + v_line);
+				
+				sp(i, ',', 5,v_type,0,v_line);
+		  
+		  }
+		  
+		  
+		  if (v_type===type_firm) {
+		     alert("Firm");
+		        cnt_firm = cnt_firm +1;
+			
+			    lineArr_Firm_g[cnt_firm] = new Object();
+			
+			    alert("cnt_firm" + cnt_firm + lineArr_Firm_g[0][0]);
+				lineArr_Firm_g[cnt_firm][all_ind] = lineArr[i];
+				alert("firm" +lineArr_Firm_g[cnt_firm][all_ind]);
+			    var pos_lat_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_end = lineArr[i].indexOf(",",4);
+				alert("pos_kand" + pos_lat_st + " "+ pos_lat_end);
+				var pos_lat_st_1 = lineArr[i].indexOf(",",6);
+				lineArr_Firm_g[cnt_firm][lat_ind] = lineArr[i].substr(pos_lat_st ,(pos_lat_end -pos_lat_st)-1);
+				lineArr_Firm_g[cnt_firm][lng_ind] = lineArr[i].substr(pos_lat_end+1, 7);
+				
+				alert("line" + v_line);
+			
+				
+				sp(i, ',', 5,v_type,cnt_firm,v_line);
+		  
+		  }
+		  */
+		 }
+	
+	
+	alert("sep_data_end");
+}
+
+
+
+function addCircleToMap(map){
+
+    map.addObject(new H.map.Circle(
+    // The central point of the circle
+    {lat:lineArr_Mitt_g[lat_ind], lng:lineArr_Mitt_g[lng_ind]},
+    // The radius of the circle in meters
+   lineArr_Mitt_g[rad_ind],
+    {
+      style: {
+        strokeColor: 'rgba(55, 85, 170, 0.6)', // Color of the perimeter
+        lineWidth: 2,
+        fillColor: 'rgba(55, 128, 0, 0.7)'  // Color of the circle
+      }	
+    }
+  ));
+
+}
+
+function add_markers_firm (p_lat_firm,p_lng_firm,p_adr_firm) {
+
+
+
+		var svgMarkup = '<svg width="250" height="22" ' +
+		  'xmlns="http://www.w3.org/2000/svg">' +
+		  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+		  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+		  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+		  'fill="white">' + p_adr_firm + '</text></svg>';
+		  
+		// Create an icon,  an object holding the latitude and longitude, and a marker:
+		var icon = new H.map.Icon(svgMarkup),
+		  coords = {lat: p_lat_firm, lng: p_lng_firm},
+		  marker= new H.map.Marker(coords, {icon: icon});
+
+		// Add the marker to the map and center the map at the location of the marker:
+		map.addObject(marker);
+
+
+		var startMarker = new H.map.Marker({
+		  lat: p_lat_firm, lng:p_lng_firm
+		  });
+		map.addObject(startMarker);
+
+}
+
+function add_markers_kand () {
+		var svgMarkup0 = '<svg width="250" height="22" ' +
+		  'xmlns="http://www.w3.org/2000/svg">' +
+		  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+		  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+		  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+		  'fill="white">' + lineArr_Kand_g[descr_ind] + '</text></svg>';
+
+		// Create an icon, an object holding the latitude and longitude, and a marker:
+		var icon0 = new H.map.Icon(svgMarkup0),
+		  coords0 = {lat:lineArr_Kand_g[lat_ind], lng:lineArr_Kand_g[lng_ind]},
+		  marker0 = new H.map.Marker(coords0, {icon: icon0});
+
+		// Add the marker to the map and center the map at the location of the marker:
+		map.addObject(marker0);
+
+
+
+		var endMarker = new H.map.Marker({
+		lat:lineArr_Kand_g[lat_ind], lng:lineArr_Kand_g[lng_ind]
+		  });
+		map.addObject(endMarker);
+}
+
+
+function add_route(p_lat_firm,p_lng_firm,p_adr_firm  ,p_line_color, p_line_width) {
+
+
+		//route
+		v_wp_str[0] = [lineArr_Kand_g[lat_ind] +',' +lineArr_Kand_g[lng_ind], lineArr_Kand_g[descr_ind]];
+		v_wp_str[1] = [p_lat_firm+',' +p_lng_firm, p_adr_firm];
+
+		p_route_cnt = v_wp_str.length-1; 
+
+
+		for (i=0; i<= p_route_cnt; i++) {
+		   v_wp_str_parts[i] = v_wp_str[i][0].split(',');
+		}
+
+		// Define a callback function to process the routing response:
+		var onResult = function(result) {
+										  var route,
+											routeShape,
+											startPoint,
+											endPoint,
+											linestring;
+										  if(result.response.route) {
+										  // Pick the first route from the response:
+										  route = result.response.route[0];
+										  // Pick the route's shape:
+										  routeShape = route.shape;
+											  
+
+
+										  // Create a linestring to use as a point source for the route line
+										  linestring = new H.geo.LineString();
+
+
+										  // Push all the points in the shape into the linestring:
+										  routeShape.forEach(function(point) {
+											var parts = point.split(',');
+											linestring.pushLatLngAlt(parts[0], parts[1]);
+		  });
+
+			  
+			
+			  
+		  // Retrieve the mapped positions of the requested waypoints:
+		  startPoint = route.waypoint[0].mappedPosition;
+		  endPoint = route.waypoint[1].mappedPosition;
+
+			  
+
+
+		  // Create a polyline to display the route:
+		  var routeLine = new H.map.Polyline(linestring, {
+			style: { strokeColor: p_line_color, lineWidth: p_line_width }
+		  });
+
+		  // Create a marker for the start point:
+		  var startMarker = new H.map.Marker({
+			lat: startPoint.latitude,
+			lng: startPoint.longitude
+		  });
+
+		  // Create a marker for the end point:
+		  var endMarker = new H.map.Marker({
+			lat: endPoint.latitude,
+			lng: endPoint.longitude
+		  });
+			  
+			alert(route.waypoint[1].mappedPosition.latitude + " " + route.waypoint[1].mappedPosition.longitude);
+
+		  var svgMarkup3 = '<svg width="250" height="22" ' +
+		  'xmlns="http://www.w3.org/2000/svg">' +
+		  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+		  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+		  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+		  'fill="white">' + lineArr_Kand_g[descr_ind] + route.waypoint[1].mappedPosition.latitude + route.waypoint[1].mappedPosition.longitude+ '</text></svg>';
+
+		 
+
+		// Create an icon, an object holding the latitude and longitude, and a marker:
+		  var icon3 = new H.map.Icon(svgMarkup3),
+									  coords3 = {lat: route.waypoint[1].mappedPosition.latitude, lng: route.waypoint[1].mappedPosition.longitude},
+									  marker3= new H.map.Marker(coords3, {icon: icon3}
+									 );
+
+		  // Add the marker to the map and center the map at the location of the marker:
+		  map.addObject(marker3);
+
+
+		  // Add the route polyline and the two markers to the map:
+		  map.addObjects([routeLine, startMarker, endMarker]);
+
+
+		  }
+		};
+
+
+		// Get an instance of the routing service:
+		var router = platform.getRoutingService();
+
+		var routingParameters = new Array();
+
+		for (i=1;i<= p_route_cnt; i++) {
+		 
+		// Create the parameters for the routing request:
+		 routingParameters[i-1] = {
+		  // The routing mode:
+		  'mode': 'fastest;car',
+		 // 'mode': 'fastest;car',
+		  // The start point of the route:
+		   'waypoint0': 'geo!' +v_wp_str[i-1][0],
+		  // The end point of the route:
+		  'waypoint1':  'geo!' + v_wp_str[i][0],
+			  
+		  // To retrieve the shape of the route we choose the route
+		  // representation mode 'display'
+		  'representation': 'display'
+		};
+			
+			
+
+
+		// Call calculateRoute() with the routing parameters,
+		// the callback and an error callback function (called if a
+		// communication error occurs):
+
+
+		router.calculateRoute(routingParameters[i-1], onResult,
+		 function(error) {
+		   alert(error.message);
+		  });
+		  
+			
+		}
+
+
+		//var today = Date(Date.now()).getDate();
+		// test = show_marker(lineArr_Kand_g[lat_ind] , lineArr_Kand_g[lng_ind], 'Monteur', 'green');
+		// test = show_marker(lineArr_Kand_g[lat_ind], lineArr_Kand_g[lng_ind],  Date(Date.now()).toString(),'green');
+		// Date(Date.now()).toString()
+
+
+
+}
+
+function show_marker(v_lat, v_lng, v_text, v_fill) {
+	var svgMarkup = '<svg width="250" height="22" ' +
+	  'xmlns="http://www.w3.org/2000/svg">' +
+	  '<rect stroke="white" fill="' + v_fill + '" x="1" y="1" width="500" ' +
+	  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+	  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+	  'fill="white">' + v_text + '</text></svg>';
+
+	 
+
+	// Create an icon, an object holding the latitude and longitude, and a marker:
+	var icon = new H.map.Icon(svgMarkup),
+	  coords = {lat: v_lat , lng: v_lng},
+	  marker = new H.map.Marker(coords, {icon: icon});
+
+	// Add the marker to the map and center the map at the location of the marker:
+	map.addObject(marker);
+};
+
+function add_additional_marker() {
+
+    var Marker = new Array();
+
+	var group = new H.map.Group();
+
+	var marker_all = [];
+
+
+	for (i=0;i<= p_route_cnt;i++){
+	
+	  var pos_ns =  parseFloat(v_wp_str_parts[i][0],10);
+	  var pos_ew = parseFloat(v_wp_str_parts[i][1],10);
+		
+	   Marker[i+1] = new H.map.Marker({lat:  pos_ns, lng: pos_ew});
+	  
+	   map.addObject(Marker[i+1]);
+	   marker_all.push(Marker[i+1]);
+	  
+
+	   test1 =  show_marker(pos_ns+0.002, pos_ew+0.002, i + ': ' +v_wp_str[i][1] , '#1b468d');               
+	   test2 =  show_marker(pos_ns+0.001, pos_ew+0.001,  '(' +v_wp_str[i][0] +')' , '#1b468d');  
+	}
+ 
+ 
+	 group.addObjects(marker_all);
+	 //map.setViewBounds(group.getBounds());
+		
+
+
+	  // Set the map's viewport to make the whole route visible:
+	  //var line =  new H.geo.LineString();
+	 // line.pushLatLngAlt(lat_kand, lng_kand);
+	 // line.pushLatLngAlt(lat_firm0, lng_firm0);
+	  
+
+	  
+
+	 // map.setViewBounds(line.getBounds());
+
+}
+
+readTextFile(str_file_name);
+config();
+  for (var i =0; i<=lineArr.length; i++) {
+     lineArr_Firm_g[i] = new Object;
+	 lineArr_Kand_g[i] = new Object; 
+  }
+sep_data(p_sp);
+//alert("Mittelpunkt" + lineArr_Mitt_g[lat_ind] + lineArr_Mitt_g[lng_ind] + lineArr_Mitt_g[rad_ind]);
+draw_map();
+
+addCircleToMap(map);
+
+
+//alert("marker" + lineArr_Firm_g[0][descr_ind]);
+//alert("marker1" + lineArr_Firm_g[1][descr_ind]);
+
+add_markers_firm(lineArr_Firm_g[0][lat_ind],lineArr_Firm_g[0][lng_ind],lineArr_Firm_g[0][descr_ind]);
+add_markers_firm(lineArr_Firm_g[1][lat_ind],lineArr_Firm_g[1][lng_ind],lineArr_Firm_g[1][descr_ind]);
+
+add_markers_kand();
+
+//alert("firm0"  + lineArr_Firm_g[0][lat_ind]+ lineArr_Firm_g[0][lng_ind]);
+
+add_route(lineArr_Firm_g[0][lat_ind],lineArr_Firm_g[0][lng_ind],lineArr_Firm_g[0][descr_ind], v_line_color[0] ,10);
+add_route(lineArr_Firm_g[1][lat_ind],lineArr_Firm_g[1][lng_ind],lineArr_Firm_g[1][descr_ind], v_line_color[1],10 );
+add_route(lineArr_Firm_g[2][lat_ind],lineArr_Firm_g[2][lng_ind],lineArr_Firm_g[2][descr_ind], v_line_color[2],10 );
+
+add_additional_marker();
+
+  </script>
+</body>
+</html>

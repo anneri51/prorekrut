@@ -1,0 +1,1646 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/19/2019 6:33:38 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="CRMTEST"
+  DTS:CreatorName="PROREKRUT\crmt"
+  DTS:DTSID="{A2C86E62-1E1B-4BC8-B451-86DDB9F3B742}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LocaleID="1031"
+  DTS:ObjectName="02_Html_erstellen"
+  DTS:PackageType="5"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{F8650E46-BD18-4E8C-AA82-CB07D9AEA4F3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Applicants]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F6A523EE-2B14-4EA1-B76C-9D6CCA1D4CA3}"
+      DTS:ObjectName="Applicants">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=CRMTEST;Initial Catalog=combit_Recruiting2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Part1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4E2512C1-35B8-42E0-972C-DE11E0716B5D}"
+      DTS:ObjectName="Part1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\crmt\Documents\Visual Studio 2017\GEO\GEO_Daten\01_src\Part1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&lt;!DOCTYPE html&gt;"
+              DTS:DTSID="{D6499813-6087-4425-9B24-4C33824554F4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Part2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4B38DCE1-9256-41CB-AD77-3A98511A0DDD}"
+      DTS:ObjectName="Part2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\crmt\Documents\Visual Studio 2017\GEO\GEO_Daten\01_src\Part2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 0"
+              DTS:DTSID="{B02EA7A4-0746-410E-9469-507114054B2F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Verbindungs-Manager für Flatfiles]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BE0A6F28-06D6-45E5-9912-ACB89DBC6407}"
+      DTS:ObjectName="Verbindungs-Manager für Flatfiles">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\crmt\Documents\Visual Studio 2017\GEO1\dl.html">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="72"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{EEC1D3E1-BE8A-4E62-9690-B5E83FF39975}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="72"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyID"
+              DTS:DTSID="{3259D3B3-9538-486C-8359-34C853A5EAED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Salutation"
+              DTS:DTSID="{76B835E0-56C0-4AEB-A18F-4AF1804A922A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Title"
+              DTS:DTSID="{41A4E046-2392-4E90-9863-1EFDEF997411}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalutationLetter"
+              DTS:DTSID="{B0451A8F-61F1-4AC9-89E9-119351D6744C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{F4987E40-4D06-4204-97FB-FC77A5D734E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Firstname"
+              DTS:DTSID="{5D1CF9E5-6B27-4AA6-A153-FC1B28FC1802}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country_Private"
+              DTS:DTSID="{875F5C0A-E2D8-4683-8449-570734514938}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZIP_Private"
+              DTS:DTSID="{08CF14E7-FBBE-4A92-ACAF-783962FE45C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City_Private"
+              DTS:DTSID="{DB73A855-3AE0-4EF6-B943-6F0B040C02BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Street_Private"
+              DTS:DTSID="{EEFA061C-9DAD-4F42-A41E-35006722F072}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{306F4F09-0CE2-475F-906C-71CFF27ED42E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone2"
+              DTS:DTSID="{C191B7BD-A374-4ED6-9C9F-FA378E31E4FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MobilePhone"
+              DTS:DTSID="{09F8D242-2CDD-4C61-9F96-9295682C206F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MobilePhone_Private"
+              DTS:DTSID="{6211C92B-B107-4038-97C4-423D048DEEB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fax"
+              DTS:DTSID="{10699862-5931-442A-9F44-74BA96D5B723}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email"
+              DTS:DTSID="{67BF0ADD-83E1-4FD0-8725-1374B6706A9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email2"
+              DTS:DTSID="{22027726-D268-4BF4-BB3A-EA42DD301E5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Facebook"
+              DTS:DTSID="{ED2918EC-40B0-4BBB-82C4-04436BCE5651}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LinkedIn"
+              DTS:DTSID="{5A181971-16DA-4CB6-B102-97858F02230E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="XING"
+              DTS:DTSID="{52732AC3-EB69-4912-A101-3B7DAC09B441}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Source"
+              DTS:DTSID="{1295EC1A-070A-474A-AB54-220D56BAC840}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BusinessRelation"
+              DTS:DTSID="{CB7D4EB3-9E1D-4BF7-B49E-4EE408D83920}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ApplicantNo"
+              DTS:DTSID="{13642B5A-D6B6-49F1-9FA0-DA804B3B9026}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Note"
+              DTS:DTSID="{7E16B76D-37F3-43AD-A6DD-C53831CAC678}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="YearlySalary"
+              DTS:DTSID="{215D05CE-BA4A-4D1E-A288-82CD0D923CC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HourlyRate"
+              DTS:DTSID="{2686EBFE-8ABD-41CD-AF34-92FD1E75DD2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Availableness_Date"
+              DTS:DTSID="{99C70061-80EC-4FCB-983A-7FC6EFCC21C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="auto_bahn"
+              DTS:DTSID="{78D44DDD-480C-460C-8EAF-B1B6C08C32AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Experience"
+              DTS:DTSID="{664A9C2B-224C-4F3E-B584-D85F7184A604}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BlockingNote"
+              DTS:DTSID="{438C79D3-2C9F-4739-816E-94701918756E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DriversLicense"
+              DTS:DTSID="{DABA9A7E-637D-478E-B2B2-3F93833F5234}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthday"
+              DTS:DTSID="{E1BC18F6-5CA3-4768-9927-AAD4E167AD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthplace"
+              DTS:DTSID="{71470973-EA8E-4C91-9F47-69281B2E69EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NativeCountry"
+              DTS:DTSID="{7A0C28CB-DEAA-42DE-8641-A981A27AAB8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nationality"
+              DTS:DTSID="{C05C9092-58CD-4EDD-8A8A-FC60A4194F4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaritalStatus"
+              DTS:DTSID="{FBD263E9-65E6-49BE-8C43-0D9BCDDA9BB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumberChildren"
+              DTS:DTSID="{8192F56B-EFA0-42F4-8244-FE18FDE57215}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CoverLetter"
+              DTS:DTSID="{0BE1723F-6065-4E7A-8AE4-C15185F1CF95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CurriculumVitae"
+              DTS:DTSID="{9F3A436A-8AED-4049-8AA2-8116EFF10457}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Credentials"
+              DTS:DTSID="{830874E7-B280-42D1-869C-DD3D869ECFC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="11"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Certificates"
+              DTS:DTSID="{64C5780C-F10C-4DE8-8EC7-6BF256A9C5B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Photo"
+              DTS:DTSID="{6CA55C50-140C-4A4A-AF8C-711944E25CBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PhotoType"
+              DTS:DTSID="{569E9956-A49E-4281-AEBC-DCBF1BDF9174}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="160"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Interests"
+              DTS:DTSID="{D7A2AF76-3884-4DAD-9A1A-B6803C220C01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LPersCont"
+              DTS:DTSID="{653B7373-4AE8-4C4C-A330-80AA142DD9AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{D4915E6F-3E06-4850-ABB2-BE6EA555EA75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="iv_zeiten"
+              DTS:DTSID="{ABC2B1FA-95AB-47B8-9094-A817E3C225E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="urlaub"
+              DTS:DTSID="{F911FC9A-268B-440C-85A6-8B12CFC8FC9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="wechselmotiv"
+              DTS:DTSID="{3A184A5D-808E-4374-BDDA-9D3017E4AEB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stadtteil"
+              DTS:DTSID="{D56211D9-52FF-4FD3-A894-EE4A4C4B1F50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UserDefined5"
+              DTS:DTSID="{1477028D-65F1-4EE8-9891-D6DF3BB3EAE6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreatedOn"
+              DTS:DTSID="{2AD9588F-B7EB-4843-8FBE-038DF95FCB55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreatedBy"
+              DTS:DTSID="{9DC9541A-1FF2-4C4E-9A4C-8A3701BAC529}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ModifiedOn"
+              DTS:DTSID="{99822FAD-24AD-45B0-9B72-A879F8487C17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ModifiedBy"
+              DTS:DTSID="{5E194305-FA93-4F2A-B5DF-B6E36EAF7C51}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Z_Import_PK"
+              DTS:DTSID="{42BE45C2-44D5-4D26-925D-64ED8D94C302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Z_Import_FK"
+              DTS:DTSID="{2073FF59-542B-425A-8C0C-854A856BDE1E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AktuellePosition"
+              DTS:DTSID="{B547CBC4-6C0A-4056-8E72-74FB4A380235}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Empfohlendurch"
+              DTS:DTSID="{CC27B4AF-8A7B-44D0-AAC0-5BC1B7E261DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profil"
+              DTS:DTSID="{BAFA5BC2-8D22-4886-B525-42AA437AD95F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="reise"
+              DTS:DTSID="{806CDC26-8911-4B64-A8ED-E8034F1C1750}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arbeitszeit"
+              DTS:DTSID="{997E97E6-909C-4E6F-98FE-BB090092F1FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="160"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bereich_Profession"
+              DTS:DTSID="{F319B5B6-2798-400E-A24C-0E467EDDB9F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Availability"
+              DTS:DTSID="{2C93C927-BA36-4CC2-B17B-90C1B304E863}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MIT"
+              DTS:DTSID="{83E6677F-79A4-4847-B98A-01FBC476E272}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ABC"
+              DTS:DTSID="{73467708-D550-4180-AE96-7CC38F7195A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bilanzkenntnisse_Spezialisierung"
+              DTS:DTSID="{28D79582-972F-42B6-B668-5524EE0DEE83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Abschlusse2"
+              DTS:DTSID="{E58AAB7B-0CAF-447F-9FFC-D30A6B51A791}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Branche"
+              DTS:DTSID="{95E1ABD5-4408-4576-B9F8-8CFE6BDD8436}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="120"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sprachen"
+              DTS:DTSID="{7397613A-8286-49B1-B806-376C87095DAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GehaltMax"
+              DTS:DTSID="{EF212D18-6BFA-4960-A7C1-E8DB69AD9A3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Feld1"
+              DTS:DTSID="{A56C1A0A-736D-4AB9-BD9F-522449EF93C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Foto"
+              DTS:DTSID="{2046A6CE-4B0F-41ED-8393-DF0CC023DC36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="303"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BewernerNotes"
+              DTS:DTSID="{6FF9FC5C-4482-4416-85EF-1C479793AA79}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email3"
+              DTS:DTSID="{785AE68F-819A-4D98-BE0B-A41F27BF75A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GehaltMin"
+              DTS:DTSID="{C19E897F-80C1-4E15-903C-B9A36368A908}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Kommunikation"
+              DTS:DTSID="{93EBCA4F-6619-487B-AD11-AB260331C177}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Ziel]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E01D0A6A-1081-4016-8E3A-E0CFCFF3249F}"
+      DTS:ObjectName="Ziel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\crmt\Documents\Visual Studio 2017\GEO\GEO_Daten\02_dest\Neues Textdokument.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&lt;!DOCTYPE html&gt;"
+              DTS:DTSID="{DAE5100D-94E6-4FDE-82A4-E00B0638EC78}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CB046B10-4EF2-4A58-AD99-C5D7F9D8B7AE}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="cnt_rows">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{35A7A658-FAC9-429F-8563-2AA84A0C5B20}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="V_CNT">
+      <DTS:VariableValue
+        DTS:DataType="3">50</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Textfile (Part1)"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Datenflusstask"
+      DTS:DTSID="{C52617EB-8ECF-42E5-997E-6A3CB56AAAC2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Textfile (Part1)"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Textfile (Part1)\Part1"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1031"
+              name="Part1"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Part1)\Part1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Part1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Part1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle].Columns[&lt;!DOCTYPE html&gt;]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      length="50"
+                      lineageId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle].Columns[&lt;!DOCTYPE html&gt;]"
+                      name="&lt;!DOCTYPE html&gt;"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&lt;!DOCTYPE html&gt;" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Part1)\Part1.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Textfile (Part1)\Ziel"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flatfileziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfileziel"
+              localeId="1031"
+              name="Ziel">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob die Daten die Zieldatei überschreiben oder an sie angehängt werden."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Gibt den Text an, der vor dem Schreiben von Daten in die Zieldatei geschrieben werden soll."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Bei Aktivierung des Textqualifizierers wird hiermit angegeben, ob der Textqualifizierer in den Daten, die in die Zieldatei geschrieben werden, mit Escapezeichen versehen wird."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Part1)\Ziel.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Ziel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Ziel]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Textfile (Part1)\Ziel.Inputs[Eingabe des Flatfileziels]"
+                  hasSideEffects="true"
+                  name="Eingabe des Flatfileziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Textfile (Part1)\Ziel.Inputs[Eingabe des Flatfileziels].Columns[&lt;!DOCTYPE html&gt;]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="&lt;!DOCTYPE html&gt;"
+                      externalMetadataColumnId="Package\Textfile (Part1)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      lineageId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle].Columns[&lt;!DOCTYPE html&gt;]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Part1)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&lt;!DOCTYPE html&gt;" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Textfile (Part1).Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Textfile (Part1)\Ziel.Inputs[Eingabe des Flatfileziels]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Textfile (Part1)\Part1.Outputs[Ausgabe der Flatfilequelle]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Textfile (Part2)"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Datenflusstask"
+      DTS:DTSID="{114FAE5D-CE1D-4846-A069-BD358EAF4E66}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Textfile (Part2)"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Textfile (Part2)\Part2"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1031"
+              name="Part2"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Part2)\Part2.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Part2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Part2]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle].Columns[Spalte 0]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 0]"
+                      length="50"
+                      lineageId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle].Columns[Spalte 0]"
+                      name="Spalte 0"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 0" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Part2)\Part2.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Textfile (Part2)\Ziel"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flatfileziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfileziel"
+              localeId="1031"
+              name="Ziel">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob die Daten die Zieldatei überschreiben oder an sie angehängt werden."
+                  name="Overwrite">false</property>
+                <property
+                  dataType="System.Null"
+                  description="Gibt den Text an, der vor dem Schreiben von Daten in die Zieldatei geschrieben werden soll."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Bei Aktivierung des Textqualifizierers wird hiermit angegeben, ob der Textqualifizierer in den Daten, die in die Zieldatei geschrieben werden, mit Escapezeichen versehen wird."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Part2)\Ziel.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Ziel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Ziel]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Textfile (Part2)\Ziel.Inputs[Eingabe des Flatfileziels]"
+                  hasSideEffects="true"
+                  name="Eingabe des Flatfileziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Textfile (Part2)\Ziel.Inputs[Eingabe des Flatfileziels].Columns[Spalte 0]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Spalte 0"
+                      externalMetadataColumnId="Package\Textfile (Part2)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      lineageId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle].Columns[Spalte 0]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Part2)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&lt;!DOCTYPE html&gt;" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Textfile (Part2).Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Textfile (Part2)\Ziel.Inputs[Eingabe des Flatfileziels]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Textfile (Part2)\Part2.Outputs[Ausgabe der Flatfilequelle]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Textfile (Sql - Kandidat +  Firma)"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Datenflusstask"
+      DTS:DTSID="{D06D769E-F830-4864-B69B-EFDBD836ABC5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Textfile (Sql - Kandidat +  Firma)"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB-Quelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;7"
+              description="OLE DB-Quelle"
+              name="Kandidat"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT TITLE FROM APPLICANTS</property>
+                <property
+                  dataType="System.String"
+                  description="Die Variable, die den auszuführenden SQL-Befehl enthält."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Die Zuordnungen zwischen den Parametern im SQL-Befehl und den Variablen."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Applicants]"
+                  connectionManagerRefId="Package.ConnectionManagers[Applicants]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle]"
+                  name="Ausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle].Columns[TITLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TITLE]"
+                      length="30"
+                      lineageId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle].Columns[TITLE]"
+                      name="TITLE"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[TITLE]"
+                      dataType="wstr"
+                      length="30"
+                      name="TITLE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der OLE DB-Quelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TITLE]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[TITLE]"
+                      name="TITLE" />
+                    <outputColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flatfileziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfileziel"
+              localeId="1031"
+              name="Ziel">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob die Daten die Zieldatei überschreiben oder an sie angehängt werden."
+                  name="Overwrite">false</property>
+                <property
+                  dataType="System.Null"
+                  description="Gibt den Text an, der vor dem Schreiben von Daten in die Zieldatei geschrieben werden soll."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Bei Aktivierung des Textqualifizierers wird hiermit angegeben, ob der Textqualifizierer in den Daten, die in die Zieldatei geschrieben werden, mit Escapezeichen versehen wird."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Ziel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Ziel]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Inputs[Eingabe des Flatfileziels]"
+                  hasSideEffects="true"
+                  name="Eingabe des Flatfileziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Inputs[Eingabe des Flatfileziels].Columns[TITLE]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="TITLE"
+                      externalMetadataColumnId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      lineageId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle].Columns[TITLE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Inputs[Eingabe des Flatfileziels].ExternalColumns[&lt;!DOCTYPE html&gt;]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="&lt;!DOCTYPE html&gt;" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Textfile (Sql - Kandidat +  Firma).Paths[Ausgabe der OLE DB-Quelle]"
+              endId="Package\Textfile (Sql - Kandidat +  Firma)\Ziel.Inputs[Eingabe des Flatfileziels]"
+              name="Ausgabe der OLE DB-Quelle"
+              startId="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat.Outputs[Ausgabe der OLE DB-Quelle]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung]"
+      DTS:CreationName=""
+      DTS:DTSID="{9B2932E6-E4CB-40A2-B824-4F7EB814C411}"
+      DTS:From="Package\Textfile (Part1)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung"
+      DTS:To="Package\Textfile (Sql - Kandidat +  Firma)" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Einschränkung 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{731B0A98-A603-4C80-9064-F486092B6817}"
+      DTS:From="Package\Textfile (Sql - Kandidat +  Firma)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Einschränkung 1"
+      DTS:To="Package\Textfile (Part2)" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Dieser CDATA-Abschnitt enthält die Layoutinformationen des Pakets, z.B. Informationen wie X-/Y-Koordinaten, Breite und Höhe.-->
+<!--Wenn Sie diesen Abschnitt manuell ändern und Ihnen ein Fehler unterläuft, können Sie ihn löschen. -->
+<!--Das Paket kann zwar weiterhin normal geladen werden, aber frühere Layoutinformationen gehen verloren, und die Elemente auf der Entwurfsoberfläche werden vom Designer automatisch neu angeordnet.-->
+<Objects
+  Version="8">
+  <!--Jeder darunter liegende Knoten enthält Eigenschaften, die sich nicht auf das Laufzeitverhalten auswirken.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Textfile (Part1)"
+          TopLeft="58.5,36.75" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Textfile (Part2)"
+          TopLeft="68.25,216.25" />
+        <NodeLayout
+          Size="235.5,42"
+          Id="Package\Textfile (Sql - Kandidat +  Firma)"
+          TopLeft="72,133" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung]"
+          TopLeft="133.5,78.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.25,54.25"
+              Start="0,0"
+              End="56.25,46.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.125"
+                    Point2="0,27.125"
+                    Point3="4,27.125" />
+                  <mssgle:LineSegment
+                    End="52.25,27.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.25,27.125"
+                    Point2="56.25,27.125"
+                    Point3="56.25,31.125" />
+                  <mssgle:LineSegment
+                    End="56.25,46.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Einschränkung 1]"
+          TopLeft="189.75,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.5,41.25"
+              Start="0,0"
+              End="-46.5,33.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.625" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.625"
+                    Point2="0,20.625"
+                    Point3="-4,20.625" />
+                  <mssgle:LineSegment
+                    End="-42.5,20.625" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-42.5,20.625"
+                    Point2="-46.5,20.625"
+                    Point3="-46.5,24.625" />
+                  <mssgle:LineSegment
+                    End="-46.5,33.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Textfile (Part1)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="103.5,42"
+          Id="Package\Textfile (Part1)\Part1"
+          TopLeft="309,49" />
+        <NodeLayout
+          Size="95.5,42"
+          Id="Package\Textfile (Part1)\Ziel"
+          TopLeft="204.5,115.5" />
+        <EdgeLayout
+          Id="Package\Textfile (Part1).Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="360.75,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-108.5,24.5"
+              Start="0,0"
+              End="-108.5,17">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.25"
+                    Point2="0,12.25"
+                    Point3="-4,12.25" />
+                  <mssgle:LineSegment
+                    End="-104.5,12.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-104.5,12.25"
+                    Point2="-108.5,12.25"
+                    Point3="-108.5,16.25" />
+                  <mssgle:LineSegment
+                    End="-108.5,17" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Textfile (Part2)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="103.5,42"
+          Id="Package\Textfile (Part2)\Part2"
+          TopLeft="151.5,17" />
+        <NodeLayout
+          Size="95.5,42"
+          Id="Package\Textfile (Part2)\Ziel"
+          TopLeft="126,129" />
+        <EdgeLayout
+          Id="Package\Textfile (Part2).Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="203.25,59">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-29.5,70"
+              Start="0,0"
+              End="-29.5,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31"
+                    Point2="0,35"
+                    Point3="-4,35" />
+                  <mssgle:LineSegment
+                    End="-25.5,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.5,35"
+                    Point2="-29.5,35"
+                    Point3="-29.5,39" />
+                  <mssgle:LineSegment
+                    End="-29.5,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Textfile (Sql - Kandidat +  Firma)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="95.5,42"
+          Id="Package\Textfile (Sql - Kandidat +  Firma)\Ziel"
+          TopLeft="196.5,254.25" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat"
+          TopLeft="124.25,124.5" />
+        <EdgeLayout
+          Id="Package\Textfile (Sql - Kandidat +  Firma).Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="184.25,166.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60,87.75"
+              Start="0,0"
+              End="60,80.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.875"
+                    Point2="0,43.875"
+                    Point3="4,43.875" />
+                  <mssgle:LineSegment
+                    End="56,43.875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="56,43.875"
+                    Point2="60,43.875"
+                    Point3="60,47.875" />
+                  <mssgle:LineSegment
+                    End="60,80.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Textfile (Sql - Kandidat +  Firma)\Kandidat">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

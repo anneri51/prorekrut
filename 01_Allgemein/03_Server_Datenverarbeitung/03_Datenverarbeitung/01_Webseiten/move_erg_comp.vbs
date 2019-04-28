@@ -5,7 +5,7 @@ loopfolder
 sub loopfolder ()
 
 Const v_SourceFolder = "C:\Users\crmt\Downloads"
-Const v_SourceFileNamePart = "dlText"
+Const v_SourceFileNamePart = "Companies_dlText"
 Const v_DestinationFolder = "C:\Users\crmt\Documents\Visual Studio 2017\GEO\GEO_04_Serverdaten\03_Adressdaten\02_Website_download\Firmen"
 v_date = mid(now(),7,4) & mid(now(),4,2) & mid(now(),1,2)
 

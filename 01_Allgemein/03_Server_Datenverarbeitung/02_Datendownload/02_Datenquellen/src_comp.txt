@@ -1,5 +1,5 @@
 1	80335	Muenchen	Elisenstrasse 3	DE
-2	81737	Muenchen	Charles-De-Gaullestr.8	DE
+2	81737	Muenchen	Charles-De-Gaullestr 8	DE
 3	81673	Muenchen	Kreillerstr. 65	DE
 4	13469	Berlin	Duesterhauptstrasse 12	DE
 5	24405	Mohrkirch	Hauptstr. 19	DE

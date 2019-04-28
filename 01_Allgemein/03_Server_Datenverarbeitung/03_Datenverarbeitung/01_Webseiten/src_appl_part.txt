@@ -1,0 +1,2226 @@
+1				
+2	82008 	Unterhaching	Bibergerstr. 56	DE
+3	47800	Krefeld	Kreuzbergstraße 12	DE
+4	85435	Erding	Zur Niedermühle 7	DE
+5	82343	Pöcking		DE
+6	81539	München	Schwanseestr.	DE
+7	80636	München		DE
+8	61118	Bad Vilbel	Windecker Straße 10	DE
+9	80469 	München	Klenzestrasse 52a 	DE
+10	81245	München/Pasing	Alte Allee 84a	DE
+11	82284	Grafrath	Hauptstr. 19a	DE
+12	93059	Regensburg	Schwabelweiser Weg 33	DE
+13	80802	München	Potsdamer Str. 5	DE
+14	80636	München	Maximilian-Wetzger-Str. 5	DE
+15	85*	Holzkirchen		DE
+16	89269	Vöhringen	Sperlingweg 3	DE
+17	59368	Werne	Bahnhofstr. 46	DE
+18	81549	München/Giesing	Warthofstr. 15	DE
+19	80798	München/Schwabing	Isabellastr. 20	DE
+20	83666	Waakirchen	Aurikelstr. 5	DE
+21	80798	München/Schwabing	Isabellastr. 27	DE
+22	80999	München/Allach-Untermenzing	St.-Johann-Str. 23a	DE
+23	80979	München/Schwabing	Schellingstraße 138	DE
+24	85774	Unterföhring	Münchener Straße 101A	DE
+25	13189	Berlin	Trelleborger Str. 21	DE
+26	86845	Großaitingen	Finkenweg 20	DE
+27	86938	Schondorf	Gartenstraße 29.	DE
+28	81735	München	Zieglerstraße 16	DE
+29	22083	Hamburg	Hamburger Straße 11	DE
+30	89349	Burtenbach		DE
+31	80639	München/Neuhausen-Nyphenburg	Romanstr. 2a	DE
+32	85386	Eching	Petra Rollmann Nelly-Sachs-Str. 1	DE
+33	50668	Köln	Riehler Str. 34	DE
+34	30880	Laatzen-Grasdorf	Bussardweg 16	DE
+35	80687	München/Pasing	Lutzstraße 9b	DE
+36	85774 	Unterföhring	Ahornstr. 24 	DE
+37	82057	Icking	Kirchenleite 22a	DE
+38	80995	München/Feldmoching	Ratoldstr. 26	DE
+39	80992	München	Meggendorferstraße 35	DE
+40	85221	Dachau	Friedrich-Wilke-Weg 65 .	DE
+41	81669	München Zentrum		DE
+42	82110	Germering	Glatzer Str. 3	DE
+43	85221	Dachau	Lederergasse 7	DE
+44	81539	München/Obergiesing	Weißenseestraße 32	DE
+45	46684	Meerbusch	Kornstraße 45	DE
+46	92289	Amberg/Ursensollen		DE
+47	82140	Olching	Weinstr. 1a	DE
+48	70180	Stuttgart		DE
+49	92318	Neumarkt-Stauf	Moosweiherstr. 17	DE
+50	80809	München	Straßberger str. 2.	DE
+51	81539	München/Giesing	Perlacher Straße 122a	DE
+52	80807	München/Milbertshofen	Silcherstrasse 5	DE
+53	83623 	Dietramszell	Am Schmiedberg 4	DE
+54	80807	München/Schwabing Nord (Parkstadt)	Gunta-Stölzl-Straße 25	DE
+55	86165	Augsburg	Hans-Heiling-Str. 7	DE
+56	81925	München	Lohengrinstraße 8a	DE
+57	81539	München Untergießing	Tegernseer Landstr. 123	DE
+58	81737  	München	Lorenzstrasse 17  	DE
+59	86510	Ried	Ahornstraße 3	DE
+60	81543	München/Untergiesing	Salierstraße 6	DE
+61	8*	München	Simone Rappl	DE
+62	81673	München/Berg am Laim	St.-Veit-Str. 58	DE
+63	85***	Ismaning		DE
+64	89312	Günzburg	Auweg 55	DE
+65	81476	München	Ambacherstraße 36	DE
+66	81241	München/Pasing	Haberlandstrasse 55	DE
+67	81673	München	Ursberger Str. 5	DE
+68	82256	Fürstenfeldbruck	Bismarckstraße 6	DE
+69	86937	Scheuring	Blumenstr. 7b	DE
+70	85662	Hohenbrunn	Falkenstraße 6	DE
+71	80***	München		DE
+72	82205	Gilching	Ressweg 26A	DE
+73	81369	München		DE
+74	81739	München/Waldperlach	Rotkäppchenstraße 63	DE
+75	60486	Frankfurt am Main	Homburger Str. 20	DE
+76	80636	München/Neuhausen	Blutenburgstraße 59	DE
+77	82223	Eichenau	Gernstr. 36	DE
+78	80637	München/Moosach	Hanebergstr 11	DE
+79	94508	Schöllnach	Büchlsteinstr. 12	DE
+80	87727 	Babenhausen	Evangelikreuz. 58	DE
+81	82152	Planegg	Münchner Str. 19	DE
+82	1220	Wien	Langobardenstrasse 45	DE
+83	55128	Mainz	Draiser Straße 47	DE
+84	81379	München	Murnauer Str. 265	DE
+85	82008	Unterhaching	Witneystr. 13	DE
+86	88436	Oberessendorf	Brunnengasse 4	DE
+87	85579	Neubiberg	Eschbaumweg 16	DE
+88				DE
+89	85221	Dachau	Roßwachtstr. 3	DE
+90	85053	Ingolstadt	Tulpenstraße 21	DE
+91	86567 	Hilgertshausen-Tandern	Herbststrasse 21	DE
+92	81249	München	Erlbachstr. 9	DE
+93	80992	München	Dachauer Str. 180	DE
+94	85716	Unterschleißheim	Margaretenanger 3 b	DE
+95	81477	München	Olivierstr. 36	DE
+96	85653	Bad Aying	Dorfstr. 4	DE
+97	85777 	Fahrenzhausen	Römerstraße 2	DE
+98	2000	Frederiksburg	13 Allegade	DE
+99	80801	München/Schwabing	Kurfürstenstr. 45	DE
+100	85084	Reichertshofen		DE
+101	81371	München/Untersendling	Aberlestraße 44	DE
+102	80637	München/Neuhausen	Lily-Braun-Weg 4	DE
+103	81241	München	Richard-Riemerschmid-Allee 5	DE
+104	81925	München/Bogenhausen	Fritz-Meyer-Weg 13	DE
+105	85*	Freising	kürzlich umgezogen	DE
+106	8*	München / Lehel		DE
+107	86500	Kutzenhausen	Weidenstr. 11	DE
+108	86919	Utting a. Ammersee	Schondorfer Straße 19	DE
+109	81679	München	Amberger Straße 40	DE
+110	89231	Ulm	Meininger Allee 7	DE
+111	85540	Haar	Am Langhölzl 4	DE
+112	81475	München/Forstenried-Fürstenried	Forst-Kasten-Allee 121	DE
+113	95448 	Bayreuth	Marsstrasse 15	DE
+114	86399	Bobingen	Lechallee 47 L	DE
+115	8*	Waldkraiburg		DE
+116	82008	Unterhaching	Kapellenstr. 25	DE
+117	80802	München	Artur-Kutscher-Platz 2a	DE
+118	81369 	München	Jachenauer Str. 15	DE
+119	80	München/Schwanthalerhöhe		DE
+120	85053	Ingolstadt	Albrecht-Dürer-Str. 19	DE
+121	80638	München	Pfaffmünsterweg 2	DE
+122	80634	München/Neuhausen		DE
+123	85551	Kirchheim (MUC Ost)	Räterstr. 22c	DE
+124	85435	Erding	Fichtenstraße 29	DE
+125	81547	München/Untergiesing-Harlaching	Schorerstr. 1	DE
+126	82515	Wolfratshausen	Am Loisachbogen 13	DE
+127	81735	München	Amselweg 4	DE
+128	80337	München	Waltherstr. 9e	DE
+129	81677	München/Bogenhausen	Leuchtenbergring 5	DE
+130	90459 	Nürnberg	Humboldtstr. 109	DE
+131	85591	Vaterstetten	Zugspitzstraße 78	DE
+132	80	München/Oberschleißheim		DE
+133	82178	Puchheim	Edelweißstraße 21	DE
+134	66482	Zweibrücken	Trautmannstraße 31	DE
+135	85399	Hallbergmoos	Tannenweg 28	DE
+136	81925	München/Bogenhausen	Franz-Wolter-Straße 4	DE
+137	93073	Neutraubling	Aussigerstr. 14b	DE
+138	80995	München/Feldmoching	Josef-Zintl-Straße 9	DE
+139	80337	München/Isarvorstadt	Maistr. 22	DE
+140	60318	Frankfurt	Rat-Beil-Str. 15	DE
+141	86807	Buchloe	Weichter Str. 1	DE
+142	85375	Neufahrn	Galgenbachweg 33	DE
+143	86875	Waal	Jägerhausstr. 4	DE
+144	80689	München-Laim	Guido-Schneble-Str. 32	DE
+145	8*	München	Stellenmarkt 10	DE
+146	80687	München/Laim		DE
+147	89703	Carson City	1005 West Fourth Street	DE
+148	80797	München	Schleißheimer Strasse 186	DE
+149	80333	München/ Schwabing	Theresienstr. 71	DE
+150	82256	Fürstenfeldbruck		DE
+151	82194	Gröbenzell	Waxensteinstr. 4a	DE
+152	81377	München/Hadern	Farchanter Strasse 1	DE
+153	83666	Waakirchen/Tegernsee	Bürgermeister-Erl-Str. 5	DE
+154	80798	München/Maxvorstadt	Zentnerstr. 28	DE
+155	89616	Rottenacker		DE
+156	27389	Stemmen	Im Sande 19	DE
+157	81927 	München	Preziosastraße 5a	DE
+158	82223	Eichenau	Am Bogen 5	DE
+159	8*	Petershausen		DE
+160			vera muelenbeck@hotmail.com	DE
+161	84036	Landshut	Weickmannshöhe 6	DE
+162	80337	München/Isarvorstadt	Thalkirchner Str. 25	DE
+163	81369	München/Am Harras	Passauerstraße 38	DE
+164	80802	München (Schwabing)	Leopoldstr. 98	DE
+165	83547	Babensham	Tötzham 11	DE
+166	88400	Biberach		DE
+167	81927	München	Denninger Str. 198	DE
+168	82205	Gilching	Am Steinberg 23a	DE
+169	80797	München/Schwabing-West	Schleißheimer Straße 87	DE
+170	80803	München/Solln		DE
+171	84036	Kumhausen	Götzdorfer Str. 12	DE
+172	80339	München	Westendstr. 74	DE
+173	81739	München	Gustav-Heinemann-Ring  92	DE
+174	68239	Mannheim	Riegeler Weg 17	DE
+175	82006	Unterhaching (oder Peitingen/Schongau)		DE
+176	82069	Hohenschäftlarn	Fischerschlösslstraße 25	DE
+177	80333	München	Residenzstraße 14	DE
+178	86156	Augsburg	Kranichweg 9	DE
+179	80797	München		DE
+180	48599	Gronau	Füchtenfeld 9	DE
+181	22869	Schenefeld	Sandstückenweg 14	DE
+182	84034	Landshut	Karlstr. 13b	DE
+183	86316	Friedberg	Altbayernstraße 2 1/2	DE
+184	81379	München/Sendling	Aidenbachstraße 99	DE
+185	80686	München/Laim	Friedenheimerstr. 77	DE
+186	89077 	Ulm (Donau)	Haßlerstraße. 5	DE
+187	84106	Volkenschwand	Schlott 2	DE
+188	80336	München	Goethestr. 40	DE
+189	83607	Holzkirchen	Roggersdorfer Str. 101	DE
+190	81825	München	Zehntfeldstr. 199	DE
+191	83700	Weissach	Am Wiesenbach 8	DE
+192	85551	Kirchheim	AM Brunnen 26	DE
+193	78333	Stockach	Geschwister-Scholl-Str.20	DE
+194	85435	Erding	Hennengasse 20	DE
+195	81929	München	Brodersenstr. 95	DE
+196	83626	Valley/Grub	Am Emholz 2	DE
+197	81827	München/Trudering	Dresselstr. 20	DE
+198	86	Ingolstadt / will raus aus Bayern!!!		DE
+199	86	Augsburg		DE
+200	86477	Augsburg		DE
+201	81475	München	Bellinzonastr. 5	DE
+202	81667	München/Au-Haidhausen	Gravelottestraße 3	DE
+203	80337	München	Zenettistraße 23a	DE
+204	82008	Unterhaching	Isarthalstr 36	DE
+205	82515	Wolfratshausen	Am Loisachbogen 5d	DE
+206	61118	Bad Vilbel	Tanusring 32	DE
+207	80636	München	Rupprechtstr. 4	DE
+208	80469	München/Isarvorstadt		DE
+209	89075	Ulm		DE
+210	80801	München/Schwabing	Franz-Joseph-Straße 36a	DE
+211	82205	Gilching		DE
+212	93090	Bach	Hauptstrasse 40	DE
+213	42781	Haan	Ohligser Str. 150	DE
+214	85551	Kirchheim b. München		DE
+215	81241	München	Pirmasenser Straße 17	DE
+216	88339	Bad Waldsee		DE
+217	68163	Mannheim I	Meerwiesenstr. 8 I	DE
+218	81***	München/Sendling		DE
+219	60318	Frankfurt am Main	Oberweg 38	DE
+220	85221	Dachau	Augustenfelder Str. 6	DE
+221	42489	Wülfrath	Zur Vorburg 14	DE
+222	81377	München	Waldfriedhofstr. 23	DE
+223	81377	München	Pelargonienweg 38	DE
+224	80339	München/Moosach	Chemnitzer Platz 1	DE
+225	82054	Sauerlach	Wallbergstraße 23	DE
+226	80937	München/Milbertshofen	Sudetendeutschestraße 16a	DE
+227	82256	Fürstenfeldbruck	Konrad-Adenauer-Str. 34 	DE
+228	85737	Ismaning	Münchener Straße 75	DE
+229	80469	München/Isarvorstadt	Reichenbachtsr. 53	DE
+230	82194	Gröbenzell	Grünfinkenstr. 13	DE
+231	85748	Garching		DE
+232	84416	Taufkirchen (Vils)	Kampenwandstr. 9	DE
+233	85540	Haar-Salmdorf	Feinerweg 3	DE
+234	85386	Eching	Karl Leisner Str. 12	DE
+235	8173	Barcelona		DE
+236	85757	Karlsfeld	Peter-Rosegger-Str. 14	DE
+237	89537	Giengen	Neuffenstrasse 15	DE
+238	85521	Ottobrunn	Jahnstr. 4	DE
+239	81925	München/Unterföhring	Lohengrinstr. 16	DE
+240	80803	München/Schwabing		DE
+241	81667	München/Au-Haidhausen	Kellerstr. 16/1	DE
+242	82319	Starnberg	Münchner Str. 6	DE
+243	051241	Bukarest	Aleea Costinesti 5, Bldg. 3, Apart. 9	DE
+244	85653	Aying	Peißer Str. 21	DE
+245	80636 	München	Nymphenburger Str. 90c		DE
+246	86935	Rott	Weilheimerstr 29	DE
+247	8	München		DE
+248	85622	Feldkirchen		DE
+249	81549	München		DE
+250	85586	Poing	Parksiedlung 21	DE
+251	85609	Aschheim	Römerstraße 3	DE
+252	48291	Telgte	Ignaz Reimann Str. 7d	DE
+253	80805	München	Wilhelm~_fiertz-Str. 12a	DE
+254	63584	Gründau	Am Gerhardtsgraben 9	DE
+255	93413 	Cham	Willmeringer Weg 32	DE
+256	86391	Stadtbergen	Im Naturpark 14	DE
+257	85253	Erdweg	Eschenweg 23	DE
+258	93197	Zeitlarn	Ödenthaler Str. 5c	DE
+259	81249	München/Pasing	Köferinger Str. 6a	DE
+260	85716	Unterschleißheim	Raiffeissenstraße 66	DE
+261	12487	Berlin		DE
+262	80634	München/Neuhausen	Nymphenburger Strasse 150	DE
+263	80995	München	Linus-Funke-Weg 7	DE
+264	80992	München/Moosach	Treitschkestraße 17	DE
+265	82054	Sauerlach	Tegernseer Landstr. 43	DE
+266	85368	Wang		DE
+267	81241	München	Haidelweg 13a	DE
+268	85	Haar		DE
+269	81825	München/Trudering	Hansjakobstr. 107b	DE
+270	80469	München	Klenzestr. 60	DE
+271	81379	München/Sendling	Baierbrunner Str. 15	DE
+272	80804	München/Schwabing	Hörwarthstraße 9	DE
+273	80689	München	Lanzstr. 29	DE
+274	10243	Berlin	Marchlewskistraße 44	DE
+275	86***	Augsburg/MUC (eher Augsburg)		DE
+276	82024	Taufkirchen	Münchener Str. 6	DE
+277	81375	München	Hosigaustr. 14	DE
+278	85250	Altomünster		DE
+279	82538	Geretsried	Erikaweg 4	DE
+280	6800	Feldkirch	Adresse Bittweg 17	DE
+281	81669	München/Au-Haidhausen		DE
+282	88	Heidenheim		DE
+283	81735	München	Staudingerstr. 63	DE
+284	80993	München/Moosach	Siegmund-Schacky-Straße 18b	DE
+285	83071	Stephanskirchen	Oderweg 4	DE
+286	82518	Geretsried	Keltenring 15	DE
+287	63831	Wiesen	Waldstrasse 1	DE
+288	86508	Rehling	Peter-Fischer-Str. 2	DE
+289	80	Schweiz		DE
+290	68163	Mannheim	Gontradstraße 22	DE
+291	50735	Köln	Graditzer Str. 89a	DE
+292	24768	Rendsburg	Röhlingsplatz 1	DE
+293	81549	München	Simsseestr. 5	DE
+294	81243	München/Pasing	Dickenstr. 2	DE
+295	80	München/Nord-West		DE
+296	81547	München/Untergiesing-Harlaching	Hochkalterstr. 8	DE
+297	86551	Aichach	Theodor-Heuss-Str. 15	DE
+298	81825 	München	Mädelegabelstr. 79	DE
+299	81247	München	Dorfstr. 25	DE
+300	82140	Olching	Ringstraße 12	DE
+301	90473	Nürnberg	Reinerzer Str. 51	DE
+302	70188	Stuttgart	Haußmannstraße 20	DE
+303	85435	Erding	Sonnenstraße 16	DE
+304	81825	München/Trudering	München, Truderinger Straße 304	DE
+305	80809	München/Milbertshofen	Honselmonnstroße 34	DE
+306	80639	München/Neuhausen-Nymphenburg	Eisnergutbogen 30	DE
+307	80997	München	Francéstr. 25	DE
+308	81476	München/Forstenried-Fürstenried	Karl-Valentin-Straße 51	DE
+309	82275	Emmering	Grässelstr. 20	DE
+310	80335	München/Maxvorstadt		DE
+311	82110	Germering	Kolbstraße 3	DE
+312	85386	Eching	Danziger Str. 1b	DE
+313	81245	München	Marschnerstr. 97	DE
+314	80798	München	Schwindstrasse 30	DE
+315	80809	München	Nadistrasse 4	DE
+316	80796	München/Schwabing-West	Hiltenspergerstrasse 46	DE
+317	83236	Übersee	Greimelstr. 64	DE
+318	81373	München/Sendling	Nestroystr. 2	DE
+319	85591	Vaterstetten	Madelsederstraße 8	DE
+320	80469	München Isarvorstadt	Ehrengutstrasse 27	DE
+321	86577	Tödtenried	Riedener Straße 3	DE
+322	84061	Ergoldsbach	Langenhettenbach 216	DE
+323	81539	München	Weißenseestr. 112	DE
+324	85221	Dachau	Lovis-Corinth-Straße 15	DE
+325	80999	München	Willi-Wien-Straße 10	DE
+326	80639	München/Neuhausen-Nymphenburg	Döllingerstraße 25	DE
+327	48149	Münster	Fliednerstrasse 14	DE
+328	81827	München	Gerhardingerweg 2	DE
+329	8*	Taufkirchen		DE
+330	80939	München	Harrisfeldweg 13	DE
+331	90429	Nürnberg	Fürther Str. 80	DE
+332	99510	Apolda	Ernst-Thälmann-Ring 123	DE
+333	81479	München/Forstenried-Fürstenried	Ludwigshöher Str. 60	DE
+334	81375	München/Hadern	Stiftsbogen 83	DE
+335	81829	München	Heltauer Str. 44	DE
+336	81667	München-Au/Haidhausen		DE
+337	8*	Rosenheim	K2M Germany GmbH	DE
+338	81829	München	Heltauer Str. 94	DE
+339	84187	Weng	Am Freising 20	DE
+340	85445	Oberding	Erdingermoos Str. 5 	DE
+341	81677	MÜnchen	Prinzregentenstrasse 148	DE
+342	86	Igenhausen		DE
+343	80339	München/Schwanthalerhöhe		DE
+344	60389	Frankfurt am Main	Burgstraße 142	DE
+345	81667	München	Kellerstr. 36	DE
+346	80339	München	Guldeinstraße 52	DE
+347	85737	Ismaning	Adalperostrasse 30	DE
+348	80939	München	Libellenstr. 31	DE
+349	70180	Stuttgart	Schlosserstraße 46	DE
+350	81673	München	Josephsburgstrasse 40	DE
+351	81373	München/Sendling	Siegenburger Str. 33	DE
+352	85737	Ismaning	Am Ring 3	DE
+353	80538	München	Knöbelstraße 30	DE
+354	80802	München/Schwabing	Giselastraße 8	DE
+355	80335	München	Thorwaldsenstraße 7	DE
+356	85774	Unterföhring		DE
+357	81549	München	Lungstr.4	DE
+358	85737	Ismaning		DE
+359	81375	München	Würmtalstraße 50	DE
+360	84177	Gottfrieding	Anschrift Alte Tichlingerstr. 26	DE
+361	1280	Luxembourg	1 rue du PÈre Jacques Brocquart	DE
+362	81477	München / Obersendling	Drygalski-Allee 118	DE
+363	80639	München	De-la-Paz-Str. 12a	DE
+364	80686	München/Laim	Valpichlerstr. 57	DE
+365	8*	München		DE
+366	82054	Sauerlach	Mozartstr. 4	DE
+367	45896	Gelsenkirchen	Quellenweg 7	DE
+368	82008	Unterhaching	Robert-Koch-Str. 9	DE
+369	81541	München	Eduard Schmid Staße 17	DE
+370	21073 	Hamburg	Maretstraße 41a	DE
+371	81927 	München	Grimmeisenstr. 7 	DE
+372	83623	Dietramszell	Ostenerfeldweg 14	DE
+373	80807	München	Dewetstraße 14	DE
+374	80939	München/Freimann	Am Blütenring 45	DE
+375	85*	Schwaig		DE
+376	81375	München	Gelbhofstr. 22	DE
+377	82319	Starnberg	Leutstettener Str. 13	DE
+378	82319	Starnberg	Luitpoldstr. 1a	DE
+379	82178	Puchheim	Josef-Schauer-Str. 50	DE
+380	80803	München	Clemensstr. 59 RGB	DE
+381	82396	Pähl	Zahlfeldstraße 11	DE
+382	80995	München	Feldmochingerstr. 437	DE
+383	81927	München/Bogenhausen	Regina-Ullmann-Str. 58	DE
+384	85640	Putzbrunn		DE
+385	80796	München Schwabing	Clemensstraße 71	DE
+386	81541	München	Gebsattelstraße 8	DE
+387	78048	Villingen-Schwenningen	Hubbauerweg 22	DE
+388	83043	Bad Aibling	Harthauser Str. 93	DE
+389	86356	Neusäß	Von-Rehlingen-Str. 43a	DE
+390	55218	Ingelheim		DE
+391	82041	Oberhaching	Lindenallee 5c	DE
+392	80805	München/Schwabing-Freimann	Ungererstr. 180	DE
+393	81371	München	Bruderhofstr. 39	DE
+394	86161	Augsburg	Am Silbermannpark 25	DE
+395	82041	Oberhaching	Auf dem Kyberg 52	DE
+396	80	Geretsried		DE
+397	80804	München/Schwabing	Hörwarthstraße 4	DE
+398	80687	München/Pasing	Behamstrasse 2b	DE
+399	82216	Maisach	Heuweg 19	DE
+400	81539	München	Balanstr. 140	DE
+401	85609	Aschheim/ Dornach	Drosselweg 11	DE
+402	80807	München/Milbertshofen	Ostermayrstraße 5	DE
+403	20251	Hamburg	Tarpenbekstr. 69	DE
+404	60528	Frankfurt am Main	Schwarzwaldstr. 62	DE
+405	83620	Feldkirchen (bei Rosenheim!)		DE
+406	80	München/Freising		DE
+407	85055	Ingolstadt	Fanderlstraße 2	DE
+408	81549	München/Giesing	Frasdorfer Straße 20	DE
+409	82481	Mittenwald	Bahnhofstr. 5	DE
+410	84437	Reichertsheim	Kreuzbachstr. 2	DE
+411	8000	Zürich		DE
+412	81477	München	Drygalski Allee 121	DE
+413	81241	München		DE
+414	82284	Grafrath	Mülleranger 19	DE
+415	84149	Velden	Arberstr. 11	DE
+416	81541	München/Haidhausen	Herzogstandstr. 2	DE
+417	8*	München/Muc Nord		DE
+418	81671	München/Berg-am-Laim	Ampfingstraße 35	DE
+419	88471	Mietingen		DE
+420	90489	Nürnberg	kühnhoferstr. 17	DE
+421	81479	München/Thalkirchen	Noestr. 11	DE
+422	80638	München-Nymphenburg		DE
+423	80799	München/Schwabing	Barer Straße 90	DE
+424	81373	München/Sendling	Ganghoferstr. 61	DE
+425	85354	Freising	Pullinger Hauptstraße 35A	DE
+426	80307	25	Wilhelm-Kreis-Straße 54a	DE
+427	82110	Germering	Ulmenallee 11	DE
+428	81675	München	Perfallstr.8	DE
+429	89312	Günzburg	Parkstraße 24	DE
+430	81049	Pullach i. Isartal		DE
+431	80805	München/Schwabing-Nord		DE
+432	81671	München/Berg am Laim	Maria-Lehner-Straße 3	DE
+433	85221	Dachau	Stettiner Str. 1	DE
+434	82008	Unterhaching	Stumpfwiesenweg 23	DE
+435	91056	Erlangen	Huthausweg 12 	DE
+436	81929	München	Kattowitzer Str. 36a	DE
+437	83071	München		DE
+438	81739	München/Neuperlach	Rotkäppchenstr. 77	DE
+439	80804	München/Schwabing-West		DE
+440	81825	München	Wiesbachhornstrasse 33	DE
+441	80687	München/Pasing	Elsenheimerstraße 41-43	DE
+442	80997	München/Moosach	Haselwurzweg 7	DE
+443	80805	München	Guerickestrasse 35	DE
+444	81549	München/Obergiesing	Schwanseestraße 69B	DE
+445	85649	Brunnthal	Wiesenstr. 2	DE
+446	83209	Prien am Chiemsee		DE
+447	72218	Wildberg	Breiteweg 22	DE
+448	80469	München/Zentrum	Auenstrasse 9	DE
+449	82110	Germering	Untere Bahnhofstr. 15	DE
+450	80	München/Schwabing		DE
+451	81669	München/Haidhausen	Rosenheimer Str. 222	DE
+452	87448	Waltenhofen	Rathausstraße 3	DE
+453	80637	München	Lily-Braun-Weg 6	DE
+454	80999	München/Allach-Untermenzing	Pasinger Heuweg 82	DE
+455	86688	Marxheim		DE
+456	50858	Köln	Jungbluthgasse 2	DE
+457	53783	Eitorf	Schönenberger Str. 26	DE
+458	81673	München	Risserkogelstr. 2	DE
+459	81675	München	Haidhauser Strasse 1	DE
+460	80802	München/Schwabing		DE
+461	81459	München	Schwarzenbergstr. 3a	DE
+462	86152	Augsburg	Spenglergäßchen 14	DE
+463	80798	München/Schwabing	Schellingstr.139	DE
+464	85716	Unterschleißheim	Südliche Ingolstädter Str. 70	DE
+465	81929	München-Bogenhausen	Freda-Wuesthoff-Weg 5	DE
+466	81737	München/Ramersdorf-Perlach	Öttlmairstr. 9	DE
+467	80803	München	Mainzer Strasse 3	DE
+468	81369	München/Sendling-Westpark	Arnimstraße 23	DE
+469	58511	Lüdenscheid	Breslauer Straße 1	DE
+470	8*	Augsburg		DE
+471	81245	München	Reußensteinstr. 1	DE
+472	81825	München	Bajuwarenstr. 99	DE
+473	81547	München/Untergiesing-Harlaching	Latemarstr. 11	DE
+474	81477	München	Geigenbergerstraße 20	DE
+475	80797	München	Centa-Herker-Bogen 5	DE
+476	86156	Augsburg		DE
+477	82223	Eichenau	Fasanstr. 10	DE
+478	85570	Markt Schwaben	Erdinger Str. 30	DE
+479	85293	Reichertshausen	Kammererbergstr. 3	DE
+480	84048	Mainburg	Uferstraße 11A	DE
+481	90461 	Nürnberg	Neulichtenhofstraße 9	DE
+482	81375	München	Wildanger 14	DE
+483	80939	München/Milbertshofen	Moorackerweg 1	DE
+484	86899	Landsberg	Lechwiesenstr. 7	DE
+485	83026	Rosenheim	Kufsteiner Str. 128	DE
+486	87677	Stöttwang	Ritterstr. 8a	DE
+487	85276	Pfaffenhofen		DE
+488	85221	Dachau	Pfarrer-Kölbl-Straße 25	DE
+489	80802 	München	Occamstraße 5	DE
+490	81475	München/Fürstenried	Bellinzonastraße 30	DE
+491	80634	München	Andreestr. 3	DE
+492	81369	München	Leipartstraße 24	DE
+493	85653	Aying	Untere Dorfstraße 5	DE
+494	85368 	Moosburg	Apianweg 4	DE
+495	81679	München/Bogenhausen	Kufsteiner Platz 1	DE
+496	84335	Mitterskirchen	Erlenweg 6a	DE
+497	81927	München	Freischützstraße 60	DE
+498	82335	Berg	Zugspitzstr. 22	DE
+499	85609 	Aschheim	Mouginsstrasse 18	DE
+500	82178	Puchheim	Tannenstraße 94	DE
+501	85586	Poing	Gruber Str. 33	DE
+502	82140	Olching	Sch l o ß s t r aß e   9 2	DE
+503	81927			DE
+504	81737	München/Ramersdorf-Perlach	Adenauerring 28	DE
+505	81677	München Bogenhausen	Saint-Privat-Strasse 10	DE
+506	80687	München	Rapotostr. 4	DE
+507	87561	Oberstdorf	Hochstiftstr. 7	DE
+508	60385	Frankfurt am Main	Inheidener Straße 71	DE
+509	85777	Fahrenzhausen	Fichtenstr 2	DE
+510	81477	München/Obersendling	Rohrauerstraße 40	DE
+511	81377	München	Orchisweg 2	DE
+512	89077	Ulm	Magirus-Deutz-Straße 12	DE
+513	81371	München	Schäftlarnstr. 90	DE
+514	80935	München	Weitlstr. 7	DE
+515	61118	Bad Vilbel / FFM		DE
+516	80805	München/Schwabing-Freimann	Kunigundenstraße 31	DE
+517	85586	Poing		DE
+518	81543	München		DE
+519	85635	Höhenkirchen	Rosenheimer Straße 27	DE
+520	85716	Unterschleißheim		DE
+521	81925	München/Bogenhausen	Fritz-Meyer-Weg 6	DE
+522	81243	München	Dachstr. 16	DE
+523	80804	München/Schwabing	Isoldenstr. 68	DE
+524	81377	München	Waldfriedhofstr. 18	DE
+525	82335	Berg	Kreuzeckweg 1	DE
+526	60438	Frankfurt am Main	Allee 19	DE
+527	85757	Karlsfeld	Oberreintalweg 12 	DE
+528	85*	Krailling		DE
+529	8*	Hof		DE
+530	82152	Planegg	Einsteinstr. 40	DE
+531	81249	München/Aubing	Riesenburgstr. 42	DE
+532	8 6 7 0 1		Do r f s t r . 1 9	DE
+533	80654		Renatastraße 38	DE
+534	90425	Nürnberg	Schweriner Str. 87	DE
+535	81379	München	Pognerstraße 18	DE
+536	82008	Unterhaching	Finsinger Weg 47	DE
+537	86154	Augsburg	Ebnerstr.17	DE
+538	82049	Pullach	Ahornallee 10	DE
+539	81375	München	Ludwig-Wörl-Weg 28	DE
+540	80803	München	Rheinstr. 9	DE
+541	80798	München	Görresstr. 27	DE
+542		München		DE
+543	82319	Starnberg	Felixweg 2 A	DE
+544	84453	Mühldorf am Inn	Franz-Trainer-Str. 37	DE
+545	80804	München/Schwabing-West	Parzivalstr. 29A	DE
+546	83700	Rottach-Egern		DE
+547	80339	München/Schwanthalerhöhe	Trappentreustraße 34	DE
+548	61118	Bad Vilbel	Am Weinberg 15a	DE
+549	85399	Hallbergmoos	Wacholderweg 2	DE
+550	81541	München / Rammersdorf	Balanstr. 69	DE
+551	82054	Sauerlach		DE
+552	80469	München	Klenzestr. 55	DE
+553	80335	München/Maxvorstadt	Erzgießereistraße 16 d	DE
+554	8*	München Schwabing		DE
+555	50968	Köln-Marienburg		DE
+556	81827	München	Mattseestr. 14c	DE
+557	85221	Dachau	Tannenweg 5	DE
+558	83093	Bad Endorf	Kreuzstraße 9c	DE
+559	90441	Nürnberg	Diana Str 45	DE
+560	81545	München/Untergiesing-Harlaching	Wunderhornstraße 3a	DE
+561	80331	München	Frauenplatz 14a	DE
+562	45886	Gelsenkirchen	Stockacker 9	DE
+563	85435	Erding	Leopoldstraße 3	DE
+564	86199	Augsburg	Gustav-Heinemann-Straße 30	DE
+565	81739	München	Gustav-Heinemann-Ring 66	DE
+566	80469	München/Isarvorstadt	Fraunhoferstr. 14	DE
+567	80997	München/Untermenzing		DE
+568	86199	Augsburg		DE
+569	80689	München/Laim	Alpenveilchenstr. 36	DE
+570	85609	Aschheim	Wallbergstraße 3	DE
+571	80805	München	Theodor-Dombart-Str. 13	DE
+572	86415	Mering	Zettlerstraße 5	DE
+573	85356	Freising	Therese – vd – Vring Str. 49	DE
+574	82008	Unterhaching	Rathausstr. 10	DE
+575	82327	Tutzing	Weilheimer Straße 29	DE
+576	81539	München/Obergiesing	Balanstr. 77	DE
+577	82223	Eichenau bei München		DE
+578	82061	Neuried	Taxetweg	DE
+579	83629	Weyarn	Klosterweg 1	DE
+580	80799	München	Schellingstr. 75	DE
+581	80796	München	Herzogstraße 130	DE
+582	80689	München / Hadern	Ehrenpreisstraße 7	DE
+583	80799	München/Maxvorstadt	Neureutherstraße 4	DE
+584	81927	München	Regina-Ullmannstr 58	DE
+585	81739	München/Ramersdorf-Perlach		DE
+586	80997	München/Moosach		DE
+587	81479	München	Idastrasse 1	DE
+588	85521	Ottobrunn	Ludwig-Thoma-Str. 40c	DE
+589	84144	Geisenhausen	Eichendorffstraße 16	DE
+590	82110	Germering	Flurstr. 16	DE
+591	81829	München	Helsinkistr. 40	DE
+592	81249	München	Wiesentfelserstrasse 35	DE
+593	86159	Augsburg	Gögginger Str. 66	DE
+594	80	München/Sendling		DE
+595	80939	München/Kieferngarten	Admiralbogen 88	DE
+596	80335	München/Maxvorstadt	Gaiglstraße  10	DE
+597	86486	Bonstetten	Gerstenfeld 7	DE
+598	82131	Gauting	Zugspitzstr. 65	DE
+599	81377			DE
+600	28211	Bremen	Straßburger Straße 37	DE
+601	81369	München/Sendling	Konrad-Celtis-Straße 35	DE
+602	90478	Nürnberg	Peterstraße 35	DE
+603	81475	München/Fürstenried West	Engadiner Straße 30	DE
+604	85464	Neufinsing	Speicherseering 31	DE
+605	80686	München	Fürstenrieder Str. 67	DE
+606	80333	München	Gabelsbergerstr. 26	DE
+607	81927	München	Cosimastr. 2	DE
+608	85598	Baldham	Marktplatz 13	DE
+609	82380	Peißenberg	Starenweg 3	DE
+610	80993	München/Milbertshofen		DE
+611	83071	Stephanskirchen	Reichenbergerstraße 28	DE
+612	85774	Unterföhring	Blumenstraße 14	DE
+613	85630	Grasbrunn	Ostring 7h	DE
+614	8*	München/Ost		DE
+615	81829	München	Astrid-Lindgren Str.27	DE
+616	81737	München (Neuperlach)		DE
+617	85051	Ingolstadt	Rundstr. 1	DE
+618	81247	München/ Allach-Untermenzing	Adelsbergstrasse 5	DE
+619	80809	München	Hanselmannstraße 34	DE
+620	80796	München/Schwabing-West	Emanuelstr. 15	DE
+621	81671	München	Echardinger Str. 111	DE
+622	82166	Gräfelfing	Killerstraße 3	DE
+623	82110	Germering	Krokusstr. 23	DE
+624	85591	Vaterstetten	Heinrich-Marschner-Str. 51B.	DE
+625	82140	Olching		DE
+626	81827	München-Ost		DE
+627	82110	Germering	Münchener Str. 20	DE
+628	83624	Otterfing	Prüglweg 5	DE
+629	82256	Fürstenfeldbruck	Breitenbichl 11 a	DE
+630	80805	München/Schwabing	Echinger Str. 9E	DE
+631	88326	Aulendorf (Württemberg)	Auf der Steige 37	DE
+632	81675	München	Einsteinstr. 111	DE
+633	81369	München	Plinganserstr. 55	DE
+634	82110	Germering	Kriemhildenstr. 2	DE
+635	63768	Hösbach	Mozartstraße 23	DE
+636	81243	München	Ravensburger Ring 16	DE
+637	80689	München	Reutterstr. 70	DE
+638	81245	München/Schwabing	Teckstr. 15	DE
+639	81241	München/Obermenzing	Linpaintnerstraße 40	DE
+640	80636	MÜnchen/Neuhausen	Leonrodstr. 27	DE
+641	80805	München	Brabanterstrasse 20	DE
+642	82140	Olching	Schloßstraße 123a	DE
+643	81677	München/Bogenhausen	Mühlbaurstr. 38B	DE
+644	81827	München/Trudering	Ernastraße 19	DE
+645	81927	München	Bruno-Walter-Ring 34	DE
+646	80634	München	Schlörstr. 34	DE
+647	86698	Oberndorf	Johann-Nepomuk-Ring 3	DE
+648	86152	Augsburg		DE
+649	81475	München/Forstenried-Fürstenried	Frohnloher Str. 9	DE
+650	89195	Staig	Einsteinstr. 55	DE
+651	81825	München	Gartenstadtstr. 67	DE
+652	80801	München	Agnesstraße 2	DE
+653	8***	Schweiz		DE
+654	80	München	Frankfurter Ring 211	DE
+655	80999	München/Untermenzing		DE
+656	85057	Ingolstadt	Richard-Wagner-Str. 14	DE
+657	80639	München	Herthastrasse 35	DE
+658	80636	München/Neuhausen	Arnulfstrasse 59	DE
+659	81673	München	Anne-Frank-Anger 4	DE
+660	80687	München/Laim	Agnes-Bernauer-Straße 30d	DE
+661	80538	München/Maxvorstadt		DE
+662	81247	München	Feichthofstr. 71	DE
+663	81247	München/Pasing	Paganinistraße 2	DE
+664	81373	München	Krünerstr. 76	DE
+665	80807	München-Schwabing Nord	Otl-Aicher Str. 54	DE
+666	82140	Olching	Dachauer Str. 12	DE
+667	84424	Isen	Kopsöd 2	DE
+668	85604	Zorneding	Birkenstrasse 13	DE
+669	80636	München/Neuhausen	Volkartstraße 80	DE
+670	80933	München	Thurwieser Str. 4	DE
+671	85521	Ottobrunn	Rubensstraße 29	DE
+672	81379	München/Sendling	Saarbrücker Straße 11	DE
+673	81375	München	Guardinistr. 71	DE
+674	82299	Türkenfeld	wolfingerstr. 2a	DE
+675	75382	Stuttgart		DE
+676	81827	München	Hugo-Weiss-Str. 94	DE
+677	85586	Poing	Südmährenstraße 70	DE
+678	82216	Maisach	Zweigstrasse 20	DE
+679	68259	Mannheim	Mosbacher Str. 32	DE
+680	85646	Purfing	Stürzerweg 18	DE
+681	86567	Hilgertshausen	Freisingerstr. 4a	DE
+682	85354	Freising	Prälat-Michael-Höck-Straße 35	DE
+683	81369	München	Konrad-Celtis-Str. 59	DE
+684	81675	München	Seeriederstraße 21	DE
+685	55286	Wörrstadt		DE
+686	81675	München	Haidhauser Strasse 9	DE
+687	80636	München	Lazarettstraße 5	DE
+688	81677	München	Brahmsstr. 5	DE
+689	83547	Babensham-Penzing	Am Weiher 11	DE
+690	90768	Fürth	Kannenbergstraße 1	DE
+691	85049	Ingolstadt		DE
+692	86899	Landsberg am Lech	Geschwister-Scholl-Str. 16	DE
+693	81375	MÜNCHEN	WINDECKSTR. 85	DE
+694	85375	Neufahrn	Galgenbachweg 8b	DE
+695	80997	München / Untementzing		DE
+696	81667	München	Pariser Str. 48	DE
+697	81539	München	Weißenseestraße 18	DE
+698	80687	München/Pasing	Rapotostr. 4	DE
+699	81371	München/Obersendling	Tegernseer Weg 17	DE
+700	49186	Bad Iburg	Bödefür 10	DE
+701	81477	München	Rohrauerstraße 58	DE
+702	82229	Seefeld OT Unering	Am Weiher 10	DE
+703	70806	Kornwestheim	Stuttgarter Straße 133	DE
+704	80637	München/Moosach	Klugstraße 127	DE
+705	81671	München/Berg am Laim		DE
+706	85368	Moosburg	Erzgebirgstr. 23	DE
+707	82223 	Eichenau	Waldstr. 14	DE
+708	85051	Ingolstadt	Münchener Str. 31	DE
+709	80999	München	Ossannastr. 4	DE
+710	88284	Wolpertswende	Lortzingstraße 4/1	DE
+711	84056	Rottenburg a.d.L.	Martin-Heigl-Straße 4	DE
+712	80687	München	Landsbergerstr. 221	DE
+713	81373	München/Sendling	Drachenseestr. 8b	DE
+714	80993	München / Moosach	Dachauer Str. 350	DE
+715	98617	Meiningen	In den Seegärten 14b	DE
+716	86833	Ettringen		DE
+717	81379	München	Aidenbachstrasse 70	DE
+718	80796	München	Elisabethstr. 18	DE
+719	80809	München	Birnauer Str. 17	DE
+720	81373	München	Paul-Meisel-Weg 6	DE
+721	81379	München/Sendling	Geisenhausenerstraße 39	DE
+722	85609	Aschheim-Dornach	Karl-Hammerschmidt-Str. 42	DE
+723	83859	Niederkassel	Kölner Str. 120a	DE
+724	80797	München	Winzererstr. 49	DE
+725	81735	München	Niederalmstrasse 21a	DE
+726	87488	Betzigau	Am Lexgraben 4	DE
+727	87743	Egg	Am Krautgarten 11	DE
+728	85221	Dachau	Freidrich-Dürr Str. 1	DE
+729	80992	München	Vilniusstraße 6	DE
+730	91154 	Roth	Münchener Straße 37 a	DE
+731	82178	Puchheim	Sandbergstr. 48	DE
+732	80992	München/Moosach	Riesstraße 84	DE
+733	48147	Münster	Wermelingstraße 41	DE
+734	80***	München/Au		DE
+735	86150	Augsburg		DE
+736	81371	München	Valleystr. 19	DE
+737	85614	Kirchseeon	Karwendelstr. 5	DE
+738	68519	Viernheim	Jahnstr. 43	DE
+739	82031	Grünwald		DE
+740	8*	München / Giesing		DE
+741	82152	Planegg		DE
+742	81475	München	Appenzellerstraße123	DE
+743	85646	Anzing	Eichenweg 8a	DE
+744	82275	Emmering	Hauptstraße 28 b	DE
+745	82435	Bad Bayersoien		DE
+746	85469	Walpertskirchen	Hollerweg 5	DE
+747	1268	Luxemburg	5, rue Jean-Pierre Biermann	DE
+748	72181	Starzach	Bergstraße 19	DE
+749	81541	München/Au-Heidhausen	Tassiloplatz 25	DE
+750	85221	Dachau	Amperweg 58	DE
+751	81677	München	Lisztstr. 20	DE
+752	80798	München	Agnesstr. 33	DE
+753	86399	Bobingen	Winterstraße 28 a	DE
+754	86167	Augsburg		DE
+755	8*	Leutkirch		DE
+756	80807 	München	Korbinianstr. 60	DE
+757	90409	Nürnberg	Goethestrasse 21	DE
+758	80687	München	Str. 16	DE
+759	85540	Haar	Zugspitzstraße 4	DE
+760	86825	Bad Wörishofen	Ulmenweg 4	DE
+761	81929	München	Süskindstraße 1	DE
+762	82205	Gilching	Sternstr. 6	DE
+763	22880	Wedel		DE
+764	60388	Frankfurt am	Am Hollgraben 23	DE
+765	80331	München/Pasing		DE
+766	80634	München	Donnersbergerstr. 10	DE
+767	80639	München	Margarethe-Danzi-Straße 12	DE
+768	81825	München/Trudering	Säntisstr. 51	DE
+769	84051	Unterwattenbach	Buchfinkweg 8	DE
+770	80798	München/Max-Vorstadt		DE
+771	81675	München	Einsteinstraße 149	DE
+772	85256	Vierkirchen	Am Grasweg 3a	DE
+773	81829	München	Maria-Montessori-Str. 48	DE
+774	81673	München/Berg am Laim	Risserkogelstraße 2	DE
+775	98487		48, Hauptstrasse	DE
+776	80339	München/Schwanthalerhöhe	Philipp-Loewenfeld-Str. 17	DE
+777	86899	Landsberg am Lech	Max-Friesenegger-Str. 24	DE
+778	2826	Görlitz	Emmerichstr. 3	DE
+779	35578	Wetzlar	Hofstatt 10	DE
+780	81929	München/Bogenhausen	Ruth-Schaumann-Str. 8	DE
+781	81369	München	Attenkoferstraße 2	DE
+782	88416	Steinhausen	Eichenstraße 8	DE
+783	83024	Rosenheim	Marienberger Str. 11	DE
+784	82229	Seefeld	Ludwig-Thoma-Str. 10	DE
+785	80993	München/Moosach	Strasse 4	DE
+786	87600	Kaufbeuren	Peter-Schegg-Str. 24	DE
+787	81825	München	Kranzhornstr. 5	DE
+788	93182	Duggendorf	Am Hammerberg 18	DE
+789	85435	Erding	Franz-Brombach-Straße 14	DE
+790	85354	Freising		DE
+791	81669	München/Au-Haidhausen	Rosenheimer Platz 4	DE
+792	83	Weyarn		DE
+793	81673	München/Berg am Laim		DE
+794	A-4020	Linz	Goethestr 55	DE
+795	80796	München	Adelheidstraße 36	DE
+796	80331	München/Lehel	Lueg ins Land 1	DE
+797	96274	Itzgrund	Am Steinig 27	DE
+798	86316	Friedberg bei Augsburg	Keltenstr. 26	DE
+799	87648	Aitrang	Lindenstraße 6b	DE
+800	81737	München/Ramersdorf-Perlach	Unterhachinger Str. 51	DE
+801	82024	Taufkirchen	Aurikelstr. 36	DE
+802	81377	München/Hadern	Waldfriedhofstr. 10	DE
+803	82319	Starnberg	Heimatshausenerstr 16	DE
+804	82256	Fürstenfeldbruck	Nordendstr. 17	DE
+805	85053	Ingolstadt	Inge-Meysel-Straße 4	DE
+806	86179	Augsburg	Hofgartenstraße 9	DE
+807	81371	München/Thalkirchen	Dietramszeller Straße 14	DE
+808	82041	Oberhaching/München	Hohenwaldstrasse 1	DE
+809	84095	Furth	Geberskirchen 3a	DE
+810	81377	München/Sendling-Westpark	Seebenseestr. 15	DE
+811	85778	Haimhausen	Eggentaler Str. 26	DE
+812	85	Ingolstadt	Bachelor of Engineering	DE
+813	80636	München	Blutenburgstr. 66	DE
+814	82327	Tutzing	Klenzestraße 19	DE
+815	80336	München	Haydnstr. 10	DE
+816	66688	Mettlach		DE
+817	80807	München Milbertshofen		DE
+818	84149	Velden	Kornstr. 4	DE
+819	81825	München/Trudering	Evereststr.  25	DE
+820	50823	Köln	Eichendorffstraße 28	DE
+821	86316 	Friedberg	Sedanstr. 2c	DE
+822	85560 	Ebersberg	Bgm.-Müller-Str. 6	DE
+823	83684	Tegernsee		DE
+824	87544	Blaichach	Am Aubach 26	DE
+825	80807	München/Milbertshofen	Michael Kleinhempl	DE
+826	85570	Markt Schwaben	Breslauer Str.12	DE
+827	84036	Landshut	Sandstraße 1b	DE
+828	82110	Germering	Goethestraße 19	DE
+829	81737	München/Ramersdorf-Perlach	Neubiberger Straße 29	DE
+830	81476	München	Winterthurer Straße 5	DE
+831	81541	München/Au		DE
+832	81829	München	Georg-Kerschensteiner Str. 34	DE
+833	80337	München		DE
+834	80636	München/Neuhausen	Erika-Mann-Straße 17	DE
+835	83607	Holzkirchen	Drosselweg 2	DE
+836	81925	München/Bogenhausen	Arabellastr. 12	DE
+837	80636	München	Marlene-Dietrich-Straße 1	DE
+838	81679	München	D e n n i n g e r   S t r a ß e  8	DE
+839	82205	Gilching	Landsbergerstr. 33	DE
+840	81547	München/Untergiesing-Harlaching	Fromundstraße 30	DE
+841	82216	Maisach	Am Oberfeld 15	DE
+842	80997	München/Moosach	Saarlouiser Straße 45	DE
+843	82110	Germering	Tristanstraße 16	DE
+844	80807	München	Frankfurter Ring 150 / Haus 3	DE
+845	80335	München/Neuhausen		DE
+846	80937	München / Milbertshofen-Am Hart	Karl - Postl - Str. 34	DE
+847	80797	München	Agnesstr. 58	DE
+848	85*	Dachau		DE
+849	85375	Neufahrn	Reiffeisenweg 3b	DE
+850	86609	Donauwörth	Amaliastr.13	DE
+851	80	München	H i r s c h - G e r e u t h - S t r a ß	DE
+852	61348	Bad Homburg		DE
+853	68169	Mannheim		DE
+854	80803	München	Unertlstr. 4	DE
+855	80807	München	Griegstraße 27	DE
+856	86923	Finning	Bgm.-Pantele-Str. 4	DE
+857	93128	Regenstauf	Haslerzellweg 9	DE
+858	81245	München/Aubing	Spieltränkergasse 6	DE
+859	22559	Hamburg	Flerrentwiete 90 b	DE
+860	84371	Triftern	Rabensham 19	DE
+861	81669	München	Zeppelinstr. 43	DE
+862	80992	München/Moosach	Hugo-Troendle-Straße 5a	DE
+863	85235	Odelzhausen	Bachwiesenweg 15	DE
+864	81925	München	Bernheimerstraße 10	DE
+865	86650	Wemding	Am Hasenbichel 50	DE
+866	84431	Heldenstein	Empling 7	DE
+867	89520	Heidenheim / Ravensburg / Coburg		DE
+868	80469	München	Jahnstraße 9	DE
+869	37138	León	Jardin Mexicano 212	DE
+870	82140	Olching/ Muc West	Pfarrstraße 73	DE
+871	60528	Frankfurt am	Heinrich Seliger Straße 55	DE
+872	60487	Frankfurt am Main	Am Leonhardsbrunn 17	DE
+873	80469	München	Klenzestr. 105	DE
+874	81547	München/Untergiesing-Harlaching	Grünwalder Str. 9	DE
+875	81545 	München	Gabriel-Max-Str. 24c	DE
+876	81541	München/Giesing		DE
+877	82024	Taufkirchen	Münchener Straße 50	DE
+878	63486	Bruchköbel	Weiherstraße 8	DE
+879	80937 	München	Franz-metzner-str. 9	DE
+880	80686	München/Laim	Kärtner Platz 4	DE
+881	85395	Oberhaindlfing	Hochstr. 40	DE
+882	80539	München/Lehel		DE
+883	80538	München	Strasse 16	DE
+884	80	München/Neuperlach		DE
+885	82319	Starnberg		DE
+886	23843	Bad Oldesloe	Hamburger Str. 35	DE
+887	85630	Grasbrunn	Fritz-Bonnet-Straße 7	DE
+888	81543	München / Untergiesing	Jamnitzerstr. 8	DE
+889	81545	München	Heigelstr. 17	DE
+890	80999	München Untermenzing	Herbigstraße 19a	DE
+891	80689	München/Laim	Terofalstr. 3	DE
+892	85614	Kirchseeon	Pfarrer-Antholzner-Str. 6	DE
+893	85455	Oberding	Lohstrasse 36	DE
+894	54318	Mertesdorf	Stadionstr. 20	DE
+895	81667 	München	Sedanstr. 17	DE
+896	80469	München/Glockenbachviertel	Pestalozzistraße 17	DE
+897	83209	Prien/Chiemsee	Forststrasse 2	DE
+898	51580	Reichshof		DE
+899	68163	Mannheim	Grete-Fleischmann-Straße 4	DE
+900	80337	München/Ludwigsvorstadt-Isarvorstadt	Adlzreiterstraße 8	DE
+901	85375	Neufahrn		DE
+902	60486	Frankfurt Main	Römischer Ring 30	DE
+903	85579	Neubiberg	Hauptstr. 28a	DE
+904	81477	München	Wengleinstrasse 9	DE
+905	80809	München/Schwabing-Nord		DE
+906	82041	Oberhaching	Linienstraße 69	DE
+907	85540	Gronsdorf	Herzogstandstraße 26	DE
+908	83607	Holzkirchen	Kleinfeldstr. 20   Isaak-Loewi-Str. 23	DE
+909	81379	München	Rupert-Mayer-Str. 27	DE
+910	83607	Holzkirchen	Gerstackerstr. 7	DE
+911	68309	Mannheim	Kornblumenstr. 15	DE
+912	70186	Stuttgart	Wunnensteinstr. 38	DE
+913	85435	Erding		DE
+914	81679	München/Bogenhasuen	Wehrlestraße 41	DE
+915	86899	Landsberg	Christoph-Thomas-Scheffler-Str. 7	DE
+916	80538	München/Maxvorstadt	Lerchenfeldstr. 21	DE
+917	86633	Neuburg	Kirchbergstraße 2 1/2	DE
+918	82054	Sauerlach	Blombergstraße 2e	DE
+919	82515	Wolfratshausen	Margeritenstraße 13	DE
+920	82110	Germering	Kerschensteinerstraße 41	DE
+921	81667	München	Wörthstraße 28	DE
+922	86***	Augsburg		DE
+923	85598	Baldham		DE
+924	80*	München-Zentrum		DE
+925	86920	Denklingen?		DE
+926	85435	Erding	Greisslbräustraße 9	DE
+927	81737	München	Jakob-Kaiser-Straße 9	DE
+928	85461 	Bockhorn	Am Schmiedanger 23	DE
+929	85586	Poing	Friedensstrasse 12i	DE
+930	81735	München	Zeitblomstr. 29	DE
+931	81819	München / Riem	Mutter-Teresa-Str. 27	DE
+932	80797	München	Mühlweg 7d	DE
+933	85540	Haar	Ahrntaler Platz 12	DE
+934	80337	München/Ludwigvorstadt	Waltherstraße 9C	DE
+935	81377 	München	Fürstenrieder Str. 274 	DE
+936	82008	Unterhaching	Ferdinand-Lassalle-Straße 6	DE
+937	80686	München/Laim	Camerloherstr. 6	DE
+938	81245	München - Aubing	Polkostr.48	DE
+939	81373	München/Sendling	Pirkheimerstraße 2	DE
+940	86415	Mering	Paarangerweg 20	DE
+941	86868	Mittelneufnach	Augsburger Str. 17a	DE
+942	8*			DE
+943	36381	Schlüchtern	Huhnweg 37	DE
+944	80999	München	Sertürnerstraße 8	DE
+945	85591	Vaterstetten	Baldhamerstraße 20	DE
+946	86163	Augsburg		DE
+947	85435	Erding	Färbergasse 11	DE
+948	85579	Neubiberg	Lilienthalstr. 32a	DE
+949	85402	Kranzberg / Muc Nord/West	Wiesenstraße 4	DE
+950	85774	Unterföhring	Münchner Str. 95	DE
+951	41812	Erkelenz	In Gerderhahn 57	DE
+952	81547	München	Otkerstr. 28	DE
+953	85640	Putzbrunn	Oedenstockacherstr. 3	DE
+954	81929	München/Riem	Freda-Wuesthoff-Weg 5	DE
+955	80337	München	Schmellerstr. 30	DE
+956	81379	München/Obersendling	Pidinger Str. 13	DE
+957	85540	Haar	Rechnerstraße 11c	DE
+958	8*	Prien		DE
+959	81675	München/Haidhausen	Kirchenstrasse 76	DE
+960	81371	München/Sendling	Aberlestraße 37	DE
+961	81671	München/Berg am Laim	Bad-Schachener-Straße 1	DE
+962	80807	München/Milbertshofen	Knorrstr. 64	DE
+963	80639	München/Neuhausen-Nymphenburg		DE
+964	84174	Viecht	Tannenstr. 7	DE
+965	60318	Frankfurt am Main	Hermannsstraße 24	DE
+966	89438	Holzheim	Birkenstr. 23	DE
+967	85622	Feldkirchen	Luitpoldstr. 6	DE
+968	81371	München/Sendling	Urbanstr. 5	DE
+969	86152 	Augsburg	Lueginslandgäßchen 11 	DE
+970	84144	Geisenhausen	St. Theobald 9	DE
+971	80339	München - Schwanthaler Höhe	Ben-Chorin-Str. 1	DE
+972	80804	München	Kölner Platz 4	DE
+973	80639	München/Neuhausen-Nymphenburg	Engasserbogen 29	DE
+974	89*	Heidenheim		DE
+975	86157	Augsburg	Willi-Weise-Str. 53b	DE
+976	80469	München	Aventinstrasse 3	DE
+977	85764	Oberschleißheim		DE
+978	85560	Ebersberg		DE
+979	28717	Bremen	Rotdornallee 3	DE
+980	60487	Frankfurt am Main	Adresse Ludwig-Landmann-Str. 343/A202	DE
+981	68163	Mannheim	Erwin-von-Witzleben-Straße 6	DE
+982	80993	München	Riesstr. 68	DE
+983	81373	München/Sendling	Treffauerstraße 46	DE
+984	50678	Köln	Maternuskirchplatz 14	DE
+985	80799	München/Schwabing & Erlangen	Barer Strasse 75	DE
+986	86919	Utting am Ammersee	Am Sulzfeld 27	DE
+987	86916	Kaufering		DE
+988	82335	Berg	Enzianweg 53 c	DE
+989	07749	Jena	Kunitzer Straße 12 c	DE
+990	80686	München	Friedenheimer Str. 75	DE
+991	55283	Nierstein	Müller-Thurgau-Weg 23	DE
+992	80939	München/Milbertshofen	Auwiesenweg 30	DE
+993	80331	Müncen/Schwabing		DE
+994	86161	Augsburg	Gärtnerstr. 16	DE
+995	81829	München/ Riem	Selma-Lagerlöf-Str. 18	DE
+996	81369	München	Kürnbergstr. 21	DE
+997	97080	Würzburg		DE
+998	79258	Hartheim	An der Ries 7	DE
+999	81373	München	Treffauerstr. 19	DE
+1000	89077	Ulm	Griesgasse 96	DE
+1001	85221	Dachau	Ludwig-Ernst-Straße 15	DE
+1002	81817	München	Großfriedrichsbruger Str. 11	DE
+1003	80	München/Berg am Laim	Schildenstraße 10	DE
+1004	85053 	Ingolstadt	Sambergerstr. 29	DE
+1005	28199	Bremen	Hohentorsheerstrsse 142	DE
+1006	80336	München	Herzog- Heinrich- Str. 35	DE
+1007	85757 	Karlsfeld	Hochstr. 8	DE
+1008	80686	München	Schrottstraße 29	DE
+1009	85	Kirchheim		DE
+1010	85579	Neubiberg	Kufsteiner Straße 4	DE
+1011	85570	Markt Schwaben	Pfr.Hochmair-Ring 18b	DE
+1012	81679	München/Bogenhausen	Mauerkircherstrasse 21	DE
+1013	81371	München	Implerstr. 60	DE
+1014	80999	München	Langerhansstr. 4	DE
+1015	81541	München	Balanstraße 55	DE
+1016	80469	München/Isarvorstadt	Arndtstr. 12	DE
+1017			Von-Eichendorff-Str. 65	DE
+1018	85221	Dachau	Siedlungsstraße 8	DE
+1019	81739	München/Ramersdorf-Perlach	Eulenspiegelstr. 19A	DE
+1020	81373	München	Drachenseestr. 7	DE
+1021	87600	Kaufbeuren	Am Vogelherd 5	DE
+1022	85540	Haar	Josef-Wiesberger-Str. 11	DE
+1023	80469	München Zentrum	Rumfordstr. 9	DE
+1024	80337	München/Isarvorstadt	Zenettistraße 26	DE
+1025	80805	München/Schwabing-Freimann	Fröttmaninger Str. 24c	DE
+1026	85253	Unterweikertshofen	Sonnenstraße 3d	DE
+1027	8808	Pfaeffikon	Huobstrasse 9	DE
+1028	81375	München	Gräfelfinger Str. 100	DE
+1029	85354	Au in der Hallertau		DE
+1030	80335	München	Linprunstr. 44	DE
+1031	81669	München/Au-Haidhausen	Rablstraße 22	DE
+1032	81667	München	Michael-Huber-Weg 5	DE
+1033	81829	München/Trudering-Moosfeld	Konrad-Zuse-Platz 1	DE
+1034	81539	München	Weissenseestraße 132	DE
+1035	80807	München/Milbertshofen	Bad-Soden-Straße 9	DE
+1036	81479	München	Gasparistr. 10	DE
+1037	81927	München	Davidstr. 9	DE
+1038	85	Unterschleißheim		DE
+1039	81675	München	Langerstr. 2	DE
+1040	30627	Hannover	Rotekreuzstr. 28	DE
+1041	80797	München	Winzererstr. 32	DE
+1042	81829	München/Trudering-Moosfeld	Stockholmstraße 15	DE
+1043	80796	München Schwabing	Mittermayrstraße 8	DE
+1044	80805	München/Milbertshofen		DE
+1045	81247	München/Pasing	Thaddäus-Eck-Straße 51a	DE
+1046	81249	München	Papinstraße 17,	DE
+1047	80801	München	Kaiserstr. 61	DE
+1048	80804	München/Schwabing	Rümannstraße 66a	DE
+1049	81679	München/Solln	St. Wendel Str. 43	DE
+1050	97082	Würzburg	Rotenhanstr. 6	DE
+1051	85391	Allershausen	Beethovenstr. 3	DE
+1052	895*	Heidenheim		DE
+1053	81667	München/Au-Haidhausen	Preysingstr. 38	DE
+1054	81247	München	Fasanenstrasse 34	DE
+1055	85630	Neukeferloh / Muc Ost	Frühlingstr. 6A	DE
+1056	42489	Wülfrath		DE
+1057	80804	München	Giselherstrasse 12a	DE
+1058	80802	München/Schwabing	Artur-Kutscher Platz, 4	DE
+1059	85622	Feldkirchen	Friedensstraße 10	DE
+1060	82061	Neuried	Josef-Hunger-Weg 2	DE
+1061	81479	München/Forstenried-Fürstenried	Melchiorstr. 31a	DE
+1062	81369	München	Attenkoferstr. 17	DE
+1063	80469	München/Isarvorstadt	Rumfordstraße 41	DE
+1064	81541	München	Zugspitzstr. 14	DE
+1065	90439	Nürnberg	Von-der-Tann-Str. 154	DE
+1066	48683	Ahaus	Bahnhofstrasse 102	DE
+1067	81249	München	Federseestraße 5 A	DE
+1068	81375	München/Hadern	Stiftsbogen 79	DE
+1069	82515	Wolfratshausen		DE
+1070	87719	Mindelheim	Schwazerstr. 11	DE
+1071	85598	Baldham	Rossinistraße 64	DE
+1072	80639	München/Neuhausen-Nymphenburg	Nibelungenstraße 41	DE
+1073	85244	Röhrmoos	Unteranger 5	DE
+1074	82024	Taufkirchen	Rathausstr. 26	DE
+1075	85764	Oberschleißheim	Am Stutenanger 6	DE
+1076	81241	München	Adresse Volmstr. 10	DE
+1077	99084	Erfurt	Thomas-Müntzer-Str. 13	DE
+1078	82166	Gräfelfing	Planeggerstr. 35	DE
+1079	82110	Germering	Adresse Kreuzlingerstraße 46	DE
+1080	80687	München/Pasing	Von-der-Pfordten-Str. 8	DE
+1081	85659	Forstern	Lentner Weg 3a	DE
+1082	65428	Rüsselsheim	Vor den Erlen 4	DE
+1083	81925	München/Bogenhausen	Johanneskirchnerstr. 34	DE
+1084	81371	München	Oberländerstr. 3e	DE
+1085	94036 	Passau	Eduard-Hamm-Str. 18	DE
+1086	85570	Ottenhofen	Grashauser Str. 12	DE
+1087	85658	Egmating	Am Mitterfeld 16	DE
+1088	87600	Kaufbeuren		DE
+1089	22089	Hamburg	Hammr Steindamm 22	DE
+1090	82205 	Gilching	Deichelweg 14	DE
+1091	81667	München	Woerthstrasse 42	DE
+1092	80339	München	Heimerastraße 34	DE
+1093	97080	Würzburg	Wagnerstr. 11	DE
+1094	45968	Gladbeck	Veilchenstraße 14	DE
+1095	81369	München/Sendling	Fallstr. 16	DE
+1096	80802 	München	Haimhauserstrasse 5	DE
+1097	81675	München	Grillparzer Str. 41	DE
+1098	86153	Augsburg	Berliner Allee 20d	DE
+1099	80796	München Schwabing	Elisabethstraße 57	DE
+1100	85567	Grafing	Goethering 23a	DE
+1101	85586	Poing	Dornröschenstr. 5	DE
+1102	85716	Unterschleißheim	Südliche Ingolstädter Str. 5c	DE
+1103	81379	München/Sendling	Boschetsriederstr. 79d	DE
+1104	83404	Ainring	Gewerbestr. 16 a	DE
+1105	80639	München	Irnfriedstr. 11	DE
+1106	81379	München/Sendling	Geltingerstr. 18s	DE
+1107	81379	München	Mauthäuslstr. 21	DE
+1108	81543	München/Au-Haidhausen	Edlingerstraße 9	DE
+1109	80689 	München	Camerloherstr. 64	DE
+1110	80636	München/Neuhausen	Klarastraße 5A	DE
+1111	81547	München	Reginfriedstrasse 6	DE
+1112	63628	Bad Soden-Salmünster	Bornäcker 6	DE
+1113	81671	München	Großvenedigerstr. 41	DE
+1114	84562	Mettenheim/Hart	Ahornring 5	DE
+1115	85049	Ingolstadt	Unterm Berg 24a	DE
+1116	81541	München/Giesing	Hohenwaldeckstr. 9	DE
+1117	80	München/Neuhausen-Nymphenburg		DE
+1118	81243	München/Pasing	Prentelweg 4	DE
+1119	63110 	Rodgau	Albrecht-Dürer-Ring 14	DE
+1120	81927	München/Bogenhausen	Berenter Str. 13	DE
+1121	86836	Lagerlechfeld	Richthofenstraße 161	DE
+1122	85665	Moosach	Doblbachstr. 14	DE
+1123	88416	Ochsenhausen		DE
+1124	60487	Frankfurt	Ludwig-Landmann-Straße 308	DE
+1125	81739	München	Gustav Heinemann Ring 220	DE
+1126	806*	München-Laim		DE
+1127	95182	Döhlau		DE
+1128	80634	München	Schluderstr. 4	DE
+1129	84508	Burgkirchen		DE
+1130	81476	München	Kreuzhofstr. 6	DE
+1131	82024	Taufkirchen	Rathausstr. 3	DE
+1132	81369	München	Albert-Roßhaupter-Str. 105	DE
+1133	85737	Ismaning	Konradstr. 2	DE
+1134	86415	Mering bei Augsburg		DE
+1135	80	München/Bogenhausen		DE
+1136	86911	Dießen am Ammersee		DE
+1137	81549	München/Giesing	Kaspar-Spät-Straße 22	DE
+1138	82110	Germering	Oberfeldstrasse 3	DE
+1139	83022	Rosenheim	Salinstr. 9	DE
+1140	80939	München	Kurt-Weill-Weg 3	DE
+1141		München	St.- Blasien- Straße 21	DE
+1142	40489	Düsseldorf	Kreuzbergstrasse 101	DE
+1143	85521	Riemerling	Hochackerstraße 53	DE
+1144	80538	München/Maxvorstadt	Bürkleinstr. 15	DE
+1145	85055	Ingolstadt	Mühlwiesenweg 10	DE
+1146	81476	München	Forstenrieder Allee 190	DE
+1147	81667	München/Au-Haidhausen	Elsässer Str. 25	DE
+1148	86688	Marxheim-Lechsend	Schwabenstr. 13a	DE
+1149	81825	München	Hohenbrunnerstraße 32	DE
+1150	81477	München/Forstenried-Fürstenried	Baumeisterstraße 1	DE
+1151	81739	München/Ramersdorf-Perlach	Fritz -Kortner -Bogen 24	DE
+1152	81543	München	Candidstrasse 5	DE
+1153	80999	München/Allach-Untermenzing	Eversbuschstr. 138	DE
+1154	81927	München	Bruno-Walter-Ring 22	DE
+1155	85646	Anzing		DE
+1156	85*	Fahrenzhausen		DE
+1157	81671	München/Berg am Laim	Führichstr. 41	DE
+1158	80992	München	Nanga-Parbat-Str. 55	DE
+1159	85560	Ebersberg	Am Lindenanger 27	DE
+1160	8*	Isny		DE
+1161	80935	München/Feldmoching	Adresse Irisstraße 43	DE
+1162	08606	Oelsnitz i.V. 	Rosenmüllerstraße 19 	DE
+1163	68169	Mannheim	Elfenstrasse 1	DE
+1164	82110	Germering	Lupinenweg 37	DE
+1165	80335	München/Maxvorstadt	Sandstrasse 39	DE
+1166	80995	München	Feldmochingerstr. 212,	DE
+1167	85579	Neubiberg		DE
+1168	85622	Feldkirchen	Flurweg 17a	DE
+1169	81673	München	Anne-Frank-Anger 2	DE
+1170	81825	München/Trudering	Vorderrissstr. 7	DE
+1171	82194	Gröbenzell	Fasanenweg 1a	DE
+1172	85570	Markt Schwaben	Bürgermeister-Haas-Weg 2	DE
+1173	85653	Aying	Untere Dorfstraße 11d	DE
+1174	91054	Erlangen	Ritzerstr. 15	DE
+1175	80636	München/Maxvorstadt	Erika-Mann-Straße 47	DE
+1176	2430	Luxemburg	Rue Michel Rodange	DE
+1177	81829	München	Lohnrößlerweg 27	DE
+1178	93086	Wörth a.d. Donau	Petersplatz 9	DE
+1179	1020	Wien	Am Tabor 12/1/9	AT
+1180	81927	München	Barlowstr. 79	DE
+1181	83022	Rosenheim	Aust r. 11	DE
+1182	65183	Wiesbaden		DE
+1183	80687	München	Landsberger Str. 272	DE
+1184	81241	München	Atterseestraße 18	DE
+1185	85221	Dachau	Salzburger Str. 2	DE
+1186	81541	München/Giesing	Severinstraße 3B	DE
+1187	81245	München	Chopinstr. 19	DE
+1188	88161	Lindenberg im Allgäu	Alemannenstraße 54	DE
+1189	81679	München/Bogenhausen	Montgelasstr. 33	DE
+1190	83101	Rohrdorf		DE
+1191	81475	München	Buchloer Straße 1	DE
+1192	65817	Eppstein	Bergstrasse 20	DE
+1193	81679	München	Straße 18	DE
+1194	91093	Heßdorf	Klebheimerstr. 4	DE
+1195	80637	München/Moosach	Dietrichstr. 4.	DE
+1196	81375	München	Altenastraße 14	DE
+1197	89423 	Gundelfingen	Wilhelm-Hauff-Str. 39	DE
+1198	81549	München/Giesing	Alzstraße 21	DE
+1199	88212	RV	Rauengestrasse 4	DE
+1200	60-681	Poznan / Posen	os. Boleslawa Chrobrego 41E / 48	PL
+1201	88480	Achstetten		DE
+1202	63872	Heimbuchenthal	Krämershohle 1	DE
+1203	81829	München	Kopenhagenstr. 6	DE
+1204	89312	Günzburg		DE
+1205	81673	München	Risserkogelstraße 2a	DE
+1206	80807	München/Theresienwiese	Tulbeckstrasse 24/2	DE
+1207	87561	Oberstdorf	Oschlesweg 14/2	DE
+1208	81243	München	Dinkelsbühler Str. 24	DE
+1209	89134	Blaustein		DE
+1210	87600	Kaufbeuren	Komotauer Str. 6	DE
+1211	85375	Neufahrn	An Der Lohe 43	DE
+1212	81827	München	Anechostr. 31	DE
+1213	81243	München/Pasing	Seldeneckstraße 33	DE
+1214	80687	München/Pasing		DE
+1215	81377	München/Sendling-Westpark		DE
+1216	74848	45		DE
+1217	80933	München/Hasenbergl	Linkstraße 11	DE
+1218	40470	Düsseldorf	Max-Halbe-Str. 19	DE
+1219	85551	Heimstetten		DE
+1220	8004	Zürich	Rotwandstrasse 70	DE
+1221	53783	Eitorf	Im Auel 28	DE
+1222	85579	Neubiberg	Keltenhof 10	DE
+1223	81479	München/Forstenried-Fürstenried	Buchauerstraße 16	DE
+1224	88416	Ochsenhausen	Laubacherweg 8	DE
+1225	86356	Augsburg / Neusäß		DE
+1226	84508	Burgkirchen	Rupertusstr. 11	DE
+1227	80686	München/Laim		DE
+1228	82054	Sauerlach	Mühlweg 2	DE
+1229	81825	München/ Trudering	Hechtstraße 14	DE
+1230	8*	München (Haidhausen)		DE
+1231	80939	München	Situlistr. 8	DE
+1232	86153	Augsburg	Werner-Haas-Str. 3a	DE
+1233	86165 	Augsburg	Wartenburger Straße 14	DE
+1234	85399	Hallbergmoos	Ahornweg 14	DE
+1235	93138	Lappersdorf	Einhausen 32 b	DE
+1236	80469	München/Isarvorstadt	Reichenbachstraße 31	DE
+1237	80636	München/Neuhausen	Maillingerstraße 34	DE
+1238	85276	Hettenshausen	Avisgrund 15	DE
+1239	54294	Trier	Gratianstraße 9	DE
+1240	8*	Friedberg		DE
+1241	82296	Schöngeising	Amperstr. 52a	DE
+1242	85307	Paunzhausen	Hauptstraße 8 a	DE
+1243	64283	Darmstadt		DE
+1244	86825	Bad Wörishofen	Gärtnerweg 1	DE
+1245	83703	Gmund	Am Talfeld 1	DE
+1246	82269	Geltendorf	Im Eichenfeld 7	DE
+1247	80689	München/Laim	Widarkisstraße 4	DE
+1248	80634	München	Blücherstr. 1	DE
+1249	80637	München/Moosach	Helene Weber Allee 4	DE
+1250	89551	Königsbronn		DE
+1251	82269	Geltendorf	Alpenstrasse 18 b	DE
+1252	83607	Holzkirchen	Erlkamer Str. 11a	DE
+1253	84453	Mühldorf am Inn		DE
+1254	85521	Riemerling	Forststrasse 3b	DE
+1255	52080	Aachen	Freidrich- Wilhelm- Straße 30	DE
+1256	80997	München	Gustav-Otto-Bogen 19	DE
+1257	85737	Ismaning	Oskar-Messter-Straße 24	DE
+1258	81667	München/Au-Haidhausen	Innere Wiener Straße 61	DE
+1259	80	München/Allach		DE
+1260	80803	München	Destouchesstr. 36	DE
+1261	85737	Ismaning	Riedererstr. 11	DE
+1262	80798	München	Georgenstraße 102	DE
+1263	85452	Moosinning	Hauptstraße 19	DE
+1264	80997	München	Haldenbergerstr. 35	DE
+1265	82223	Eichenau	Am Bogen 31	DE
+1266	83562	Rechtmehring	steinweger str 16	DE
+1267	80993	München	EGGMÜHLER STR.24A	DE
+1268	81371	München/Sendling	Implerstr. 44	DE
+1269	85659	Forstern	Flurstr. 7	DE
+1270	80639	München/Neuhausen-Nymphenburg	Foerrtdinand-Maria-Str. 20	DE
+1271	63768	Hösbach	Hirtenstraße 27	DE
+1272	83620	Feldkirchen-Westerham	Heubergstr. 24	DE
+1273	86899	Landsberg	Herzog-­-Ernst-­-Str. 179a	DE
+1274	92436	Bruck in der Oberpfalz	Lessingstrasse 5	DE
+1275	85354	Freising	Fabrikstrasse 2	DE
+1276	81827	München	Scheibmeirstrasse 16	DE
+1277	86453	Dasing	Kirchengrund 9	DE
+1278	81925	München/Bogenhausen	Oberföhringer Straße	DE
+1279	84503	Altötting	Herrenmühlstraße 23a	DE
+1280	84066	Mallersdorf-Pfaffenberg	Höhenweg 15	DE
+1281	36037	Fulda	Leipziger Str. 139	DE
+1282	88422	Alleshausen		DE
+1283	80335 	München	Linprunstraße 37	DE
+1284	90482	Nürnberg	Zaunwiesenweg 38	DE
+1285	82152	Martinsried	Angerbauerstr. 2b	DE
+1286	68519	Viernheim	Kirschenstraße 116	DE
+1287	85391	Allershausen	Eggenberg 6	DE
+1288	84106	Volkenschwand / Landshut	Ringstr. 28	DE
+1289	81543	München	Kolumbusstr. 2	DE
+1290	81541	München/Haidhausen	Bereiteranger 2	DE
+1291	81243	München/Obermenzing		DE
+1292	94116	Hutthurm	Schulstraße 17	DE
+1293	80636	München	Arnulfstraße 39	DE
+1294	85386	Eching	Frühlingstr. 5a	DE
+1295	85579	Neubiberg	Wiesenweg 34	DE
+1296	91058	Erlangen	Breslauer Str. 13	DE
+1297	81669	München/Au-Haidhausen	Bazeillesstraße 3	DE
+1298	80637	München/Neuhausen	Landshuter Allee. 31	DE
+1299	97318	Kitzingen		DE
+1300	80	München/Trudering-Berg am Laim		DE
+1301			Zornedinger Str. 7A	DE
+1302	86*	Augsburg		DE
+1303	85055	Ingolstadt	Wredestraße 8b	DE
+1304	84028	Landshut	Ländgasse 50	DE
+1305	83026	Rosenheim	Georg-Aicher-Strasse 7	DE
+1306	81549	München	Frasdorfer Str. 16	DE
+1307	81371	München	Kidlerstr. 2	DE
+1308	80	München/Giesing	Herzogstandstraße 6	DE
+1309	81671	München/Berg am Laim	Grafinger Str. 85A	DE
+1310	80804	München	Klopstockstr. 8	DE
+1311	23558	Lübeck		DE
+1312	80636	München/Neuhausen	Volkartstraße 63 A	DE
+1313	80796	München	Herzogstraße 126	DE
+1314	87662	Kaltental-Aufkirch	Helmishofenerstraße 29	DE
+1315	80	München		DE
+1316	82272	Moorenweis	Pappelstr. 31a	DE
+1317	81541	München/Giesing	Hohenwaldeckstraße 43	DE
+1318	86163	Augsburg	Eibseestr. 21	DE
+1319	86558	Hohenwart	Am Steinberg 19	DE
+1320	81476	München/Forstenried-Fürstenried	Waterloo Str. 57	DE
+1321	85399	Hallbergmoos	Pfarrer-Weiß-Weg 6	DE
+1322	82269	Geltendorf	Rosenstr. 37 A	DE
+1323	82377	Penzberg	Fischhaberstraße 17	DE
+1324	88*	Aretsried		DE
+1325	85591	Vaterstetten	Lilienstraße 45	DE
+1326	81379	München/Sendling	Aidenbachstr. 72	DE
+1327	80538	München	Lerchenfeldstr. 27	DE
+1328	82131	Gauting	Pütrichstraße 11	DE
+1329	82054	Sauerlach	Blombergstrasse 7b	DE
+1330			Isabellastr. 26	DE
+1331	83022	Rosenheim	Chiemseestrasse 18	DE
+1332	60486	Frankfurt	Große Seestr. 19	DE
+1333	86391	Stadtbergen	Mittlere Feldstr. 11a	DE
+1334	80689	München	Stroblstr. 22	DE
+1335	87459	Pfronten / Ost-Allgäu	Unterer Lus 14	DE
+1336	33178	Borchen	Ahornweg 12	DE
+1337	80992	München/Moosach	Scharnhorststraße 2	DE
+1338	86574	Petersdorf	Schulstr. 2	DE
+1339	81667	München/Au-Haidhausen	Weißenburger Platz 2	DE
+1340	85614	Kirchseeon	Wasserburger Str. 37	DE
+1341	63450	Hanau	Daimler Str. 8D	DE
+1342	81825	München	Gronsdorferstr. 1a	DE
+1343	86504	Merching	Watzmannstr. 6 a	DE
+1344	40211	Düsseldorf	Schützenstr. 49	DE
+1345	81669	München	Hochstr. 19a	DE
+1346	81679	München/Bogenhausen	Scheinerstr. 20	DE
+1347	85586	Poing	Friedensstr. 2	DE
+1348	83*	Übersee		DE
+1349	81247	Munich	Höhenkircherstraße 24	DE
+1350	80797	München	Lothstraße 68	DE
+1351	83064	Raubling/Kirchdorf	Neubeurer Str. 18	DE
+1352	82110	Germering	Lohengrinstr. 37	DE
+1353	81539	München	Balanstraße 106	DE
+1354	24118	Kiel	Niebuhrstraße 5	DE
+1355	81829	München	Heinrich­Böll­Str. 46	DE
+1356	40880	Ratingen	Ganghofer Straße 14	DE
+1357	82256	Fürstenfeldbruck	Schöngeisingerstr.58	DE
+1358	81667	München	Sedanstr. 39	DE
+1359	8	Heidenheim		DE
+1360	8832	Wilen b. Wollerau		DE
+1361	wien	19	Werkmanngasse 1/4		DE
+1362	85716	Haar	Lindenstraße 28   Lindenstraße 28	DE
+1363	80634	München	Lorschstr. 5	DE
+1364	60486	Frankfurt	Ohmstr. 67	DE
+1365	64297	Darmstadt	Seeheimer Str. 27	DE
+1366	80689	München	Guido-Schneble-Str. 45	DE
+1367	89	Weißenhorn		DE
+1368	80805 	München	Ungererstraße 98	DE
+1369	80933	München/Feldmoching	Riemerschmidstraße 41	DE
+1370	81669	München/Au-Haidhausen	St.-Cajetan-Str. 27	DE
+1371	81677	München/Au-Haidhausen	Mühlbaurstr.10	DE
+1372	97084	Würzburg	Domweg 17	DE
+1373	84034	Landshut	Rennweg 4	DE
+1374	81475	München	Appenzeller Str. 107	DE
+1375	80995 	München	Moosglöckchenweg 4	DE
+1376	91242	Ottensoos	Hans-Priner-Str. 18	DE
+1377	80997	München/Moosach	Schönleutnerstraße 5	DE
+1378	80639	München/Nymphenburg	Scherrstraße 1	DE
+1379	80336	München/Maxvorstadt	Mathildenstraße 5A	DE
+1380	83355	Grabenstätt	Marktstr. 5	DE
+1381	55583	Bad Kreuznach	Dreiburgenstraße 10a	DE
+1382	85579	Neubiberg	Schulzstr. 2d	DE
+1383		Passau	Dr.-Hans Kapfinger str 13	DE
+1384	80796	München/Schwabing-West	Rankestr.3	DE
+1385	85737	Ismaning	Am Englischen Garten 27 		DE
+1386	85586	Poing	Margeritenstr. 14	DE
+1387	81925	München/Bogenhausen	Oberföhringerstr. 123	DE
+1388	80	München/Ost		DE
+1389	80	München/Glockenbachviertel		DE
+1390	85570	Markt Schwaben	Bürgermeister-Strobl-Straße 19	DE
+1391	82275	Emmering	Hauptstrasse 17 a	DE
+1392	8*	Allgäu		DE
+1393	80	München/Zentral		DE
+1394	80*	München		DE
+1395	85276	Pfaffenhofen	König-Ludwig-Str. 27a	DE
+1396	80469	München	Corneliusstr. 3	DE
+1397	81825	München	Zauberwaldstr. 8	DE
+1398	81927	München/Bogenhausen	Meistersingerstraße 144	DE
+1399	80797	München/Freimann	Adams-Lehmann-Str. 105	DE
+1400	85757	Karlsfeld	Dr. Johann-Heitzer-Str. 40	DE
+1401	80469	München/Isarvorstadt	Auenstraße 52	DE
+1402	80796	München/Schwabing	Elisabethstraße 2	DE
+1403	80339	München	Max-Friedlaender-Bogen 19	DE
+1404	81477	München	Paul-Klee-Strasse 8	DE
+1405	86453	Dasing	Anschrift Wiesenstraße 30	DE
+1406	22846	Norderstedt		DE
+1407	80*	München/Freimann		DE
+1408	83679	Sachsenkam	Alpenblickstraße 15a	DE
+1409	85622	Feldkirchen	Beethovenstraße 15	DE
+1410	81677	München	Richard-Strauß-Str. 11	DE
+1411	86911	Dießen	Tannenstr. 24	DE
+1412	80797	München/Schwabing-West		DE
+1413	83553	Frauenneuharting	Tegernauerstr. 11	DE
+1414	85570	Markt Schwaben		DE
+1415	82110	Germering		DE
+1416	85250	Altomünster	Am Kreppenfeld 10	DE
+1417	81667	München/Au-Haidhausen	Haidenauplatz 2	DE
+1418	88085	Langenargen	Kanalstraße 22	DE
+1419	81675	München	Ismaninger Straße 92	DE
+1420	81369	München/Sendling		DE
+1421	82256	Fürstenfeldbruck	Jägerstr. 29	DE
+1422	81667	München/Haidhausen	Preysingplatz 7	DE
+1423	47918	Tönisvorst	Ludwig Jahn Strasse 48	DE
+1424	83646	Bad Tölz		DE
+1425	82110	Germering	Blütenstr 23	DE
+1426	80992	München	Baubergerstrasse 12	DE
+1427	85405	Nandlstadt	Färberstraße 37	DE
+1428	81541	München/Giesing	Tegernseer Landstraße 14	DE
+1429	86438	Kissing	Bahnhofstr. 131	DE
+1430	89231	Neu-Ulm	Allgäuer Str. 39	DE
+1431	88212	Ravensburg	Spohnstr. 9/1	DE
+1432	80639	München / Nymphenburg	Margarethe-Danzi-Str. 12	DE
+1433	85055	Ingolstadt/Etting		DE
+1434	60318	Frankfurt am Main	Nordendstraße 21	DE
+1435	80797	München/Schwabing	Schleißheimer Str. 64	DE
+1436	81373	München/Sendling	Krünerstraße 59	DE
+1437	82436 	Eglfing	Dorfstraße 1	DE
+1438	81476	München	Falkenhorstweg 18	DE
+1439	81925	München/Bogenhausen		DE
+1440	81249	München / Lochhausen	Estinger Strasse 4b	DE
+1441	81245	München	Herzog-Johann-Straße 14	DE
+1442	13189	Berlin	Schonensche Str. 29	DE
+1443	81379	München/Sendling	Badstraße 14b	DE
+1444	85375	Neufahrn b Freising (München)	Reiffeisenweg 3b	DE
+1445	85416	Langenbach		DE
+1446	85465	Langenpreising	Preysingstr. 29a	DE
+1447	81379	München/Obersendling		DE
+1448	81369			DE
+1449	86157	Augsburg	Chemnitzer Str. 10	DE
+1450	80799	München	Schnorrstr 1	DE
+1451	86637	Wertingen	Ludwig- Thoma- Str.15	DE
+1452	04105	Leipzig	Feuerbachstrasse 21 	DE
+1453	68782	Brühl	Im Merkelgrund 2a	DE
+1454	81476	München	Herterich Str. 159d	DE
+1455	80336	München	Bavariastr. 9	DE
+1456	85290	Geisenfeld		DE
+1457	81829	München	Elisabeth-zu-Guttenbergstraße 38	DE
+1458	80	München/Fürstenried		DE
+1459			Muellerstrasse 10 App 14	DE
+1460	80636	München/Neuhausen (Maillingerstr.)	Blutenburgstr. 72	DE
+1461	85053	Ingolstadt	Feselenstraße 31	DE
+1462	86163	Augsburg	Auerbergweg 7	DE
+1463	82205 	Gilching	Fichtenstraße 5a	DE
+1464	85465	Langenpreising	Christian-Jorhan-Str. 40	DE
+1465	8*	Freising		DE
+1466	85399	Hallbergmoos	Birkenweg 6	DE
+1467	80637	München/Neuhausen	Lily-Braun-Weg 3	DE
+1468	52146	Würselen	Nadlerweg 5	DE
+1469	85764	Oberschleißheim	Tannenstraße 10	DE
+1470	81927	München/Bogenhausen	Taimerhofstr. 4	DE
+1471	78589	Dürbheim		DE
+1472	83024	Rosenheim	Korbinianstr. 8	DE
+1473	81667	München	Wörthstr. 12	DE
+1474	80805 	München	BERLINER STRASSE 16	DE
+1475	81739	MÜnchen	Schneewittchenstraße 25	DE
+1476	81379	München/Sendling	Zielstattstraße 105	DE
+1477	55278	Mommenheim	Silvanerstraße 15 A	DE
+1478	86609	Donauwörth	Bahnhofstr. 21	DE
+1479	81241	München/Pasing	Josef-Felder-Straße 55	DE
+1480	81541	München/ Taufkirchen	Gebsattelstraße 2	DE
+1481	82049	Pullach		DE
+1482	48005	426	Reuterweg 77	DE
+1483	82216	Gernlinden	Am Gut Haus 3	DE
+1484	85386	Eching-Dietersheim	Auweg 8	DE
+1485	80689	München	Senftenauerstr. 28	DE
+1486	81476	München	Forstenrieder Allee 140c	DE
+1487	99089	Erfurt	Schwalbenweg 1	DE
+1488	84051	Essenbach-Ohu	Fliederstraße 14	DE
+1489	85622 	Feldkirchen	Friedensstraße 10	DE
+1490	86807	Buchloe / Lindenberg	Blütenweg 13	DE
+1491	81377	München	Prälat-Wellenhofer-Str. 41	DE
+1492	81669	München-Haidhausen	Rablstr. 12	DE
+1493	81829	München	Teuchertstraße 20	DE
+1494	81377 	München	Anschrift: St.Veit-Str. 26	DE
+1495	81925	München		DE
+1496	80687	München/ Ismaning	Landsberger Str. 239	DE
+1497	85764	Oberschleißheim	Bruckmannring 10	DE
+1498	85354	Freising	Abelestr.24	DE
+1499	82166	Gräfelfing	Meisenstraße 24	DE
+1500	81245	München	Schirmerweg 14	DE
+1501	81477	München	Vorhoelzerstr. 3	DE
+1502	80634	München/Neuhausen Nymphenburg	Arnulfstraße 132,	DE
+1503	8*	München	Intern in Financial Monitoring	DE
+1504	80807	München	Marianne-Brandt-Str. 21	DE
+1505	81929	München	Bennigsenstraße 3	DE
+1506	85551	Kirchheim/MUC Ost		DE
+1507	81241	München	Maierhofstraße 33	DE
+1508	81379	München		DE
+1509	85622	Feldkirchen	Regina-Ullmann Str. 10	DE
+1510	80636	München/Neuhausen	Albrechtstr. 14	DE
+1511	585640		Ottobrunner Straße 	DE
+1512	80637	München/Moosach	Merianstrasse 9	DE
+1513	80	München/Glockenbach		DE
+1514	83629	Weyarn	Seidinger Str.8	DE
+1515	80687 	München	Agnes-Bernauer-Straße 56	DE
+1516	81371	München/Sendling	Kidlerstraße 4	DE
+1517	80687	München/Laim	Agnes-Bernauer-Str. 69	DE
+1518	50859	Köln	Anschrift Siegstraße 2	DE
+1519	91186	Büchenbach		DE
+1520	82110	Germering	Landsberger Str. 3	DE
+1521	80796	München	Hiltenspergerstr. 85	DE
+1522	85774	Unterföhring	Ahornstraße 15a	DE
+1523	85354	Freising	Prechtlstr. 2	DE
+1524	81827	München	Großfriedrichsburger Str. 14	DE
+1525	82110	Germering	Luitpoldstraße 9	DE
+1526	80337	München	Waltherstrasse 1	DE
+1527	85764	Oberschleißheim	Am Frauenfeld 4	DE
+1528	82205	Gilching	Hörlholzweg 8	DE
+1529	69488	Birkenau	Nächstenbacher Str. 7	DE
+1530	80634 	München	Schulstraße 32  	DE
+1531	86343	Königsbrunn	Landsberger Straße 120	DE
+1532	80809	München/Milbertshofen		DE
+1533	81243	München	Dinkelsbühler Str. 16	DE
+1534	82194	Gröbenzell	Dr.-Werner-Str.41	DE
+1535	81249	München	Gündinger Str. 9	DE
+1536	85778	Haimhausen	Münchner Straße 43 a	DE
+1537	80689	München		DE
+1538	80335	München	Erzgießereistraße 18a	DE
+1539	80363		Rupprechtstr. 16	DE
+1540	80798	München/Schwabing	Schwarzmannstraße 6	DE
+1541	80355	München (Isarvorstadt)		DE
+1542	105484	Moskau	13ya Parkowaja Uliza 26/5	DE
+1543	40489	Düsseldorf		DE
+1544	80337	München/Isarvorstadt		DE
+1545	80469	München	Hans-Sachs-Str. 5	DE
+1546	81373	München	Treffauerstraße 3	DE
+1547	87616	Marktoberdorf		DE
+1548	82140	Olching	Schloßstraße 94	DE
+1549	65185	Wiesbaden	Mainzer Straße 25A	DE
+1550	33378	Rheda-Wiedenbrück	Fritz-Burmann-Str. 9	DE
+1551	80801	München/Schwabing	Friedrichstraße 32	DE
+1552	86157	Augsburg		DE
+1553	83115	Neubeuern	Samerstrasse 8A	DE
+1554	80	München/Bogenhausen	Grillparzerstraße 33	DE
+1555	81677	München/Bogenhausen	Brahmsstraße 6	DE
+1556	85247	Schwabhausen	Dahlienstraße 4	DE
+1557	84539	Ampfing	Rosenstraße 1b	DE
+1558	81737	München	Neubiberger Str. 36a	DE
+1559	85521	Ottobrunn	Kleiststr. 13	DE
+1560	80687	München	Landsberger Str. 215	DE
+1561	84*	Vilsbiburg		DE
+1562	80637	München	Hartliebstraße 10	DE
+1563	80686	München/Laim	Neubeuernerstraße 10	DE
+1564	80995	München/Feldmoching	Lerchenauer Straße 247d	DE
+1565	8*	München/Neuhausen		DE
+1566	85521	Ottobrunn	Rosenheimer Landstr. 141	DE
+1567	80995	München	Himmelschlüsselstraße 25	DE
+1568	86706	Weichering	Kochheimer Str. 22A	DE
+1569	85599	Parsdorf	Tannenweg 8	DE
+1570	81925	München/Bogenhausen	Grüntal 28	DE
+1571	85560	Ebersberg	Dr.-Wintrich-Str. 35	DE
+1572	86609	Donauwörth	Dr.-Loeffellad-Str.6	DE
+1573	82069	Hoenschäftlarn	Klosterstr 25A	DE
+1574	82319	Starnberg	Josef-Fischhaber-Straße 31	DE
+1575	81371	München	Lindenschmitstr. 35	DE
+1576	81667	München	Breisacher Str. 28	DE
+1577	86156	Augsburg	FRITZ-STRASSMANN-STR. 31	DE
+1578	42855	Remscheid	Moltkestr. 18a	DE
+1579	85402	Kranyberg	Berg 17	DE
+1580	84405	Dorfen	Dammerlberg 14a	DE
+1581	81369	München/Sendling	Friedrich - Hebbel - Str. 18	DE
+1582	81679	München	Cuvilliéstraße 14	DE
+1583	81243	München-Westen	Zwernitzer Str. 41d	DE
+1584	84427	St. Wolfgang bei Erding		DE
+1585	54296	Trier	Hockweilerstr. 61	DE
+1586	86179	Augsburg	Bürgermeister-Widmeier-Str. 44 .	DE
+1587	82256	Fürstenfeldbruck	Asambogen 33	DE
+1588	80637	München	Hedwig-Dransfeld-Allee 20	DE
+1589	85459	Berglern	Siedlerstraße 21	DE
+1590	8*	München (Sendling)		DE
+1591	89231	Neu - Ulm	Breslauer Straße 7	DE
+1592	80802	München	Occamstraße 5	DE
+1593	84028	Landshut	Dreifaltigkeitsplatz 1a	DE
+1594	81671	München/Berg am Laim	Höhenstadter Straße 8	DE
+1595	85774	UnterfÖhring	Brunnbachlweg 17e	DE
+1596	83395	Freilassing	Höglstr. 6	DE
+1597	80	München/Obergiesing		DE
+1598	80336	München/Isarvorstadt	Landwehrstr. 85	DE
+1599	81379	München	Uttinger Str. 12	DE
+1600	81247	München/Obermenzing	Thaddäus-Eck-Str. 53	DE
+1601	81728	München		DE
+1602	82049	Pullach im Isartal	Wolfratshauserstraße 83	DE
+1603	47877	Willich	Niederstraße 67	DE
+1604	80639	München	Königbauer Straße 22	DE
+1605	80335	München/Nymphenburg	Nymphenburger Str. 6h	DE
+1606	72358	Dormettingen	Jahnstrasse 3	DE
+1607	42489	Wülfrath	Ringstr. 27	DE
+1608	80807	München/Milbertshofen	Dewetstraße 9	DE
+1609	80538	München/Lehel	Tattenbachstraße 7a	DE
+1610	80809	München	Birnauer Strasse 11	DE
+1611	82061	Neuried	Alpspitzring 60	DE
+1612	81825	München	Seebrucker Str. 20	DE
+1613			Pelkovenstr. 89	DE
+1614	88045	Friedrichshafen		DE
+1615	86453	Dasing	Dasinger Str. 7	DE
+1616	81377	München	Schachblumenweg 26	DE
+1617	80974	München		DE
+1618	81543	München/Haidhausen	Winterstr. 10	DE
+1619	81249	München	Papinstraße 17	DE
+1620	55583	Ebernburg		DE
+1621	80804	München/Schwabing	Leopoldstraße 180	DE
+1622	82061	Neuried	Balthasar-Graf-Str. 5	DE
+1623	85406	Zolling bei Freising		DE
+1624	80639	München / Nymphenburg	Döllingerstrasse 15	DE
+1625	83607	Holzkirchen	Franz-Obermayer-Str. 29	DE
+1626	42781	Haan	Königgrätzer Straße 28	DE
+1627	81547	München	Sommerstr. 1B	DE
+1628	22589	Hamburg		DE
+1629	81241	München / Pasing-Obermenzing	Institutstraße 23	DE
+1630	80807	München	Griegstr. 21	DE
+1631	84149	Velden	Mälzerstraße 4	DE
+1632	80689	München/Laim	Gotthardstr. 58	DE
+1633	91486	Uehlfeld	Bahnhofstrasse 24	DE
+1634	64823	Groß-Umstadt	Brandenburger Straße 8	DE
+1635	80634	München/Neuhausen-Nymphenburg	Mettinghstraße 6	DE
+1636	83607	Holzkirchen		DE
+1637	80999	München	Kleselstr. 55	DE
+1638	85080	Gaimersheim	Oskar-Maria-Graf Str. 6	DE
+1639	82211	Herrsching	Dorfstraße 6	DE
+1640	80636	München/Neuhausen	Hilblestr. 32	DE
+1641	85737	Ismaning	Leuchtenbergstr. 12	DE
+1642	81829	München	Riemer Strasse 309	DE
+1643	81827	München	Wasserburger Landstraße 221	DE
+1644	8*	München-Schwabing		DE
+1645	82380	Peißenberg	Iblherstrasse 16	DE
+1646	80687	München	Veit-Stoß-Straße 1	DE
+1647	80802	München/Schwabing	Königinstrasse 28	DE
+1648	83043	Bad Aibling	Wildstr. 11	DE
+1649			vittoriosigno@gmail.com	DE
+1650	81539	München/Obergiesing		DE
+1651	82347	Bernried am Starnberger See	Eichenstraße 14	DE
+1652	85354	Freising	Obere Hauptstr. 61	DE
+1653	8*	Windach	Plankensteinweg 71	DE
+1654	81825	München	Haffstr. 25	DE
+1655	85386	Eching		DE
+1656	81825	München/Trudering	Marianne-Plehn-Str.51	DE
+1657	81539	München	Wirtstrasse 17	DE
+1658	81245	München/Obermenzing	Mooswiesenstr. 5	DE
+1659	81539	München	Balanstraße 144a	DE
+1660	82291	Mammendorf		DE
+1661	22763	Hamburg	Grünebergstr. 50	DE
+1662	8*	München	Forggenseestr. 62	DE
+1663	81247	München	Paganinistraße 7	DE
+1664	68159	Mannheim		DE
+1665	81375 	München	Wolkerweg 10a	DE
+1666	80687	München	Reuttestr. 42	DE
+1667	81539	Ottobrunn		DE
+1668	85356	Attaching	Mauthstraße 3	DE
+1669	85235	München	Blumenstr. 12	DE
+1670	85417	Marzling	Eichelsberg 10	DE
+1671	85579	Neubiberg	Wotanstr.14	DE
+1672	81829	München/Riem	Mittbacher Str. 2	DE
+1673	86316	Friedberg	Asamstr. 12	DE
+1674	81547	München/Untergiesing-Harlaching	Ohlmüllerstraße 15	DE
+1675	81543	München/ Harlaching	Schönstraße 104	DE
+1676	81735			DE
+1677	85276	Pfaffenhofen a.d. Ilm	Portenschlagerweg 21	DE
+1678	80637	München	Lily-Braun-Weg 21	DE
+1679	80992	München	Hugo-Troendle-Strasse 5a	DE
+1680	85467	Neuching	Trattmoos 22	DE
+1681	87600	Kaufbeuren	Rosental 7	DE
+1682	81929	München/Daglfing	Rennbahnstraße 53	DE
+1683	80999	München	Clemensstraße 30	DE
+1684	82031	Grünwald	Sudetenstr. 14a	DE
+1685	86937	Scheuring	Mühlweg 11	DE
+1686	80804	München/Schwabing West	Aachener Strasse 3	DE
+1687	80331	München/Färbergraben	Nordendstraße 45	DE
+1688	75378	Bad Liebenzell		DE
+1689	60486	Frankfurt am Main	Ohmstraße 66	DE
+1690	81373	München/Sendling	Oetztaler Straße 7	DE
+1691	65428	Rüsselsheim	Tannenstr. 74	DE
+1692	81369	München	Passauerstr. 30	DE
+1693	86157	Augsburg	Arnulfstr. 34	DE
+1694	25482	Appen	Bogenstr. 17a	DE
+1695	81679	München/Bogenhausen	Heiglhofstr. 71	DE
+1696	85238	Petershausen	Marbacher Straße 6	DE
+1697	88250	Weingarten	Wilhelmstraße 34	DE
+1698	80937	München/Milbertshofen-Am Hart	Rose-Pichler-Weg 50	DE
+1699	85464	Finsing	Eicherloherstr. 44	DE
+1700	81377	München/Hadern	Pählstr.18	DE
+1701	82194	Gröbenzell	Eschenrieder Straße 31	DE
+1702	80807	München/Milbertshofen	Oberhofer Platz 4	DE
+1703	80995	München	Linus-Funke-Weg 20	DE
+1704	60486	Frankfurt am Main	Galvanistraße 29	DE
+1705	82054	Sauerlach	Tegernseer Landstraße 7a	DE
+1706	81679	München		DE
+1707	87711	Mindelheim		DE
+1708	81825	München	Graltspitzstrasse 40	DE
+1709	85656	Buch am Buchrain		DE
+1710	81667	München	Gravelottestraße 1a	DE
+1711	81371	München	Schäftlarnstr. 172	DE
+1712	80636	München/Neuhausen	Olgastr. 12	DE
+1713	80336	München/Isarvorstadt	Paul-Heyse-Straße 31c	DE
+1714	87600	Kaufbeuren	Schönblick 57	DE
+1715	85296	Rohrbach	Schelmengrund 16	DE
+1716	80335	München	Loristr. 1	DE
+1717	83236	Übersee	Greimelstraße 64	DE
+1718	83661	Lenggries	Holz 8	DE
+1719	80469	München/Isarvorstadt	Dreihmühlenstr. 14	DE
+1720	80469	München/Isarvorstadt	Pestalozzistr. 6	DE
+1721	81369 	München	Heißstraße 13	DE
+1722	81549	München/ Ramersdorf	Görzer Str. 62	DE
+1723	22085	Hamburg	Hans-Henny-Jahnn-Weg 24	DE
+1724	83352	Altenmarkt	Steiner Straße 66	DE
+1725	81369	München	Johann-Clanze-Str. 49	DE
+1726	81927	München/Bogenhausen	Fürkhofstraße 22	DE
+1727	82041	Oberhaching	St.-Stephan-Weg 18	DE
+1728	81379	München/Thalkirchen	Emil-Geis-Str. 40a	DE
+1729	81479	München	Schieggstr. 21 c	DE
+1730	81929	München/Daglfing		DE
+1731	98574	Schmalkladen		DE
+1732	86156	Augsburg	Weldishoferstraße 37	DE
+1733	84*	Landshut?		DE
+1734	82166	Gräfelfing		DE
+1735	92334 	Berching	Wiestalstraße 15	DE
+1736	85435	Erding	Franz-Bombach-Straße 14	DE
+1737	86199	Augsburg	Adolph-Kolping-Straße 1	DE
+1738	81927	München	Cosimastrasse 210	DE
+1739	81369	München	Albert-Roßhaupter-Str. 20	DE
+1740	84***	Eggenfelden/Landshut		DE
+1741	86836	Augsburg		DE
+1742	82237	Wörthsee - Etterschlag	Joachim-Königbauer-Weg 26 A	DE
+1743	12689	Berlin	Flämingstrasse 93	DE
+1744	80335	München/Maxvorstadt	Dachauer Straße 99	DE
+1745	8005	Cape Town	2 Mutley Rd	DE
+1746	80687	München	Sandrartstr.4	DE
+1747	83620	Feldkirchen-Westerham	Bachlände 15	DE
+1748	81549	München/Giesing	Pennstr. 11	DE
+1749	84508	Burgkirchen a.d..Alz	Ahornstraße 4	DE
+1750	81827	München	Fauststr. 44	DE
+1751	86161	Augsburg	Europenstr. 18	DE
+1752	80*	München / Milbertshofen		DE
+1753	80802	München/Schwabing	Occamstraße 5	DE
+1754	60487	Frankfurt am Main		DE
+1755	81375	München	Windeckstrasse 85	DE
+1756	81829	München	Lehrer-Götz-Weg 30	DE
+1757	92224	Amberg	Neustift 27	DE
+1758	81675	München Prinzregentenplatz		DE
+1759	80469	München	Müllerstraße 43a	DE
+1760	85653	Aying	Rosenheimer Landstraße 18	DE
+1761	81673	München	Bertschstr. 26	DE
+1762	80538	München	Strasse 17	DE
+1763	80634	München/Neuhausen	Schlörstraße 5	DE
+1764	85435	Erding	Am Hochrainacker 30	DE
+1765	81369	München	Klingerstrasse 34	DE
+1766	80801	München	Habsburgerstr. 5	DE
+1767	81543 	München	Hans-Mielich-Str.1	DE
+1768	85399	Hallbergmoos	Preglerweg 11	DE
+1769	85774	Unterföhring	Ahornstr. 8	DE
+1770	80997	München	Ernst-von-Romberg-Strasse 34 	DE
+1771	80686	München/Laim	Droste-Hülshoff-Str. 8	DE
+1772	12683	Berlin	Öseler Straße 16	DE
+1773	80469	München	Holzstraße 33	DE
+1774	80637 	München		DE
+1775	85229	Markt Indersdorf	Propst-Morhardt-Str. 40	DE
+1776	81373	München		DE
+1777	80992	München/Moosach	Meggendorferstr. 33	DE
+1778	80689	München	Blumenauer Str. 87	DE
+1779	21385	Lüneburg		DE
+1780	85737 	Ismaning	Jägerstr. 3a	DE
+1781	80469	München/Isarvorstadt	Hans-Sachs-Str. 5	DE
+1782	80339	München	Parkstr. 11	DE
+1783	82407	Wielenbach	Nelkenstr. 4	DE
+1784	85452	Eichenried / Erding (Nordost)		DE
+1785	80636	München/Neuhausen	Nymphenburgerstraße 130	DE
+1786	85057	Ingolstadt	Gumppenbergstr. 16	DE
+1787	82*	Gilching		DE
+1788	80538	München	Crusiusstrasse 1	DE
+1789	80339	München	Heimeranstr. 49	DE
+1790	83093	Bad Enders / Chiemsee	Hirnsberg 1	DE
+1791	80339	München / Schwanthalerhöhe	Ridlerstraße 11	DE
+1792	82110	Germering	Kiefernstr. 12	DE
+1793	85452	Moosinning bei Erding	Taunusstraße 33	DE
+1794	81245	München / Pasing		DE
+1795	70569	Stuttgart	Robert-Leicht-Straße 137b	DE
+1796	80637	München	Hohenlohstrasse 29	DE
+1797	85229	Markt Indersdorf	Glonntalstraße 18r.	DE
+1798	48147	Münster	Coerdestraße 29	DE
+1799	86157	Augsburg	Flandernstr. 11b	DE
+1800	80788	München	Petuelring 130	DE
+1801	80995	München/Feldmoching		DE
+1802	86415	Mering	Ahornweg 50	DE
+1803	80804	München/Schwabing-West	Gernotstraße 10	DE
+1804	8*	München	Praktikant im Corporate Restructuring	DE
+1805	80797 	München	Therese-Studer-Str. 1	DE
+1806	86926	Greifenberg		DE
+1807	81541	München/Giesing	St. Martin Str. 52	DE
+1808	89518	Heidenheim	Sudetenstr.1	DE
+1809	89518	Heidenheim		DE
+1810	80807	München/Milbertshofen	Knorrstraße 29	DE
+1811	81925	München/Bogenhausen	Hochstiftsweg 19	DE
+1812	86*	Landberg		DE
+1813	81547	München/Untergiesing-Harlaching	Kurzstr. 3	DE
+1814	83071	Stephanskirchen	Ganghoferstraße 3	DE
+1815	80809	München/Milbertshofen	Schleißheimer Str. 301	DE
+1816	85521	Ottobrunn	Nimrodstrasse 15	DE
+1817	82349	Frohnloh	Birkenallee 22a	DE
+1818	86405	Meitingen	Schloßstr. 2a	DE
+1819	80803	München/Schwabing	Bonner Platz 2	DE
+1820	85635	Höhenkirchen-Siegertsbrunn	Haringstraße 37	DE
+1821	8802	Kilchberg (ZH)	Seestraße 52	CH
+1822	81247	München	Betzenweg 33a	DE
+1823	89284	Pfaffenhofen	Rothweg 2a	DE
+1824	80637	München	Lily-Braun-Weg 5	DE
+1825	80639	München	Wotanstraße 31	DE
+1826	82223	Eichenau	Hauptstrasse 39	DE
+1827	81737	München/Neuperlach		DE
+1828	88677	Markdorf	Am Ochsenbach 14	DE
+1829	85232	Günding/Dachau	Hauptstraße 20	DE
+1830	89264	Weissenhorn	Bgm.-Stötter-Str. 4	DE
+1831	81477	München/Forstenried-Fürstenried	Olivierstr. 11a	DE
+1832	80339 	München	Bergmannstraße 54	DE
+1833	81545	München	Geiselgasteigstr. 126	DE
+1834	85570	Markt Schwaben	Erdingerstr. 30	DE
+1835	86949	Windach	Schwabhauserstraße 16 A	DE
+1836	80997	München	Korbinian-Beer-Str. 30	DE
+1837	81247	München	Fasanenstraße 24	DE
+1838	82377	Penzberg		DE
+1839	81667	München/Au-Haidhausen	Rosenheimer Straße	DE
+1840	89343	Jettingen - Scheppach	Hinter den Oberen Gärten 35a	DE
+1841	81479	München	Katharinenstr. 6	DE
+1842	85540	Haar		DE
+1843	81827	München/Trudering	Iltisstrasse 46	DE
+1844	80993	München	Hans-Beimler-Weg 33	DE
+1845	85591	Vaterstetten	Gerda-Penzel-Str. 33	DE
+1846	85221	Dachau	Syrius Eberle Weg 11	DE
+1847	85276	Pfaffenhofen	Lessingstr. 13	DE
+1848	80799	München	Nordendstrasse 3	DE
+1849	81673	München/Berg am Laim	Bertschstr. 26	DE
+1850	82194	Gröbenzell	Herbststr. 6	DE
+1851	81545	München/Untergiesing-Harlaching	Benediktenwandstr. 7	DE
+1852	80	München/Lehel		DE
+1853	44869	Bochum	Ligusterweg 13	DE
+1854	80939	München	Hürnbeckstr. 20a 	DE
+1855	81737	München	Lorenzstrasse 14	DE
+1856	82140	Olching	Feldstraße  42	DE
+1857	85*	Kirchheim		DE
+1858	80992	München-Moosach	Hardenbergstr. 28	DE
+1859	85716	Unterschleißheim	Kreuzstraße 30	DE
+1860	81827	München	Von-Erckert-Str. 70	DE
+1861	86157	Augsburg	Otto-Sauler-Str. 21	DE
+1862	82140	Olching	Geschwister-Scholl-Weg 3	DE
+1863	85778	Haimhausen (MUC Nord)		DE
+1864	80992	München/Moosach	Abbachstraße 16	DE
+1865	81679	München	Cuvilliésstraße 14	DE
+1866	82024	Taufkirchen	Limmerweg 5	DE
+1867	85622	Feldkirchen	Hohenlindner Str. 23b	DE
+1868	83	Eggstätt		DE
+1869	80469	München/Glockenbach	Adresse Fraunhoferstraße 25	DE
+1870	86343	Königsbrunn	Wandalenstr. 17	DE
+1871	90513	Zirndorf	Gutenbergstr. 3	DE
+1872	85757	Karlsfeld	Schachenweg 5	DE
+1873	80333	Munich	Theresienstrasse 70	DE
+1874	81369	München/Sendling	Flößergasse 11B	DE
+1875	80797	München/Schwabing	Schleißheimer Straße 183c	DE
+1876	80807	München	Kantstr. 23d	DE
+1877	8053	Zürich	23 Am Oeschbrig	DE
+1878	80687	München	Behamstr. 31	DE
+1879	82024	Taufkirchen	Oberweg. 31	DE
+1880	51368	Leverkusen		DE
+1881	85	Ingolstadt		DE
+1882	65428	Rüsselsheim	Helmholtzweg 11	DE
+1883	85221	Dachau	Gündingerstr. 3	DE
+1884	80687	München/Pasing	Agnes-Bernauer-Str. 15a	DE
+1885	85254	Sulzemoos		DE
+1886	80636	München	Klarastraße 15	DE
+1887	80339	München/ Schwanthaler Höhe	Parkstraße 1	DE
+1888	80469	München/Isarvorstadt	Utzschneiderstr. 5	DE
+1889	80636	München/Neuhausen		DE
+1890	81479	München	Melchiorstrasse 37	DE
+1891	60385	Frankfurt	Kettelerallee 49	DE
+1892	63128	Dietzenbach	Feldstraße 33	DE
+1893	81735	München/Berg am Laim	Frauendreißigerstr. 34	DE
+1894	83624	Otterfing	PALNKAMER STR. 10C	DE
+1895	85646	Neufinsing	Eichenring 34	DE
+1896	1063AG	Amsterdam	Harry Koningsbergerstraat 152	DE
+1897	80995	München	Rambertweg 11	DE
+1898	81673	München/Berg am Laim	Baumkirchner Straße 25a	DE
+1899	85462	Eitting	Süßbachstr. 6	DE
+1900	82131	Stockdorf	Kraillinger Straße 5	DE
+1901	85092	Kösching	Laubenweg 4	DE
+1902	85737	Ismaning	Carl-Zeiss-Ring 11	DE
+1903	86899	Landsberg am Lech	Johann-Arnold-Straße  32a	DE
+1904	85551	Kirchheim	Vogelbeerenweg 4	DE
+1905	81371	München/Sendling	Brudermühlstr. 52	DE
+1906	80335	München/Maxvorstadt	Nymphenburgerstraße 55	DE
+1907	80773	München		DE
+1908	85435	Erding	Lange Feldstr. 42	DE
+1909	85567	Grafing b. Munich	Kirchenplatz 6	DE
+1910	81373	München/Sendling		DE
+1911	84539	Ampfing	Pfarrer-Dr.-Lipp-Str. 11	DE
+1912	81825	München/Trudering	Sonnwendjochstrasse 72	DE
+1913	80335	München	Kreittmayrstr. 31a	DE
+1914	85570	Markt Schwaben	Maria-Adelberger Strasse 12	DE
+1915	8*	Kipfenberg		DE
+1916	80336	München/Theresienwiese	St.-Pauls-Platz 8	DE
+1917	86199	Augsburg	Philipp-Scheidemann-Str. 10	DE
+1918	89518	Heidenheim	Sudetenstr. 12	DE
+1919	80	München?		DE
+1920	85375	Neufahrn	Albert-Einstein-Str. 4	DE
+1921	85152	Planegg	Egenhofenstraße 37b	DE
+1922	85375	Neufahrn	Wendelsteinweg 12	DE
+1923	80992	München/Moosach	Hanauer Straße 9	DE
+1924	80335	München/Maxvorstadt	Kreittmayrstraße 31a	DE
+1925	85229	Marktindersdorf		DE
+1926	81929	München/Pasing		DE
+1927	80331	München/Lehel		DE
+1928	89075	Ulm	Lehle 33	DE
+1929	81825	München	Spieljochstr. 8	DE
+1930	89	Ulm		DE
+1931	82256	Fürstenfeldbruck	Münchner Straße 53	DE
+1932	80809	München		DE
+1933	81247 	München	Faistenlohestraße 35a	DE
+1934	80339	München	Astallerstr. 13	DE
+1935	81545	München/Untergiesing-Harlaching	Harthauserstr. 17	DE
+1936	80687	München	Agnes-Bernauer Str. 147	DE
+1937	86165	Augsburg	Schackstr. 6	DE
+1938	85464	Neufinsing	Erdinger Straße 7	DE
+1939	60316	Frankfurt	Am Tiergarten 22	DE
+1940	83043	Bad Aibling		DE
+1941	82538	Geretsried		DE
+1942	82041	Oberhaching		DE
+1943	80	München/zentral		DE
+1944	81371	München	Daiserstr. 28	DE
+1945	83558	Maitenbeth	Niesberg 9	DE
+1946	80687	München/Pasing	Landsberger Straße 300	DE
+1947	81677	München/Bogenhausen	Buschingstr. 45	DE
+1948	86199	Augsburg	Josef-Felder-Str. 38	DE
+1949	85521	Ottobrunn	Riemenschneiderstraße 9	DE
+1950	86807	Buchloe/Lindenberg	Goethestraße 2b	DE
+1951	86946	Stadl	Frauenwies 3	DE
+1952	85356	Freising	Erdinger Straße 87g	DE
+1953	80636	München	Olgastr. 7	DE
+1954	82229	Seefeld	Neuhoffweg 6	DE
+1955	85293	Reichertshausen	Pfaffenhofener Straße 19	DE
+1956	83059	Kolbermoor/Lk. Rosenheim		DE
+1957	86150	Augsburg	Konrad Adenauer Allee  41	DE
+1958	82275	Emmering	Pfarrer-Ferstl-Straße 78	DE
+1959	81827	München/Trudering	Ernastraße 46	DE
+1960	96160 	Geiselwind	Birkenweg 32	DE
+1961	97422	Schweinfurt	Söldnerstraße 10	DE
+1962	81243	München	Aubinger Straße 147	DE
+1963	81547	München/Untergiesing-Harlaching	Otkerstraße	DE
+1964	67098	Bad Dürkheim	Hausener Weg 34a	DE
+1965	82194	Gröbenzell	Schuberstr. 4	DE
+1966	61348	Bad Homburg	Brandenburger Straße 62	DE
+1967	81539	München	Ungsteiner Str. 32	DE
+1968	82319	Starnberg	Würmstraße 6a	DE
+1969	89275	Elchingen	Gänsackerweg 60	DE
+1970	86899	Landsberg am Lech	Kohlstatt Str. 7	DE
+1971	80687	München	Hauzenberger Str. 32	DE
+1972	85399	Hallbergmoos	Maximilianstr. 58a	DE
+1973	84166	Adlkofen	Patzing 1	DE
+1974	80995	München/Feldmoching	Gustav-Schiefer-Straße 44	DE
+1975	85399	Hallbermoos	Lindenweg 4	DE
+1976	83*	Traunstein		DE
+1977	86405	Meitingen	Zugspitzstraße 18	DE
+1978	81927	München	Preziosastr. 45	DE
+1979	81675	München/Bogenhausen	Einsteinsstr. 111	DE
+1980	81241	München	Volmstraße 35	DE
+1981	80339	München	Landsberger-Str.18	DE
+1982	80689	München/Laim	Guido-Schneble-Str. 11	DE
+1983	81245	München	Hermann-Köhl-Str. 24	DE
+1984	80799	München/Schwabing	Rambergstr. 2	DE
+1985	81249	Gröbenzell	Templerstr. 1	DE
+1986	83062	Bruckmühl	Vagenerau Weg 112	DE
+1987	82131	Gauting	Godostraße 7	DE
+1988	86911	Dießen-Riederau	Malerweg 14	DE
+1989	60487	Frankfurt		DE
+1990	85748	Garching	Mühlfeldweg 17	DE
+1991	81673	München/Berg am Laim	Ursbergerstraße 13	DE
+1992	27568	Bremerhaven	Möwenstrasse 3	DE
+1993	86415	Mering	Luitpoldshöhstraße 17a	DE
+1994	80804	München Schwabing	Leopoldstr. 206	DE
+1995	68766	HOCKENHEIM	BIRKENALLEE 57	DE
+1996	81667	München	Rosenheimer Str. 113a	DE
+1997	26384	Wilhelmshaven		DE
+1998	90768	Fürth	Zur Eschenau 32	DE
+1999	10115	Berlin	Habersaathstr. 36a	DE
+2000	72181	Starzach	Vogelsangstraße 14	DE
+2001	81369	München/Sendling	Gottfried-Böhm-Ring 31	DE
+2002	81377	München	Max-Lebsche-Platz 38	DE
+2003	80686	München	Valpichlerstraße 76	DE
+2004	80798	München	Luisenstraße 72	DE
+2005	86159	Augsburg	Hochfeldstr. 28	DE
+2006	80339	München	Ridlerstr. 29	DE
+2007	81671	München	Ampfingstr. 44	DE
+2008	80636	München/Neuhausen	Rupprechtstr. 23 b	DE
+2009	86836	Untermeitingen	Jahnstraße 14	DE
+2010	80939	München	Kieferngartenstraße 25	DE
+2011	81375	München	Ringstr. 20	DE
+2012	81673	München/Berg am Laim	Berg am Laimstr. 56	DE
+2013	86561	Aresing	Pfarrstr. 1A	DE
+2014	85256	Vierkirchen	Bgm-Zeiner-Ring 1	DE
+2015	81379	München/Sendling	Schondorfer Straße 7a	DE
+2016	80805	München	Dietersheimerstraße 15	DE
+2017	45478	Mülheim	Artur-Brocke-Allee 31	DE
+2018	80997	München/Moosach	Von-Reuter-Straße 10A	DE
+2019	82405	Weilheim in Oberbayern		DE
+2020	83734	Hausham	Alte Tegernseerstraße 37	DE
+2021	80801	München/Schwabing	Nordendstr.64	DE
+2022	81829	München/Trudering-Moosfeld	Ika-Freuden-Straße 33	DE
+2023	80337	München-Ludwigvorstadt/Isarvorstadt (Goe	Tumblinger Straße 15	DE
+2024	81539	München	Raintaler Str.16a	DE
+2025	81669	München/Au-Haidhausen	Sankt-Cajetan-Straße 4	DE
+2026	80634	München/Neuhausen	Donnersberger Straße 9a	DE
+2027	85630	Grasbrunn	Ostring 5 F	DE
+2028	15258	145998		DE
+2029	81369	München	Hauffstr. 2	DE
+2030	80798	München	Augustenstr. 101	DE
+2031	95448	Bayreuth	Königsbergstr. . 1	DE
+2032	87600	Kaufbeuren	Salzstr. 1b	DE
+2033	80689	München	Camerloherstr. 75	DE
+2034	81475	München	Bellinzonastr. 22	DE
+2035	81371	München Sendling	Implerstraße 50a	DE
+2036	80339	München	Guldeinstr. 34a	DE
+2037	80	München/Maxvorstadt		DE
+2038	80335	München	Loristr. 22	DE
+2039	80687	München	Agnes-Bernauer-Straße 22	DE
+2040	81739	München/Neuperlach	Hamannstraße 21b	DE
+2041	82061	Neuried	Ettaler Straße 27	DE
+2042	78224	Singen	Alpenstr. 17a	DE
+2043	28199	Bremen	Diplom-KaufmannWasserkunst 9	DE
+2044	86316	Friedberg	Sedanstrasse 14	DE
+2045	56068	Koblenz		DE
+2046	80807	München	Christoph-von-Gluck-Platz 31	DE
+2047	80809	München/Milbertshofen	Anhalter Straße 7	DE
+2048	80933 	München	Linkstrasse 15 	DE
+2049	81673	München	Innsbrucker Ring 11	DE
+2050	85614	Kirchseeon	Fritz-Litzlfelder Str. 5	DE
+2051	85551	Kirchheim	Barbi-Henneberger-Str. 4	DE
+2052	82110	Germering	Kreuzlingerstr. 17c	DE
+2053	68	Mannheim		DE
+2054	88316	Isny / Allgäu		DE
+2055	8*	München / Rosenheim (Familie)		DE
+2056	8*	Bad Friedrichshall		DE
+2057	8*	München / Karlsfeld		DE
+2058	80636	München	Volkartstrasse 93	DE
+2059	81735	München/Berg am Laim	Plettstr. 29	DE
+2060	80801	München/Schwabing	Habsburgerstrasse	DE
+2061	85591	Vaterstetten	Veilchenweg16	DE
+2062	80687	München	Agnes-Bernauer-Str. 49	DE
+2063	86163	Augsburg	Friedrich-Deffner-Str. 1	DE
+2064	81825	München/Trudering	Marianne-Plehn-Straße 70	DE
+2065	81739	München (Ramersdorf, Perlach)		DE
+2066	83677	Reichersbeuern	Ruhpointhöhe 3	DE
+2067	81475	München	Forst-Kasten-Allee 121	DE
+2068	85356	Freising	Lantbertstr. 8	DE
+2069	94526	Metten	Riedfeldstr. 1	DE
+2070	81872	München (Westpark)	Faberstraße 4b	DE
+2071	78667	Villingendorf	Zollernstraße 7	DE
+2072	85662	Hohenbrunn	Brennereistr. 61	DE
+2073	82178	Puchheim	Gerner Platz 1	DE
+2074	82067	Schäftlarn	Zechstraße 35	DE
+2075	80805	München/Schwabing	Schinkelstraße 14	DE
+2076	30163	Hannover	Steinmetzstr. 26	DE
+2077	81927	München	Denninger Str. 208	DE
+2078	85356	Freising	General-von-Stein-Str. 7	DE
+2079	60488	Frankfurt am Main	Heerstr. 34	DE
+2080	86465	Welden	Kolpingstraße 6	DE
+2081	81379	München	Boschetsrieder Straße 51 B	DE
+2082	80809	München/Milbertshofen	Lüneburger Str. 19	DE
+2083	14641	Nauen	Berliner Straße 9	DE
+2084	90411	Nürnberg	Jungermannstr. 1	DE
+2085	97846	Partenstein / Lohr am Main		DE
+2086	81545	München	Aggensteinstraße 9	DE
+2087	80809	München/Milbertshofen	Keferloherstr. 53	DE
+2088	80805	München	Garchinger Str. 23	DE
+2089	81735	München	Nawiaskystr. 17	DE
+2090	85778	Haimhausen	Max-Bergmann-Str. 16	DE
+2091	85521	Ottobrunn	Kaulbachstr. 2	DE
+2092	82362	Weilheim	Johannes-Michel-Weg 18	DE
+2093	81377	München	Schongauerstr. 35	DE
+2094	68535	Edingen-Neckarhausen	Edistraße 36	DE
+2095	80993	München	Seydlitzstr. 69 	DE
+2096	82069	Hohenschäftlarn	Starnberger Str. 28	DE
+2097	81669	München/Haidhausen	Bazeillesstraße 17	DE
+2098	81539	München	Weissenseestrasse 108	DE
+2099	85250	Altomünster	Altomünsterstrasse 7,	DE
+2100	80336	München	Goethestr. 52	DE
+2101	81825	München/Neuhausen	Halfinger Strasse 39	DE
+2102	84030	Ergolding	Rottenburger Straße 30	DE
+2103	85293	Reichertshausen / Steinkirchen	Nelkenweg 7	DE
+2104	60318	Frankfurt	Hermannstr. 24	DE
+2105	81369	München/Sendling	Passauerstraße 38	DE
+2106	82152	Krailling	Luitpoldstraße 35	DE
+2107	80799	München/Schwabing	Neureutherstr. 22	DE
+2108	86154	Augsburg	Billerstr. 21	DE
+2109	85604	Zorneding	Herzog-Otto-Weg 11	DE
+2110	80686	München/Laim	Westendstr. 281	DE
+2111	85241	Hebertshausen	Grießlstraße 15	DE
+2112	82239	Alling	Kirchstrasse 11A	DE
+2113	81373	München	Pfeuferstr. 33	DE
+2114	85551	Kirchheim	Am Brunnen 26	DE
+2115	81475	München	Appenzeller Str. 7	DE
+2116	89233	Neu-Ulm	Hindenburgstr.34	DE
+2117	85716	Unterschleißheim	Siriusstr. 2	DE
+2118	82008	Unterhaching	Leuschnerstraße 32	DE
+2119	81927	München/Bogenhausen	Denninger Str. 210	DE
+2120	85540	Haar	Wieselweg 16	DE
+2121	82024	Taufkirchen	Keltenring 17	DE
+2122	80809	München	Schleißheimer Straße 388	DE
+2123	38640 	Goslar	Siemensstraße 13	DE
+2124	86405	Meitingen-Langenreichen	Lindenstr. 14	DE
+2125	85764	Oberschleißheim	Mittenheimerstrasse 14a	DE
+2126	81735	München/Berg am Laim	Heinrich-Wieland-Strasse 49	DE
+2127	85551	Kirchheim	Magdalenenweg 38	DE
+2128	80	München/Hirschgarten		DE
+2129	14482	Potsdam	Virchowstraße 35	DE
+2130	86938	Schondorf am Ammersee		DE
+2131	86156	Augsburg	Finkenweg 12b	DE
+2132	97877	Wertheim		DE
+2133	81547	München/Obergiesing	Otkerstraße 5	DE
+2134	82178	Puchheim	Obere Lagerstr. 9	DE
+2135	81829	München	Am Mitterfeld 29	DE
+2136	81476 	München	Rotenhanstr. 17	DE
+2137	81369	München/Sendling	Konrad-Celtis-Strasse 42	DE
+2138	82178	Puchheim	Lochhauserstr. 5a	DE
+2139	82024	Taufkirchen	Platanenstr. 5	DE
+2140	80634	München/Neuhausen	Nymphenburgerstraße 150	DE
+2141	60385	Frankfurt	Jovan Zafirov Berger Straße 207 B	DE
+2142	82223	Eichenau	Puchheimer Weg 16	DE
+2143	65189	Wiesbaden	Hermann-Jansen-Straße 1	DE
+2144	81547	München/Untergiesing-Harlaching	Fromundstr.   22	DE
+2145	86911	Dießen am Ammersee	Stagurastr. 10 a	DE
+2146	80637	München/Moosach	Heideckstrasse 29	DE
+2147	85452	Moosinning	Hauptstrasse 28a	DE
+2148	80637	München/Nymphenburg	Hauzenbergerstraße 20	DE
+2149	86911	Dießen	Stragurastr. 10a	DE
+2150	85435	Erding	Am Hochrainacker 94	DE
+2151	86150	Augsburg	Frohsinnstraße 23	DE
+2152	81925	München/Bogenhausen	Elektrastraße 13	DE
+2153	85774	Unterföhring	Lohwiesenweg 32	DE
+2154	65830	Kriftel	Schulstraße 1a	DE
+2155	81825	München/Trudering	Eigerstr.29	DE
+2156	85354	Freising	Mittlerer Graben 17	DE
+2157	80	Dachau		DE
+2158	80639 	München	Eisnergutbogen 40	DE
+2159	81667	München/Haidhausen		DE
+2160	80995	München	Hans-Böckler-Str. 83	DE
+2161	80803	München	Cherubinistr. 1	DE
+2162	85579	Neubiberg	PROF.-MESSERSCHMITT-STR. 10	DE
+2163	88250	Weingarten (Württemberg)	Hoyerstraße 50	DE
+2164	81825	München/Trudering	Gartenstadtstraße 75	DE
+2165	80333	München	Rottmannstr. 16a	DE
+2166	80997	München/Untermenzing	Simrockstraße 52	DE
+2167	81375	München/Hadern		DE
+2168	89584	Ehingen	Obere Wart 6	DE
+2169	81549	München	Amerstorfferstr. 18	DE
+2170	80639	München	Rosa-Bavarese-Str. 18	DE
+2171	74889	Sinsheim	Thomas Mann Str. 8	DE
+2172	81373	München/Sendling	Ganghoferstr. 63	DE
+2173	8*		Stritzling 186	DE
+2174	68163	Mannheim	Corneliusstr. 23	DE
+2175	80686	München	Becherstr. 1B	DE
+2176	96047	Bamberg	Plattnergasse 3	DE
+2177	81247	München	Menterstr.135	DE
+2178	82216	Maisach	Hugo-Brunninger-Str. 2	DE
+2179	81373	München/Sendling	Kössener Str. 33	DE
+2180	85716	Unterschleißheim	Alexander-Pachmann-Str. 13f	DE
+2181	81245	München	Kaspar-Kerll-Str. 12	DE
+2182	80337	München	Str.	DE
+2183	95448	Bayreuth	Königsbergstr. 1	DE
+2184	82008	Unterhaching	Goerdelerstr. 28	DE
+2185	80809	München/Milbertshofen	Fürstenbergstraße 23	DE
+2186	81240		Lenzstrasse 3	DE
+2187	8*	Baldham	Am Grünhaus 16	DE
+2188	82140	Olching	Storcheneck 3	DE
+2189	18055	Rostock		DE
+2190	86*	Aichach		DE
+2191	81541	München/Giesing	Zeppelinstr. 25	DE
+2192	81476	München/Forstenried-Fürstenried	Filchnerstr. 46	DE
+2193	82269	Geltendorf		DE
+2194	81479	München	Plattlinger Str. 5	DE
+2195	85774	Unterföhring	Ahornstraße 25	DE
+2196	85737	Ismaning	Camerloherstraße 57	DE
+2197	80993	München/Moosach	Wittenberger Str. 20	DE
+2198	80335	München	Nymphenburger Str. 4	DE
+2199	84453	Mühldorf/Inn		DE
+2200	81247	München	Passionistenstr.22	DE
+2201	80634	München	Schulstraße 9 Rgb	DE
+2202	89073	Ulm		DE
+2203	81243	München/Pasing	Bodenseestrasse 217	DE
+2204	9 3 0 4 9		D E I S C HG A S S E 2	DE
+2205	83043	Bad Aibling	Ganghoferstr. 6A in	DE
+2206	82216	Maisach	Dr-Jozef-Thiel-Weg 12	DE
+2207	82327	Tutzing	Kreuzstr. 3	DE
+2208	80000	München		DE
+2209	81549	München/Ramersdorf	Görzer Straße 139	DE
+2210	89264	Weißenhorn		DE
+2211	81679	München	Denninger Str. 8	DE
+2212	80337	München/Isarvorstadt	Tumblingerstraße 17	DE
+2213	80796	München/Schwabing West	Belgradstraße 45	DE
+2214	82024	Taufkirchen		DE
+2215	81827	München	Postweg 47	DE
+2216	82319	Starnberg	Kühtal 8	DE
+2217	80993	München/Moosach	Seydlitzstr. 63	DE
+2218	28*	Hamburg		DE
+2219	81739	München/Waldperlach	Putzbrunnerstr. 244	DE
+2220	80807	München/Milbertshofen	Christoph-von-Gluck-Platz 19	DE
+2221	80337 	München	Schmellerstr. 30	DE
+2222	8 6 1 6 3		U N T E R S B E R G S T R A S S E 1 5	DE
+2223	82194	Gröbenzell	Ettaler Straße 43	DE
+2224	86156	Augsburg	Lincolnstr. 8a	DE
+2225	85591	Vaterstetten		DE
+2226	86438	Kissing	Max-Planck-Str.7	DE

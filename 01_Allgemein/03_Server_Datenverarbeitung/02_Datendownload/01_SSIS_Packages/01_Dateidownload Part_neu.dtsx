@@ -11,8 +11,8 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="01_Dateidownload Part_neu"
   DTS:PackageType="5"
-  DTS:VersionBuild="45"
-  DTS:VersionGUID="{23669F73-9FF9-41C8-A0AC-B798493475EB}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{835C43FF-B9F8-4A52-AA16-B0AF9FCBF9D9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -296,179 +296,43 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Spalte 0"
-              DTS:DTSID="{699A5533-4A93-4F89-B476-0EE2BA6827B7}"
+              DTS:DTSID="{97E4307D-CF11-4F32-8727-C661C1C21472}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Spalte 1"
-              DTS:DTSID="{152F3A35-B659-48AF-AD03-E1BCA1EE7B1F}"
+              DTS:DTSID="{034C7A7B-E15C-4999-829C-DCA8E161B100}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Spalte 2"
-              DTS:DTSID="{8C746869-CDD0-4941-8D95-7E4F1B1E4901}"
+              DTS:DTSID="{385B2F1A-2EA1-4735-95AE-523214F4680C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Spalte 3"
-              DTS:DTSID="{FDCA3C8F-7034-4724-A619-906E2B1BBCF2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 4"
-              DTS:DTSID="{075FB679-8C26-429A-BA4E-51A5115A2B99}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 5"
-              DTS:DTSID="{C9556BD8-B3F5-490A-8944-3451B0D29291}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 6"
-              DTS:DTSID="{65360FEC-35EE-41E3-BDB9-C61FB5F0F91B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 7"
-              DTS:DTSID="{34FBEF0B-4C3B-421F-AC8A-FB7CE3289F20}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 8"
-              DTS:DTSID="{2C5D8D6A-E41D-4B39-952E-4558601AAD3B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 9"
-              DTS:DTSID="{D2294AE8-58FB-4070-BE1B-920A4BFCA9CF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 10"
-              DTS:DTSID="{330866A4-9726-43FB-977E-9BFBB386B5B0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 11"
-              DTS:DTSID="{A006A708-B1E3-4E53-B81D-E387EF82EA56}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 12"
-              DTS:DTSID="{431433F9-E965-45F3-9B1C-D7EE3B9E5F25}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 13"
-              DTS:DTSID="{554360BB-4A94-482A-9411-7D70AA1B0AE7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 14"
-              DTS:DTSID="{AD46A83D-165E-41A1-B66B-BB4674FCA07D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 15"
-              DTS:DTSID="{0678975A-62DC-483E-AB6D-9F038FBDDE03}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 16"
-              DTS:DTSID="{360F323B-6DBE-416D-BFE6-A9C7720E811C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 17"
-              DTS:DTSID="{9756A086-B774-4BFF-A0AD-F4A5E19C4503}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 18"
-              DTS:DTSID="{8EB07C37-522B-4264-B098-5EECDBECF28A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 19"
-              DTS:DTSID="{976901F6-3A2D-4424-976E-F5917D47BBDC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 20"
-              DTS:DTSID="{3D69B8CE-41D6-48E5-AC05-E753BF3B9215}"
+              DTS:DTSID="{89C0FC53-4038-4400-8F5D-E13C6D8D8651}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 21"
-              DTS:DTSID="{D9C31CBD-E724-4EFF-8DCC-304B80652462}"
+              DTS:ObjectName="Spalte 4"
+              DTS:DTSID="{24D680FC-2A69-4E5F-89BD-8546B6508751}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -7042,108 +6906,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="str"
                       length="255"
                       name="Spalte 4" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 5]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 5" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 6]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 6" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 7]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 7" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 8]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 8" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 9]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 9" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 10]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 10" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 11]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 11" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 12]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 12" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 13]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 13" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 14]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 14" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 15]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 15" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 16]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 16" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 17]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 17" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 18]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 18" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 19]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 19" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 20]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 20" />
-                    <externalMetadataColumn
-                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 21]"
-                      codePage="1252"
-                      dataType="str"
-                      length="255"
-                      name="Spalte 21" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -14637,41 +14399,45 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="224,42"
-          Id="Package\Applicants\txt-Applicants part - aggregiert"
-          TopLeft="5.50000000000011,821.5" />
-        <NodeLayout
-          Size="120,42"
-          Id="Package\Applicants\Multicast"
-          TopLeft="482.25,311.5" />
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Applicants\Zusammenführungsjoin"
-          TopLeft="501.25,919.25" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Applicants\DB-Applicants"
-          TopLeft="470.25,5.5" />
+          Size="164,42"
+          Id="Package\Applicants\Skriptkomponente"
+          TopLeft="233,603" />
         <NodeLayout
           Size="138,42"
           Id="Package\Applicants\AGGREGATE"
           TopLeft="343.5,413.5" />
         <NodeLayout
-          Size="131,42"
-          Id="Package\Applicants\Sortieren 1"
-          TopLeft="290,821.5" />
-        <NodeLayout
           Size="122,42"
           Id="Package\Applicants\Sortieren"
           TopLeft="481.75,821.5" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Applicants\Multicast 1"
+          TopLeft="290.75,719.5" />
         <NodeLayout
           Size="166,42"
           Id="Package\Applicants\txt-Applicants part"
           TopLeft="459.75,1025.5" />
         <NodeLayout
-          Size="130,42"
-          Id="Package\Applicants\Multicast 1"
-          TopLeft="290.75,719.5" />
+          Size="190,42"
+          Id="Package\Applicants\Zusammenführungsjoin"
+          TopLeft="501.25,919.25" />
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Applicants\Multicast"
+          TopLeft="482.25,311.5" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Applicants\txt-Applicants part - aggregiert"
+          TopLeft="5.50000000000011,821.5" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Applicants\DB-Applicants"
+          TopLeft="470.25,5.5" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Applicants\Sortieren 1"
+          TopLeft="290,821.5" />
         <EdgeLayout
           Id="Package\Applicants.Paths[Ausgabe des Zusammenführungsjoins]"
           TopLeft="596.25,961.25">
@@ -14707,6 +14473,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Applicants.Paths[Ausgabe des Aggregats 1]"
+          TopLeft="412.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97.5,147.5"
+              Start="0,0"
+              End="-97.5,140">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,69.75"
+                    Point2="0,73.75"
+                    Point3="-4,73.75" />
+                  <mssgle:LineSegment
+                    End="-93.5,73.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-93.5,73.75"
+                    Point2="-97.5,73.75"
+                    Point3="-97.5,77.75" />
+                  <mssgle:LineSegment
+                    End="-97.5,140" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Applicants.Paths[Ausgabe der OLE DB-Quelle]"
           TopLeft="542.5,47.5">
           <EdgeLayout.Curve>
@@ -14720,6 +14520,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Ausgabe 0]"
+          TopLeft="315,645">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.75,74.5"
+              Start="0,0"
+              End="40.75,67">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.25"
+                    Point2="0,37.25"
+                    Point3="4,37.25" />
+                  <mssgle:LineSegment
+                    End="36.75,37.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.75,37.25"
+                    Point2="40.75,37.25"
+                    Point3="40.75,41.25" />
+                  <mssgle:LineSegment
+                    End="40.75,67" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14932,78 +14766,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Applicants\Skriptkomponente"
-          TopLeft="233,603" />
-        <EdgeLayout
-          Id="Package\Applicants.Paths[Ausgabe des Aggregats 1]"
-          TopLeft="412.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-97.5,147.5"
-              Start="0,0"
-              End="-97.5,140">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,69.75"
-                    Point2="0,73.75"
-                    Point3="-4,73.75" />
-                  <mssgle:LineSegment
-                    End="-93.5,73.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-93.5,73.75"
-                    Point2="-97.5,73.75"
-                    Point3="-97.5,77.75" />
-                  <mssgle:LineSegment
-                    End="-97.5,140" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Applicants.Paths[Ausgabe 0]"
-          TopLeft="315,645">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.75,74.5"
-              Start="0,0"
-              End="40.75,67">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.25"
-                    Point2="0,37.25"
-                    Point3="4,37.25" />
-                  <mssgle:LineSegment
-                    End="36.75,37.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.75,37.25"
-                    Point2="40.75,37.25"
-                    Point3="40.75,41.25" />
-                  <mssgle:LineSegment
-                    End="40.75,67" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15024,93 +14786,81 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Companies">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="228,42"
-          Id="Package\Companies\txt-Companies part - aggregiert"
-          TopLeft="5.50000000000011,821.5" />
-        <NodeLayout
-          Size="120,42"
-          Id="Package\Companies\Multicast"
-          TopLeft="482.25,311.5" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164,42"
           Id="Package\Companies\Skriptkomponente"
           TopLeft="233,603" />
         <NodeLayout
-          Size="148,42"
-          Id="Package\Companies\DB-Companies"
-          TopLeft="470.25,5.5" />
-        <NodeLayout
           Size="138,42"
           Id="Package\Companies\AGGREGATE"
           TopLeft="343.5,413.5" />
         <NodeLayout
-          Size="131,42"
-          Id="Package\Companies\Sortieren 1"
-          TopLeft="290,821.5" />
+          Size="190,42"
+          Id="Package\Companies\Zusammenführungsjoin"
+          TopLeft="432,898" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Companies\Sortieren"
+          TopLeft="527,753" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Companies\Multicast 1"
+          TopLeft="290.75,719.5" />
         <NodeLayout
           Size="169,42"
           Id="Package\Companies\txt-Companies part"
           TopLeft="459.75,1025.5" />
         <NodeLayout
-          Size="130,42"
-          Id="Package\Companies\Multicast 1"
-          TopLeft="290.75,719.5" />
+          Size="120,42"
+          Id="Package\Companies\Multicast"
+          TopLeft="482.25,311.5" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\Companies\txt-Companies part - aggregiert"
+          TopLeft="5.50000000000011,821.5" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\Companies\DB-Companies"
+          TopLeft="470.25,5.5" />
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Companies\Sortieren 1"
+          TopLeft="290,821.5" />
         <EdgeLayout
-          Id="Package\Companies.Paths[Ausgabe der OLE DB-Quelle]"
-          TopLeft="543.25,47.5">
+          Id="Package\Companies.Paths[Ausgabe des Zusammenführungsjoins]"
+          TopLeft="527,940">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,264"
+              EndConnector="17.25,85.5"
               Start="0,0"
-              End="0,256.5">
+              End="17.25,78">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,256.5" />
+                    End="0,38.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.75"
+                    Point2="0,42.75"
+                    Point3="4,42.75" />
+                  <mssgle:LineSegment
+                    End="13.25,42.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.25,42.75"
+                    Point2="17.25,42.75"
+                    Point3="17.25,46.75" />
+                  <mssgle:LineSegment
+                    End="17.25,78" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Companies.Paths[Ausgabe 0]"
-          TopLeft="315,645">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.75,74.5"
-              Start="0,0"
-              End="40.75,67">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.25"
-                    Point2="0,37.25"
-                    Point3="4,37.25" />
-                  <mssgle:LineSegment
-                    End="36.75,37.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.75,37.25"
-                    Point2="40.75,37.25"
-                    Point3="40.75,41.25" />
-                  <mssgle:LineSegment
-                    End="40.75,67" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15144,185 +14894,69 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Companies.Paths[Multicast Ausgabe 11]"
-          TopLeft="335.416666666667,761.5">
+          Id="Package\Companies.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="543.25,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-215.916666666667,60"
+              EndConnector="0,264"
               Start="0,0"
-              End="-215.916666666667,52.5">
+              End="0,256.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.4376899696049" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4376899696049"
-                    Point2="0,24.4376899696049"
-                    Point3="-4,24.4376899696049" />
-                  <mssgle:LineSegment
-                    End="-211.916666666667,24.4376899696049" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-211.916666666667,24.4376899696049"
-                    Point2="-215.916666666667,24.4376899696049"
-                    Point3="-215.916666666667,28.4376899696049" />
-                  <mssgle:LineSegment
-                    End="-215.916666666667,52.5" />
+                    End="0,256.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Companies.Paths[Multicast Ausgabe 1]"
-          TopLeft="523.75,353.5">
+          Id="Package\Companies.Paths[Ausgabe 0]"
+          TopLeft="315,645">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-111.25,60"
+              EndConnector="40.75,74.5"
               Start="0,0"
-              End="-111.25,52.5">
+              End="40.75,67">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.4717444717445" />
+                    End="0,33.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.4717444717445"
-                    Point2="0,24.4717444717445"
-                    Point3="-4,24.4717444717445" />
+                    Point1="0,33.25"
+                    Point2="0,37.25"
+                    Point3="4,37.25" />
                   <mssgle:LineSegment
-                    End="-107.25,24.4717444717445" />
+                    End="36.75,37.25" />
                   <mssgle:CubicBezierSegment
-                    Point1="-107.25,24.4717444717445"
-                    Point2="-111.25,24.4717444717445"
-                    Point3="-111.25,28.4717444717445" />
+                    Point1="36.75,37.25"
+                    Point2="40.75,37.25"
+                    Point3="40.75,41.25" />
                   <mssgle:LineSegment
-                    End="-111.25,52.5" />
+                    End="40.75,67" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Companies.Paths[Ausgabe für Multicast 2]"
-          TopLeft="375.75,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-20.25,60"
-              Start="0,0"
-              End="-20.25,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4393592677346" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4393592677346"
-                    Point2="0,24.4393592677346"
-                    Point3="-4,24.4393592677346" />
-                  <mssgle:LineSegment
-                    End="-16.25,24.4393592677346" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-16.25,24.4393592677346"
-                    Point2="-20.25,24.4393592677346"
-                    Point3="-20.25,28.4393592677346" />
-                  <mssgle:LineSegment
-                    End="-20.25,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="122,42"
-          Id="Package\Companies\Sortieren"
-          TopLeft="527,753" />
-        <EdgeLayout
-          Id="Package\Companies.Paths[Ausgabe für Multicast 21]"
-          TopLeft="560.916666666667,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.0833333333334,399.5"
-              Start="0,0"
-              End="27.0833333333334,392">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,158.953947368421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,158.953947368421"
-                    Point2="0,162.953947368421"
-                    Point3="4,162.953947368421" />
-                  <mssgle:LineSegment
-                    End="23.0833333333334,162.953947368421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.0833333333334,162.953947368421"
-                    Point2="27.0833333333334,162.953947368421"
-                    Point3="27.0833333333334,166.953947368421" />
-                  <mssgle:LineSegment
-                    End="27.0833333333334,392" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="190,42"
-          Id="Package\Companies\Zusammenführungsjoin"
-          TopLeft="432,898" />
-        <EdgeLayout
-          Id="Package\Companies.Paths[Sortierausgabe]"
-          TopLeft="588,795">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-61,103"
-              Start="0,0"
-              End="-61,95.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47.5"
-                    Point2="0,51.5"
-                    Point3="-4,51.5" />
-                  <mssgle:LineSegment
-                    End="-57,51.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-57,51.5"
-                    Point2="-61,51.5"
-                    Point3="-61,55.5" />
-                  <mssgle:LineSegment
-                    End="-61,95.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15356,41 +14990,189 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Companies.Paths[Ausgabe des Zusammenführungsjoins]"
-          TopLeft="527,940">
+          Id="Package\Companies.Paths[Sortierausgabe]"
+          TopLeft="588,795">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.25,85.5"
+              EndConnector="-61,103"
               Start="0,0"
-              End="17.25,78">
+              End="-61,95.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.75" />
+                    End="0,47.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,38.75"
-                    Point2="0,42.75"
-                    Point3="4,42.75" />
+                    Point1="0,47.5"
+                    Point2="0,51.5"
+                    Point3="-4,51.5" />
                   <mssgle:LineSegment
-                    End="13.25,42.75" />
+                    End="-57,51.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.25,42.75"
-                    Point2="17.25,42.75"
-                    Point3="17.25,46.75" />
+                    Point1="-57,51.5"
+                    Point2="-61,51.5"
+                    Point3="-61,55.5" />
                   <mssgle:LineSegment
-                    End="17.25,78" />
+                    End="-61,95.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Companies.Paths[Multicast Ausgabe 11]"
+          TopLeft="335.416666666667,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-215.916666666667,60"
+              Start="0,0"
+              End="-215.916666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4376899696049" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4376899696049"
+                    Point2="0,24.4376899696049"
+                    Point3="-4,24.4376899696049" />
+                  <mssgle:LineSegment
+                    End="-211.916666666667,24.4376899696049" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-211.916666666667,24.4376899696049"
+                    Point2="-215.916666666667,24.4376899696049"
+                    Point3="-215.916666666667,28.4376899696049" />
+                  <mssgle:LineSegment
+                    End="-215.916666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Companies.Paths[Multicast Ausgabe 1]"
+          TopLeft="523.75,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-111.25,60"
+              Start="0,0"
+              End="-111.25,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4717444717445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4717444717445"
+                    Point2="0,24.4717444717445"
+                    Point3="-4,24.4717444717445" />
+                  <mssgle:LineSegment
+                    End="-107.25,24.4717444717445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-107.25,24.4717444717445"
+                    Point2="-111.25,24.4717444717445"
+                    Point3="-111.25,28.4717444717445" />
+                  <mssgle:LineSegment
+                    End="-111.25,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Companies.Paths[Ausgabe für Multicast 21]"
+          TopLeft="560.916666666667,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.0833333333334,399.5"
+              Start="0,0"
+              End="27.0833333333334,392">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,158.953947368421" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,158.953947368421"
+                    Point2="0,162.953947368421"
+                    Point3="4,162.953947368421" />
+                  <mssgle:LineSegment
+                    End="23.0833333333334,162.953947368421" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.0833333333334,162.953947368421"
+                    Point2="27.0833333333334,162.953947368421"
+                    Point3="27.0833333333334,166.953947368421" />
+                  <mssgle:LineSegment
+                    End="27.0833333333334,392" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Companies.Paths[Ausgabe für Multicast 2]"
+          TopLeft="375.75,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.25,60"
+              Start="0,0"
+              End="-20.25,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4393592677346" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4393592677346"
+                    Point2="0,24.4393592677346"
+                    Point3="-4,24.4393592677346" />
+                  <mssgle:LineSegment
+                    End="-16.25,24.4393592677346" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.25,24.4393592677346"
+                    Point2="-20.25,24.4393592677346"
+                    Point3="-20.25,28.4393592677346" />
+                  <mssgle:LineSegment
+                    End="-20.25,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

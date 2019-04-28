@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+</head>
+<body>
+  <div id="map" style="width: 100%; height: 1000px; background: grey" />
+  <script  type="text/javascript" charset="UTF-8" >
+    
+/**
+ * Adds a circle over New Delhi with a radius of 1000 metres onto the map
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application 
+ */
+ 
+//map
+var platform;
+var map;
+var ui;
+var behavior;
+var defaultLayers;
+var pixelRatio ;
+
+//Kandidat
+var org_type0 = "Kandidat";
+var adr_kand = "Verbr1: 0 km - Hausstr. 37, Bremen"
+
+//firma
+var lat_firm0 = 48.2071;
+var lng_firm0 = 11.8127;
+var org_type10 = "Firma";
+var org_desc0 =  "IT Firma1";
+var adr_firm0 = "Verbr1: 0 km - Hausstr. 45, Bremen"
+
+var lat_firm1 = 48.2021;
+var lng_firm1 = 11.5157;
+var org_type11 = "Firma";
+var org_desc1 =  "IT Firma2";
+var adr_firm1 = "Verbr1: 0 km - Hausstr. 25, Bremen"
+
+//Mittelpunkt
+/*
+var lat_cntr = 48.2071;
+var lng_cntr = 11.5127;
+
+var rad = 5000;
+*/
+var lat_cntr;
+var lng_cntr ;
+var rad ;
+
+
+
+
+
+var lineArr ;
+
+//Arrays
+var lineArr_Kand_g= new Array();
+var lineArr_Firm_g= new Array(new Array());
+
+var lineArr_Mitt_g= new Array();
+
+var lineArr_Kand= new Array();
+var lineArr_Firm= new Array();
+var lineArr_Mitt= new Array();
+
+//Array Indizes - Positionen
+var all_ind = 0;   //index
+var ind = 1; 
+var data_type_ind = 2;  //data_index (Mittelpunkt, Kandidat, Firma)
+var lat_ind = 3;  
+var lng_ind = 4; 
+var descr_ind =5; //Description
+var data_type_descr_en_ind = 6;   //Datentypbeschreibung
+var data_type_descr_de_ind = 7;  //Datentypbeschreibung
+var rad_ind = 8;   // Radius für Umkreissuche
+
+
+var p_route_cnt;
+var v_wp_str_parts = new Array();
+var v_wp_str = new Array();
+
+
+var str_file_name="Basisdaten_Anzeige_V1.txt";
+var blob;
+ 
+
+ 
+function draw_map() {
+/**
+ * Boilerplate map initialization code starts below:
+ */
+
+//Step 1: initialize communication with the platform
+// Instantiate a map and platform object:
+ platform = new H.service.Platform({
+  'app_id': 'hU8C4hi5HZZAA29CN1h5',
+  'app_code': 'no8qak0DOkDF8O_oi1xqaw'
+});
+
+pixelRatio = window.devicePixelRatio || 1;
+defaultLayers = platform.createDefaultLayers({
+  tileSize: pixelRatio === 1 ? 256 : 512,
+  ppi: pixelRatio === 1 ? undefined : 320
+});
+
+//Step 2: initialize a map - this map is centered over New Delhi
+map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map,{
+  center: {lat:lat_cntr, lng:lng_cntr},
+  zoom: 13,
+  pixelRatio: pixelRatio
+});
+
+//map.setBaseLayer(defaultLayers.satellite.traffic);
+
+//Step 3: make the map interactive
+// MapEvents enables the event system
+// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI components
+ui = H.ui.UI.createDefault(map, defaultLayers);
+}
+
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest(); // XMLHttpRequest (often abbreviated as XHR) is a browser object accessible in JavaScript that provides data in XML, JSON, but also HTML format, or even a simple text using HTTP requests.
+    rawFile.open("GET", file, false); // open with method GET the file with the link file ,  false (synchronous)
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4) // readyState = 4: request finished and response is ready
+        {
+            if(rawFile.status === 200) // status 200: "OK"
+            {
+                var allText = rawFile.responseText; //  Returns the response data as a string
+                //console.log(allText); // display text on the console
+				
+                //alert(allText);
+                intoArray(allText);
+            }
+        }
+    }
+    rawFile.send(null); //Sends the request to the server Used for GET requests with param null
+}
+
+
+function intoArray (lines) {
+
+   lineArr = lines.split('\n'); 
+}
+
+function sp (p_arr_pos, p_sp, p_cnt, p_type)
+{
+  var pre = 0;
+  var post = -1;
+  var str = "";
+  var p_txt=0;
+  var cnt = 0;
+  
+  
+  for (var i=0; i<= lineArr[p_arr_pos].length; i++) {
+  
+
+    pre = post;
+	post +=1;
+	i=post;
+	alert (i);
+	
+	var pre1 = pre+1;
+
+	
+	if (lineArr[p_arr_pos].substr(pre+1, 1) === "'") {
+	     p_txt = lineArr[p_arr_pos].indexOf("'",pre+2);
+         pre=pre+1;
+		 post = p_txt+1;
+		 lineArr_Mitt[descr_ind]=lineArr[p_arr_pos].substr(pre, post-pre +1);
+		// alert(lineArr[p_arr_pos].substr(pre, post-pre +1) + " " + post);
+	}
+	else {
+	       post=lineArr[p_arr_pos].indexOf(p_sp,post);
+		   lineArr_Mitt[cnt] = lineArr[p_arr_pos].substr(pre, post-pre +1);
+	     //  alert(lineArr[p_arr_pos].substr(pre, post-pre +1) + " " + post + " "+ cnt);
+		   if (p_type = '1' ) {
+		     rad = lineArr_Mitt[7];
+		   }
+	}
+	
+	 cnt = cnt+1;
+  } 
+  
+  alert("rad" + rad);
+ 
+
+  
+  for (var i= 0; i<=lineArr_Mitt.length;i++) {
+     alert(i + " " + lineArr_Mitt[i]);
+  }
+
+}
+
+function sep_data(){
+
+    alert("sep_data begin");
+	var v_type ;
+	var cnt_firm =-1;
+	for (var i= 0; i<= lineArr.length-1; i++) {
+
+		 //alert(lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1));
+		 v_type = lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1);
+		 
+		 if (v_type==='1') {
+		 
+		 //   alert("lineArr" + lineArr[i]);
+		  
+		 
+                lineArr_Mitt_g[all_ind] = lineArr[i];
+		        alert("Mitt" +lineArr_Mitt_g[all_ind]);
+
+                var pos_lat_cntr_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_cntr_end = lineArr[i].indexOf(",",4);
+				// alert(pos_lat_cntr_st + " "+ pos_lat_cntr_end);
+				var pos_lat_mitt_st = lineArr[i].indexOf(",",6);
+				lat_cntr = lineArr[i].substr(pos_lat_cntr_st ,(pos_lat_cntr_end -pos_lat_cntr_st)-1);
+				lng_cntr = lineArr[i].substr(pos_lat_cntr_end+1, 7);	
+				
+				rad = lineArr[i].substr(pos_lat_mitt_st, 4);
+			
+				
+				
+				lineArr_Mitt_g[data_type_ind] = lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1);             
+				lineArr_Mitt_g[lat_ind] = lat_cntr; 			
+				lineArr_Mitt_g[lng_ind]= lng_cntr;
+				lineArr_Mitt_g[rad_ind]= rad;
+				
+			
+			//alert("cntr + rad" + lat_cntr + " " + lng_cntr + "  " + rad);
+			sp(i, ',', 5,v_type);
+			rad = rad.replace(",","");
+            rad = rad.replace(",","");
+			//	alert("rad1" + lat_cntr + " "+ lng_cntr + " " + rad);
+			
+		 
+			
+		 }
+		 
+		  if (lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1)==='2') {
+				lineArr_Kand_g[all_ind] = lineArr[i];
+				
+				var pos_lat_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_end = lineArr[i].indexOf(",",4);
+				alert("pos_kand" + pos_lat_st + " "+ pos_lat_end);
+				var pos_lat_st_1 = lineArr[i].indexOf(",",6);
+				lineArr_Kand_g[lat_ind] = lineArr[i].substr(pos_lat_st ,(pos_lat_end -pos_lat_st)-1);
+				lineArr_Kand_g[lng_ind] = lineArr[i].substr(pos_lat_end+1, 7);
+				alert("Kand" + lineArr_Kand_g[lat_ind] +lineArr_Kand_g[lng_ind]);
+				/*
+						var all_ind = 0;   //index
+						var ind = 1; 
+						var data_type_ind = 2;  //data_index (Mittelpunkt, Kandidat, Firma)
+						var lat_ind = 3;  
+						var lng_ind = 4; 
+						var descr_ind =5; //Description
+						var data_type_descr_en_ind = 6;   //Datentypbeschreibung
+						var data_type_descr_de_ind = 7;  //Datentypbeschreibung
+						var rad_ind = 8;   // Radius für Umkreissuche
+				*/
+
+				//alert("knd" +lineArr_Kand_g[all_ind]);
+		  
+		  }
+		  
+		  
+		  if (lineArr[i].substr(lineArr[i].indexOf(",",1)+1, lineArr[i].indexOf(",",2)-lineArr[i].indexOf(",",1)-1)==='3') {
+		        cnt_firm = cnt_firm +1;
+				//lineArr_Firm_g[cnt_firm]=0;
+			    lineArr_Firm_g[cnt_firm] = new Object();
+			
+			    alert("cnt_firm" + cnt_firm + lineArr_Firm_g[0][0]);
+				lineArr_Firm_g[cnt_firm][all_ind] = lineArr[i];
+				alert("firm" +lineArr_Firm_g[cnt_firm][all_ind]);
+			    var pos_lat_st = lineArr[i].indexOf(",",3)+1;
+				var pos_lat_end = lineArr[i].indexOf(",",4);
+				alert("pos_kand" + pos_lat_st + " "+ pos_lat_end);
+				var pos_lat_st_1 = lineArr[i].indexOf(",",6);
+				lineArr_Firm_g[cnt_firm][lat_ind] = lineArr[i].substr(pos_lat_st ,(pos_lat_end -pos_lat_st)-1);
+				lineArr_Firm_g[cnt_firm][lng_ind] = lineArr[i].substr(pos_lat_end+1, 7);
+			
+				
+				
+		  
+		  }
+		 
+	}
+	alert("sep_data_end");
+}
+
+
+
+function addCircleToMap(map){
+  map.addObject(new H.map.Circle(
+    // The central point of the circle
+    {lat:lat_cntr, lng:lng_cntr},
+    // The radius of the circle in meters
+    rad,
+    {
+      style: {
+        strokeColor: 'rgba(55, 85, 170, 0.6)', // Color of the perimeter
+        lineWidth: 2,
+        fillColor: 'rgba(55, 128, 0, 0.7)'  // Color of the circle
+      }	
+    }
+  ));
+  alert("circle");
+}
+
+function add_markers () {
+
+alert("lng_firm0" + lng_firm0);
+
+var svgMarkup1 = '<svg width="250" height="22" ' +
+  'xmlns="http://www.w3.org/2000/svg">' +
+  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+  'fill="white">' + org_desc0  + lat_firm0 + lng_firm0 + '</text></svg>';
+// Create an icon, an object holding the latitude and longitude, and a marker:
+var icon1 = new H.map.Icon(svgMarkup1),
+  coords1 = {lat: lat_firm0, lng: lng_firm0},
+  marker1= new H.map.Marker(coords1, {icon: icon1});
+
+// Add the marker to the map and center the map at the location of the marker:
+map.addObject(marker1);
+
+var svgMarkup2 = '<svg width="250" height="22" ' +
+  'xmlns="http://www.w3.org/2000/svg">' +
+  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+  'fill="white">' + org_desc1 + '</text></svg>';
+
+ 
+
+// Create an icon, an object holding the latitude and longitude, and a marker:
+var icon2 = new H.map.Icon(svgMarkup2),
+  coords2 = {lat: lat_firm1, lng: lng_firm1},
+  marker2= new H.map.Marker(coords2, {icon: icon2});
+
+// Add the marker to the map and center the map at the location of the marker:
+map.addObject(marker2);
+
+var svgMarkup0 = '<svg width="250" height="22" ' +
+  'xmlns="http://www.w3.org/2000/svg">' +
+  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+  'fill="white">' + org_type0 + '</text></svg>';
+
+// Create an icon, an object holding the latitude and longitude, and a marker:
+var icon0 = new H.map.Icon(svgMarkup0),
+  coords0 = {lat:lineArr_Kand_g[lat_ind], lng:lineArr_Kand_g[lng_ind]},
+  marker0 = new H.map.Marker(coords0, {icon: icon0});
+
+// Add the marker to the map and center the map at the location of the marker:
+map.addObject(marker0);
+
+var startMarker = new H.map.Marker({
+  lat: lat_firm0, lng:lng_firm0
+  });
+map.addObject(startMarker);
+
+  var endMarker = new H.map.Marker({
+lat:lineArr_Kand_g[lat_ind], lng:lineArr_Kand_g[lng_ind]
+  });
+map.addObject(endMarker);
+}
+
+// Now use the map as required...
+
+
+
+
+
+
+function add_route(p_lat_firm,p_lng_firm,p_adr_firm , p_line_color ) {
+
+
+		//route
+		//var v_lat1 = lat_firm0;
+		//var v_lng1 = lng_firm0;
+
+		v_wp_str[0] = [lineArr_Kand_g[lat_ind] +',' +lineArr_Kand_g[lng_ind], adr_kand];
+		v_wp_str[1] = [p_lat_firm+',' +p_lng_firm, p_adr_firm];
+
+		p_route_cnt = v_wp_str.length-1; 
+
+
+		for (i=0; i<= p_route_cnt; i++) {
+		v_wp_str_parts[i] = v_wp_str[i][0].split(',');
+		}
+
+		// Define a callback function to process the routing response:
+		var onResult = function(result) {
+		  var route,
+			routeShape,
+			startPoint,
+			endPoint,
+			linestring;
+		  if(result.response.route) {
+		  // Pick the first route from the response:
+		  route = result.response.route[0];
+		  // Pick the route's shape:
+		  routeShape = route.shape;
+			  
+
+
+		  // Create a linestring to use as a point source for the route line
+		  linestring = new H.geo.LineString();
+
+
+		  // Push all the points in the shape into the linestring:
+		  routeShape.forEach(function(point) {
+			var parts = point.split(',');
+			linestring.pushLatLngAlt(parts[0], parts[1]);
+		  });
+
+			  
+			
+			  
+		  // Retrieve the mapped positions of the requested waypoints:
+		  startPoint = route.waypoint[0].mappedPosition;
+		  endPoint = route.waypoint[1].mappedPosition;
+
+			  
+
+
+		  // Create a polyline to display the route:
+		  var routeLine = new H.map.Polyline(linestring, {
+			style: { strokeColor: p_line_color, lineWidth: 10 }
+		  });
+
+		  // Create a marker for the start point:
+		  var startMarker = new H.map.Marker({
+			lat: startPoint.latitude,
+			lng: startPoint.longitude
+		  });
+
+		  // Create a marker for the end point:
+		  var endMarker = new H.map.Marker({
+			lat: endPoint.latitude,
+			lng: endPoint.longitude
+		  });
+			  
+			alert(route.waypoint[1].mappedPosition.latitude + " " + route.waypoint[1].mappedPosition.longitude);
+
+		  var svgMarkup3 = '<svg width="250" height="22" ' +
+		  'xmlns="http://www.w3.org/2000/svg">' +
+		  '<rect stroke="white" fill="' + '#1b468d' + '" x="1" y="1" width="500" ' +
+		  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+		  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+		  'fill="white">' + "Routenziel" + route.waypoint[1].mappedPosition.latitude + route.waypoint[1].mappedPosition.longitude+ '</text></svg>';
+
+		 
+
+		// Create an icon, an object holding the latitude and longitude, and a marker:
+		var icon3 = new H.map.Icon(svgMarkup3),
+		  coords3 = {lat: route.waypoint[1].mappedPosition.latitude, lng: route.waypoint[1].mappedPosition.longitude},
+		  marker3= new H.map.Marker(coords3, {icon: icon3});
+
+		  // Add the marker to the map and center the map at the location of the marker:
+		  map.addObject(marker3);
+
+
+		  // Add the route polyline and the two markers to the map:
+		  map.addObjects([routeLine, startMarker, endMarker]);
+
+
+		  }
+		};
+
+
+		// Get an instance of the routing service:
+		var router = platform.getRoutingService();
+
+		var routingParameters = new Array();
+
+		for (i=1;i<= p_route_cnt; i++) {
+		 
+		// Create the parameters for the routing request:
+		 routingParameters[i-1] = {
+		  // The routing mode:
+		  'mode': 'fastest;car',
+		 // 'mode': 'fastest;car',
+		  // The start point of the route:
+		   'waypoint0': 'geo!' +v_wp_str[i-1][0],
+		  // The end point of the route:
+		  'waypoint1':  'geo!' + v_wp_str[i][0],
+			  
+		  // To retrieve the shape of the route we choose the route
+		  // representation mode 'display'
+		  'representation': 'display'
+		};
+			
+			
+
+
+		// Call calculateRoute() with the routing parameters,
+		// the callback and an error callback function (called if a
+		// communication error occurs):
+
+
+		router.calculateRoute(routingParameters[i-1], onResult,
+		 function(error) {
+		   alert(error.message);
+		  });
+		  
+			
+		}
+
+
+		//var today = Date(Date.now()).getDate();
+		 test = show_marker(lineArr_Kand_g[lat_ind] , lineArr_Kand_g[lng_ind], 'Monteur', 'green');
+		 test = show_marker(lineArr_Kand_g[lat_ind], lineArr_Kand_g[lng_ind],  Date(Date.now()).toString(),'green');
+		// Date(Date.now()).toString()
+
+
+
+}
+
+function show_marker(v_lat, v_lng, v_text, v_fill) {
+var svgMarkup = '<svg width="250" height="22" ' +
+  'xmlns="http://www.w3.org/2000/svg">' +
+  '<rect stroke="white" fill="' + v_fill + '" x="1" y="1" width="500" ' +
+  'height="22" /><text x="12" y="18" font-size="8pt" ' +
+  'font-family="Arial" font-weight="bold" text-anchor="left" ' +
+  'fill="white">' + v_text + '</text></svg>';
+
+ 
+
+// Create an icon, an object holding the latitude and longitude, and a marker:
+var icon = new H.map.Icon(svgMarkup),
+  coords = {lat: v_lat , lng: v_lng},
+  marker = new H.map.Marker(coords, {icon: icon});
+
+// Add the marker to the map and center the map at the location of the marker:
+map.addObject(marker);
+};
+
+function add_additional_marker() {
+
+var Marker = new Array();
+
+var group = new H.map.Group();
+
+var marker_all = [];
+
+
+for (i=0;i<= p_route_cnt;i++){
+  var pos_ns =  parseFloat(v_wp_str_parts[i][0],10);
+  var pos_ew = parseFloat(v_wp_str_parts[i][1],10);
+    
+   Marker[i+1] = new H.map.Marker({lat:  pos_ns, lng: pos_ew});
+  
+   map.addObject(Marker[i+1]);
+   marker_all.push(Marker[i+1]);
+  
+  
+    //  test1 =  show_marker(pos_ns+0.25, pos_ew+0.25, i + ': ' +v_wp_str[i][1] , '#1b468d');               
+    //  test2 =  show_marker(pos_ns+0.10, pos_ew+0.25,  '(' +v_wp_str[i][0] +')' , '#1b468d');  
+	  
+	 test1 =  show_marker(pos_ns+0.002, pos_ew+0.002, i + ': ' +v_wp_str[i][1] , '#1b468d');               
+	 test2 =  show_marker(pos_ns+0.001, pos_ew+0.001,  '(' +v_wp_str[i][0] +')' , '#1b468d');  
+}
+ 
+ 
+ group.addObjects(marker_all);
+ //map.setViewBounds(group.getBounds());
+    
+
+
+  // Set the map's viewport to make the whole route visible:
+  //var line =  new H.geo.LineString();
+ // line.pushLatLngAlt(lat_kand, lng_kand);
+ // line.pushLatLngAlt(lat_firm0, lng_firm0);
+  
+
+  
+
+ // map.setViewBounds(line.getBounds());
+
+}
+
+readTextFile(str_file_name);
+sep_data();
+draw_map();
+addCircleToMap(map);
+add_markers();
+alert("firm0"  + lineArr_Firm_g[0][lat_ind]+ lineArr_Firm_g[0][lng_ind]);
+add_route(lineArr_Firm_g[0][lat_ind],lineArr_Firm_g[0][lng_ind],adr_firm0, "blue" );
+add_route(lineArr_Firm_g[1][lat_ind],lineArr_Firm_g[1][lng_ind],adr_firm1, "red" );
+add_additional_marker();
+
+  </script>
+</body>
+</html>

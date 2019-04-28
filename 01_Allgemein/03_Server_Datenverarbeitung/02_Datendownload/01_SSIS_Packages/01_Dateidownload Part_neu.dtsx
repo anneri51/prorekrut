@@ -11,8 +11,13 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="01_Dateidownload Part_neu"
   DTS:PackageType="5"
+<<<<<<< HEAD
   DTS:VersionBuild="36"
   DTS:VersionGUID="{163D09F7-B14B-472C-BE6A-0805E0DC7170}">
+=======
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{774DD660-82B3-4ADB-8E3B-0AF772C38FEB}">
+>>>>>>> master
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -902,6 +907,7 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{82FFB0C2-9BE6-44D2-B7CC-C9257FDDA5FA}"
+<<<<<<< HEAD
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="v_row_cnt_aggr">
@@ -916,15 +922,30 @@
       DTS:ObjectName="v_row_cnt_aggr_neu">
       <DTS:VariableValue
         DTS:DataType="3">1</DTS:VariableValue>
+=======
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_row_cnt_aggr">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+>>>>>>> master
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{B2155D6E-5B5F-4677-8E33-17513E128774}"
+<<<<<<< HEAD
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="v_row_cnt_all">
       <DTS:VariableValue
         DTS:DataType="3">1</DTS:VariableValue>
+=======
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="v_row_cnt_all">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+>>>>>>> master
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -943,6 +964,155 @@
           version="1">
           <components>
             <component
+<<<<<<< HEAD
+=======
+              refId="Package\Applicants\Abgeleitete Spalte"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Abgeleitete Spalte;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Erstellt neue Spaltenwerte, indem Ausdrücke auf Transformationseingabespalten angewendet werden. Erstellen Sie neue Spalten, oder überschreiben Sie vorhandene. Verketten Sie beispielsweise die Werte der Spalten &quot;first name&quot; und &quot;last name&quot;, um die Spalte &quot;full name&quot; zu erhalten."
+              name="Abgeleitete Spalte"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Applicants\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]"
+                  description="Eingabe der Transformation für abgeleiteten Spalten"
+                  name="Eingabe der abgeleiteten Spalte">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte]"
+                  description="Standardausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  name="Ausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\Applicants\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 1-Spalte]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Berechnung"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 1-Spalte]"
+                      name="Abgeleitete 1-Spalte"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Ausdruck für abgeleitete Spalte"
+                          name="Expression">@[User::v_row_cnt_all] + 1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Angezeigter Ausdruck für abgeleitete Spalte"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::v_row_cnt_all] + 1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Applicants\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte]"
+                  description="Fehlerausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\Applicants\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Abgeleitete Spalte.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Applicants\Abgeleitete Spalte 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Abgeleitete Spalte;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Erstellt neue Spaltenwerte, indem Ausdrücke auf Transformationseingabespalten angewendet werden. Erstellen Sie neue Spalten, oder überschreiben Sie vorhandene. Verketten Sie beispielsweise die Werte der Spalten &quot;first name&quot; und &quot;last name&quot;, um die Spalte &quot;full name&quot; zu erhalten."
+              name="Abgeleitete Spalte 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Applicants\Abgeleitete Spalte 1.Inputs[Eingabe der abgeleiteten Spalte]"
+                  description="Eingabe der Transformation für abgeleiteten Spalten"
+                  name="Eingabe der abgeleiteten Spalte">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte]"
+                  description="Standardausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  name="Ausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\Applicants\Abgeleitete Spalte 1.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 2-Spalte]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Berechnung"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 2-Spalte]"
+                      name="Abgeleitete 2-Spalte"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Ausdruck für abgeleitete Spalte"
+                          name="Expression">@[User::v_row_cnt_aggr] + 1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Angezeigter Ausdruck für abgeleitete Spalte"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[User::v_row_cnt_aggr] + 1</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Fehlerausgabe der abgeleiteten Spalte]"
+                  description="Fehlerausgabe der Transformation für abgeleitete Spalten"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der abgeleiteten Spalte"
+                  synchronousInputId="Package\Applicants\Abgeleitete Spalte 1.Inputs[Eingabe der abgeleiteten Spalte]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Fehlerausgabe der abgeleiteten Spalte].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+>>>>>>> master
               refId="Package\Applicants\AGGREGATE"
               componentClassID="Microsoft.Aggregate"
               contactInfo="AGGREGATE;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;3"
@@ -1160,8 +1330,13 @@
                   dataType="System.String"
                   description="Der auszuführende SQL-Befehl."
                   name="SqlCommand"
+<<<<<<< HEAD
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select ap.*, row_number() over (order by id) rnr
 from dbo.applicants ap
+=======
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select *
+from dbo.applicants
+>>>>>>> master
 where address_position_ns is null and address_position_ew is null</property>
                 <property
                   dataType="System.String"
@@ -1969,6 +2144,7 @@ where address_position_ns is null and address_position_ew is null</property>
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[Address_Position_EW]"
                       name="Address_Position_EW"
                       truncationRowDisposition="FailComponent" />
+<<<<<<< HEAD
                     <outputColumn
                       refId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[rnr]"
                       dataType="i8"
@@ -1978,6 +2154,8 @@ where address_position_ns is null and address_position_ew is null</property>
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[rnr]"
                       name="rnr"
                       truncationRowDisposition="FailComponent" />
+=======
+>>>>>>> master
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2352,10 +2530,13 @@ where address_position_ns is null and address_position_ew is null</property>
                       refId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[Address_Position_EW]"
                       dataType="r8"
                       name="Address_Position_EW" />
+<<<<<<< HEAD
                     <externalMetadataColumn
                       refId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].ExternalColumns[rnr]"
                       dataType="i8"
                       name="rnr" />
+=======
+>>>>>>> master
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2815,11 +2996,14 @@ where address_position_ns is null and address_position_ew is null</property>
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[Address_Position_EW]"
                       name="Address_Position_EW" />
                     <outputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\DB-Applicants.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[rnr]"
                       dataType="i8"
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[rnr]"
                       name="rnr" />
                     <outputColumn
+=======
+>>>>>>> master
                       refId="Package\Applicants\DB-Applicants.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Fehlerausgabe der OLE DB-Quelle].Columns[ErrorCode]"
@@ -2913,6 +3097,7 @@ where address_position_ns is null and address_position_ew is null</property>
               </outputs>
             </component>
             <component
+<<<<<<< HEAD
               refId="Package\Applicants\Skriptkomponente"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Schließt benutzerdefinierten Skriptcode ein und führt ihn aus. Wenden Sie beispielsweise eine Geschäftsregel an, durch die der Bereich der gültigen Werte in einer Spalte &quot;income&quot; beschränkt wird, oder addieren Sie Werte in zwei Spalten, und berechnen Sie den Mittelwert der Summe.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;11"
@@ -3786,6 +3971,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </outputs>
             </component>
             <component
+=======
+>>>>>>> master
               refId="Package\Applicants\Sortieren"
               componentClassID="Microsoft.Sort"
               contactInfo="Sortieren;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
@@ -5123,11 +5310,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Sortieren.Inputs[Sortiereingabe].Columns[Salutation]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="Salutation"
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[Salutation]">
+=======
+                      refId="Package\Applicants\Sortieren.Inputs[Sortiereingabe].Columns[Abgeleitete 1-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 1-Spalte"
+                      lineageId="Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 1-Spalte]">
+>>>>>>> master
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -5140,10 +5334,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Sortieren.Inputs[Sortiereingabe].Columns[rnr]"
                       cachedDataType="i8"
                       cachedName="rnr"
                       lineageId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[rnr]">
+=======
+                      refId="Package\Applicants\Sortieren.Inputs[Sortiereingabe].Columns[Salutation]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Salutation"
+                      lineageId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[Salutation]">
+>>>>>>> master
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6247,16 +6449,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Salutation]"
                       dataType="wstr"
                       length="30"
                       lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Salutation]"
                       name="Salutation">
+=======
+                      refId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Abgeleitete 1-Spalte]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Abgeleitete 1-Spalte]"
+                      name="Abgeleitete 1-Spalte">
+>>>>>>> master
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+<<<<<<< HEAD
                           name="SortColumnId">#{Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[Salutation]}</property>
                       </properties>
                     </outputColumn>
@@ -6265,12 +6475,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="i8"
                       lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[rnr]"
                       name="rnr">
+=======
+                          name="SortColumnId">#{Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 1-Spalte]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Salutation]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Salutation]"
+                      name="Salutation">
+>>>>>>> master
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+<<<<<<< HEAD
                           name="SortColumnId">#{Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[rnr]}</property>
+=======
+                          name="SortColumnId">#{Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle].Columns[Salutation]}</property>
+>>>>>>> master
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6370,10 +6595,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Sortieren 1.Inputs[Sortiereingabe].Columns[rownumber]"
                       cachedDataType="i8"
                       cachedName="rownumber"
                       lineageId="Package\Applicants\Skriptkomponente.Outputs[Ausgabe 0].Columns[rownumber]">
+=======
+                      refId="Package\Applicants\Sortieren 1.Inputs[Sortiereingabe].Columns[Abgeleitete 2-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 2-Spalte"
+                      lineageId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 2-Spalte]">
+>>>>>>> master
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -6382,7 +6614,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                         <property
                           dataType="System.Int32"
                           description="Gibt die Sortierreihenfolge der Spalte an."
+<<<<<<< HEAD
                           name="NewSortKeyPosition">5</property>
+=======
+                          name="NewSortKeyPosition">0</property>
+>>>>>>> master
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -6456,17 +6692,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[rownumber]"
                       dataType="i8"
                       lineageId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[rownumber]"
                       name="rownumber"
                       sortKeyPosition="5">
+=======
+                      refId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[Abgeleitete 2-Spalte]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[Abgeleitete 2-Spalte]"
+                      name="Abgeleitete 2-Spalte">
+>>>>>>> master
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Gibt den Herkunftsbezeichner der Eingabespalte an, die dieser Ausgabespalte zugeordnet ist."
+<<<<<<< HEAD
                           name="SortColumnId">#{Package\Applicants\Skriptkomponente.Outputs[Ausgabe 0].Columns[rownumber]}</property>
+=======
+                          name="SortColumnId">#{Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 2-Spalte]}</property>
+>>>>>>> master
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6651,6 +6898,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       externalMetadataColumnId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 21]"
                       lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Address_Position_EW]" />
                     <inputColumn
+<<<<<<< HEAD
+=======
+                      refId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].Columns[Abgeleitete 1-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 1-Spalte"
+                      externalMetadataColumnId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 1]"
+                      lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]" />
+                    <inputColumn
+                      refId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].Columns[Abgeleitete 2-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 2-Spalte"
+                      externalMetadataColumnId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 2]"
+                      lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 2-Spalte]" />
+                    <inputColumn
+>>>>>>> master
                       refId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].Columns[CompanyID]"
                       cachedDataType="guid"
                       cachedName="CompanyID"
@@ -6690,6 +6952,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="Country_Private (1)"
                       externalMetadataColumnId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 27]"
                       lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Country_Private (1)]" />
+<<<<<<< HEAD
                     <inputColumn
                       refId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].Columns[rnr]"
                       cachedDataType="i8"
@@ -6702,6 +6965,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="rownumber"
                       externalMetadataColumnId="Package\Applicants\txt-Applicants part.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 2]"
                       lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[rownumber]" />
+=======
+>>>>>>> master
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -6913,6 +7178,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   name="Eingabe des Flatfileziels">
                   <inputColumns>
                     <inputColumn
+<<<<<<< HEAD
+=======
+                      refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].Columns[Abgeleitete 2-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 2-Spalte"
+                      externalMetadataColumnId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 0]"
+                      lineageId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte].Columns[Abgeleitete 2-Spalte]" />
+                    <inputColumn
+>>>>>>> master
                       refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].Columns[ZIP_Private]"
                       cachedDataType="wstr"
                       cachedLength="9"
@@ -6940,12 +7214,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="Country_Private"
                       externalMetadataColumnId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 4]"
                       lineageId="Package\Applicants\AGGREGATE.Outputs[Ausgabe des Aggregats 1].Columns[Country_Private]" />
+<<<<<<< HEAD
                     <inputColumn
                       refId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].Columns[rownumber]"
                       cachedDataType="i8"
                       cachedName="rownumber"
                       externalMetadataColumnId="Package\Applicants\txt-Applicants part - aggregiert.Inputs[Eingabe des Flatfileziels].ExternalColumns[Spalte 0]"
                       lineageId="Package\Applicants\Skriptkomponente.Outputs[Ausgabe 0].Columns[rownumber]" />
+=======
+>>>>>>> master
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7086,6 +7363,67 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </inputs>
             </component>
             <component
+<<<<<<< HEAD
+=======
+              refId="Package\Applicants\Zeilenanzahl"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Zeilenanzahl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Zählt Zeilen, während sie einen Datenfluss durchlaufen. Verwenden Sie beispielsweise die Anzahl der verarbeiteten Zeilen, um zu ermitteln, ob Bereinigungsvorgänge ausgeführt werden sollen. Oder aktualisieren Sie Text in einer E-Mail, um den Verarbeitungsstatus bekanntzugeben."
+              name="Zeilenanzahl">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die die Zeilenanzahl enthalten soll."
+                  name="VariableName">User::v_row_cnt_all</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Applicants\Zeilenanzahl.Inputs[Zeilenanzahl Eingabe 1]"
+                  hasSideEffects="true"
+                  name="Zeilenanzahl Eingabe 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Applicants\Zeilenanzahl.Outputs[Zeilenanzahl Ausgabe 1]"
+                  name="Zeilenanzahl Ausgabe 1"
+                  synchronousInputId="Package\Applicants\Zeilenanzahl.Inputs[Zeilenanzahl Eingabe 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Applicants\Zeilenanzahl 1"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Zeilenanzahl;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;0"
+              description="Zählt Zeilen, während sie einen Datenfluss durchlaufen. Verwenden Sie beispielsweise die Anzahl der verarbeiteten Zeilen, um zu ermitteln, ob Bereinigungsvorgänge ausgeführt werden sollen. Oder aktualisieren Sie Text in einer E-Mail, um den Verarbeitungsstatus bekanntzugeben."
+              name="Zeilenanzahl 1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die die Zeilenanzahl enthalten soll."
+                  name="VariableName">User::v_row_cnt_aggr</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Applicants\Zeilenanzahl 1.Inputs[Zeilenanzahl Eingabe 1]"
+                  hasSideEffects="true"
+                  name="Zeilenanzahl Eingabe 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Applicants\Zeilenanzahl 1.Outputs[Zeilenanzahl Ausgabe 1]"
+                  name="Zeilenanzahl Ausgabe 1"
+                  synchronousInputId="Package\Applicants\Zeilenanzahl 1.Inputs[Zeilenanzahl Eingabe 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+>>>>>>> master
               refId="Package\Applicants\Zusammenführungsjoin"
               componentClassID="Microsoft.MergeJoin"
               contactInfo="Zusammenführungsjoin;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
@@ -7567,16 +7905,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="Address_Position_EW"
                       lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Address_Position_EW]" />
                     <inputColumn
+<<<<<<< HEAD
+=======
+                      refId="Package\Applicants\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 1-Spalte"
+                      lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Abgeleitete 1-Spalte]" />
+                    <inputColumn
+>>>>>>> master
                       refId="Package\Applicants\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Salutation]"
                       cachedDataType="wstr"
                       cachedLength="30"
                       cachedName="Salutation"
                       lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[Salutation]" />
+<<<<<<< HEAD
                     <inputColumn
                       refId="Package\Applicants\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[rnr]"
                       cachedDataType="i8"
                       cachedName="rnr"
                       lineageId="Package\Applicants\Sortieren.Outputs[Sortierausgabe].Columns[rnr]" />
+=======
+>>>>>>> master
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -7614,11 +7963,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedSortKeyPosition="4"
                       lineageId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[Country_Private]" />
                     <inputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[rownumber]"
                       cachedDataType="i8"
                       cachedName="rownumber"
                       cachedSortKeyPosition="5"
                       lineageId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[rownumber]" />
+=======
+                      refId="Package\Applicants\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Abgeleitete 2-Spalte]"
+                      cachedDataType="i4"
+                      cachedName="Abgeleitete 2-Spalte"
+                      lineageId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe].Columns[Abgeleitete 2-Spalte]" />
+>>>>>>> master
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -8711,6 +9067,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
+<<<<<<< HEAD
+=======
+                      refId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]"
+                      name="Abgeleitete 1-Spalte">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+                          name="InputColumnID">#{Package\Applicants\Zusammenführungsjoin.Inputs[Linke Eingabe des Zusammenführungsjoins].Columns[Abgeleitete 1-Spalte]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+>>>>>>> master
                       refId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Salutation]"
                       dataType="wstr"
                       length="30"
@@ -8781,6 +9153,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
+<<<<<<< HEAD
                       refId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[rnr]"
                       dataType="i8"
                       lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[rnr]"
@@ -8798,12 +9171,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="i8"
                       lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[rownumber]"
                       name="rownumber">
+=======
+                      refId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 2-Spalte]"
+                      dataType="i4"
+                      lineageId="Package\Applicants\Zusammenführungsjoin.Outputs[Ausgabe des Zusammenführungsjoins].Columns[Abgeleitete 2-Spalte]"
+                      name="Abgeleitete 2-Spalte">
+>>>>>>> master
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Die mit dieser Ausgabespalte verbundene Eingabespalte"
+<<<<<<< HEAD
                           name="InputColumnID">#{Package\Applicants\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[rownumber]}</property>
+=======
+                          name="InputColumnID">#{Package\Applicants\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins].Columns[Abgeleitete 2-Spalte]}</property>
+>>>>>>> master
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -8814,6 +9197,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </components>
           <paths>
             <path
+<<<<<<< HEAD
               refId="Package\Applicants.Paths[Ausgabe 0]"
               endId="Package\Applicants\Multicast 1.Inputs[Multicast Eingabe 1]"
               name="Ausgabe 0"
@@ -8821,11 +9205,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <path
               refId="Package\Applicants.Paths[Ausgabe der OLE DB-Quelle]"
               endId="Package\Applicants\Multicast.Inputs[Multicast Eingabe 1]"
+=======
+              refId="Package\Applicants.Paths[Ausgabe der abgeleiteten Spalte]"
+              endId="Package\Applicants\Multicast.Inputs[Multicast Eingabe 1]"
+              name="Ausgabe der abgeleiteten Spalte"
+              startId="Package\Applicants\Abgeleitete Spalte.Outputs[Ausgabe der abgeleiteten Spalte]" />
+            <path
+              refId="Package\Applicants.Paths[Ausgabe der abgeleiteten Spalte1]"
+              endId="Package\Applicants\Multicast 1.Inputs[Multicast Eingabe 1]"
+              name="Ausgabe der abgeleiteten Spalte"
+              startId="Package\Applicants\Abgeleitete Spalte 1.Outputs[Ausgabe der abgeleiteten Spalte]" />
+            <path
+              refId="Package\Applicants.Paths[Ausgabe der OLE DB-Quelle]"
+              endId="Package\Applicants\Zeilenanzahl.Inputs[Zeilenanzahl Eingabe 1]"
+>>>>>>> master
               name="Ausgabe der OLE DB-Quelle"
               startId="Package\Applicants\DB-Applicants.Outputs[Ausgabe der OLE DB-Quelle]" />
             <path
               refId="Package\Applicants.Paths[Ausgabe des Aggregats 1]"
+<<<<<<< HEAD
               endId="Package\Applicants\Skriptkomponente.Inputs[Eingabe &quot;0&quot;]"
+=======
+              endId="Package\Applicants\Zeilenanzahl 1.Inputs[Zeilenanzahl Eingabe 1]"
+>>>>>>> master
               name="Ausgabe des Aggregats 1"
               startId="Package\Applicants\AGGREGATE.Outputs[Ausgabe des Aggregats 1]" />
             <path
@@ -8863,6 +9265,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               endId="Package\Applicants\Zusammenführungsjoin.Inputs[Rechte Eingabe des Zusammenführungsjoins]"
               name="Sortierausgabe"
               startId="Package\Applicants\Sortieren 1.Outputs[Sortierausgabe]" />
+<<<<<<< HEAD
+=======
+            <path
+              refId="Package\Applicants.Paths[Zeilenanzahl Ausgabe 1]"
+              endId="Package\Applicants\Abgeleitete Spalte.Inputs[Eingabe der abgeleiteten Spalte]"
+              name="Zeilenanzahl Ausgabe 1"
+              startId="Package\Applicants\Zeilenanzahl.Outputs[Zeilenanzahl Ausgabe 1]" />
+            <path
+              refId="Package\Applicants.Paths[Zeilenanzahl Ausgabe 11]"
+              endId="Package\Applicants\Abgeleitete Spalte 1.Inputs[Eingabe der abgeleiteten Spalte]"
+              name="Zeilenanzahl Ausgabe 1"
+              startId="Package\Applicants\Zeilenanzahl 1.Outputs[Zeilenanzahl Ausgabe 1]" />
+>>>>>>> master
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -10485,7 +10900,11 @@ where address_position_ns is null and address_position_ew is null</property>
           Id="Package\Applicants"
           TopLeft="57,26.25" />
         <NodeLayout
+<<<<<<< HEAD
           Size="130,42"
+=======
+          Size="130.5,42"
+>>>>>>> master
           Id="Package\Companies"
           TopLeft="55.75,95.5" />
       </GraphLayout>
@@ -10497,6 +10916,7 @@ where address_position_ns is null and address_position_ew is null</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+<<<<<<< HEAD
           Size="224,42"
           Id="Package\Applicants\txt-Applicants part - aggregiert"
           TopLeft="5.50000000000011,821.5" />
@@ -10516,11 +10936,21 @@ where address_position_ns is null and address_position_ew is null</property>
           Size="138,42"
           Id="Package\Applicants\AGGREGATE"
           TopLeft="343.5,413.5" />
+=======
+          Size="137.5,42"
+          Id="Package\Applicants\Zeilenanzahl 1"
+          TopLeft="343.75,515.5" />
+        <NodeLayout
+          Size="137.5,42"
+          Id="Package\Applicants\Zeilenanzahl"
+          TopLeft="473.75,107.5" />
+>>>>>>> master
         <NodeLayout
           Size="131,42"
           Id="Package\Applicants\Sortieren 1"
           TopLeft="290,821.5" />
         <NodeLayout
+<<<<<<< HEAD
           Size="122,42"
           Id="Package\Applicants\Sortieren"
           TopLeft="481.75,821.5" />
@@ -10597,10 +11027,57 @@ where address_position_ns is null and address_position_ew is null</property>
               EndConnector="210.416666666667,55.75"
               Start="0,0"
               End="210.416666666667,48.25">
+=======
+          Size="121.5,42"
+          Id="Package\Applicants\Sortieren"
+          TopLeft="481.75,821.5" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Applicants\txt-Applicants part - aggregiert"
+          TopLeft="5.50000000000011,821.5" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Applicants\AGGREGATE"
+          TopLeft="343.5,413.5" />
+        <NodeLayout
+          Size="165.5,42"
+          Id="Package\Applicants\txt-Applicants part"
+          TopLeft="459.75,1025.5" />
+        <NodeLayout
+          Size="129.5,42"
+          Id="Package\Applicants\Multicast 1"
+          TopLeft="290.75,719.5" />
+        <NodeLayout
+          Size="144.5,42"
+          Id="Package\Applicants\DB-Applicants"
+          TopLeft="470.25,5.5" />
+        <NodeLayout
+          Size="120.5,42"
+          Id="Package\Applicants\Multicast"
+          TopLeft="482.25,311.5" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Applicants\Abgeleitete Spalte 1"
+          TopLeft="308,617.5" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Applicants\Abgeleitete Spalte"
+          TopLeft="460.5,209.5" />
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Zeilenanzahl Ausgabe 11]"
+          TopLeft="412.5,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18,60"
+              Start="0,0"
+              End="-18,52.5">
+>>>>>>> master
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< HEAD
                     End="0,29.1706680584551" />
                   <mssgle:CubicBezierSegment
                     Point1="0,29.1706680584551"
@@ -10614,6 +11091,21 @@ where address_position_ns is null and address_position_ew is null</property>
                     Point3="210.416666666667,37.1706680584551" />
                   <mssgle:LineSegment
                     End="210.416666666667,48.25" />
+=======
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-14,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14,30"
+                    Point2="-18,30"
+                    Point3="-18,34" />
+                  <mssgle:LineSegment
+                    End="-18,52.5" />
+>>>>>>> master
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10623,6 +11115,7 @@ where address_position_ns is null and address_position_ew is null</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+<<<<<<< HEAD
           Id="Package\Applicants.Paths[Sortierausgabe]"
           TopLeft="542.75,863.5">
           <EdgeLayout.Curve>
@@ -10631,10 +11124,21 @@ where address_position_ns is null and address_position_ew is null</property>
               EndConnector="83.8333333333334,55.75"
               Start="0,0"
               End="83.8333333333334,48.25">
+=======
+          Id="Package\Applicants.Paths[Zeilenanzahl Ausgabe 1]"
+          TopLeft="542.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+>>>>>>> master
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< HEAD
                     End="0,29.1706680584551" />
                   <mssgle:CubicBezierSegment
                     Point1="0,29.1706680584551"
@@ -10648,6 +11152,9 @@ where address_position_ns is null and address_position_ew is null</property>
                     Point3="83.8333333333334,37.1706680584551" />
                   <mssgle:LineSegment
                     End="83.8333333333334,48.25" />
+=======
+                    End="0,52.5" />
+>>>>>>> master
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10792,23 +11299,171 @@ where address_position_ns is null and address_position_ew is null</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+<<<<<<< HEAD
         <NodeLayout
           Size="164,42"
           Id="Package\Applicants\Skriptkomponente"
           TopLeft="233,603" />
+=======
+>>>>>>> master
         <EdgeLayout
           Id="Package\Applicants.Paths[Ausgabe des Aggregats 1]"
           TopLeft="412.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
+<<<<<<< HEAD
               EndConnector="-97.5,147.5"
               Start="0,0"
               End="-97.5,140">
+=======
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Ausgabe der OLE DB-Quelle]"
+          TopLeft="542.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Ausgabe der abgeleiteten Spalte1]"
+          TopLeft="394.5,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-39,60"
+              Start="0,0"
+              End="-39,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-35,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-35,30"
+                    Point2="-39,30"
+                    Point3="-39,34" />
+                  <mssgle:LineSegment
+                    End="-39,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Ausgabe der abgeleiteten Spalte]"
+          TopLeft="542.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="189.5,42"
+          Id="Package\Applicants\Zusammenführungsjoin"
+          TopLeft="501.25,919.25" />
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Sortierausgabe]"
+          TopLeft="542.5,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="53.5,55.75"
+              Start="0,0"
+              End="53.5,48.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.875"
+                    Point2="0,27.875"
+                    Point3="4,27.875" />
+                  <mssgle:LineSegment
+                    End="49.5,27.875" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49.5,27.875"
+                    Point2="53.5,27.875"
+                    Point3="53.5,31.875" />
+                  <mssgle:LineSegment
+                    End="53.5,48.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Applicants.Paths[Sortierausgabe1]"
+          TopLeft="355.5,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="210.25,55.75"
+              Start="0,0"
+              End="210.25,48.25">
+>>>>>>> master
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+<<<<<<< HEAD
                     End="0,69.75" />
                   <mssgle:CubicBezierSegment
                     Point1="0,69.75"
@@ -10822,6 +11477,21 @@ where address_position_ns is null and address_position_ew is null</property>
                     Point3="-97.5,77.75" />
                   <mssgle:LineSegment
                     End="-97.5,140" />
+=======
+                    End="0,29.1699372056515" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.1699372056515"
+                    Point2="0,33.1699372056515"
+                    Point3="4,33.1699372056515" />
+                  <mssgle:LineSegment
+                    End="206.25,33.1699372056515" />
+                  <mssgle:CubicBezierSegment
+                    Point1="206.25,33.1699372056515"
+                    Point2="210.25,33.1699372056515"
+                    Point3="210.25,37.1699372056515" />
+                  <mssgle:LineSegment
+                    End="210.25,48.25" />
+>>>>>>> master
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10831,6 +11501,7 @@ where address_position_ns is null and address_position_ew is null</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+<<<<<<< HEAD
           Id="Package\Applicants.Paths[Ausgabe 0]"
           TopLeft="315,645">
           <EdgeLayout.Curve>
@@ -10839,10 +11510,21 @@ where address_position_ns is null and address_position_ew is null</property>
               EndConnector="40.75,74.5"
               Start="0,0"
               End="40.75,67">
+=======
+          Id="Package\Applicants.Paths[Ausgabe des Zusammenführungsjoins]"
+          TopLeft="596,961.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-53.5,64.25"
+              Start="0,0"
+              End="-53.5,56.75">
+>>>>>>> master
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< HEAD
                     End="0,33.25" />
                   <mssgle:CubicBezierSegment
                     Point1="0,33.25"
@@ -10856,6 +11538,21 @@ where address_position_ns is null and address_position_ew is null</property>
                     Point3="40.75,41.25" />
                   <mssgle:LineSegment
                     End="40.75,67" />
+=======
+                    End="0,28.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.125"
+                    Point2="0,32.125"
+                    Point3="-4,32.125" />
+                  <mssgle:LineSegment
+                    End="-49.5,32.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-49.5,32.125"
+                    Point2="-53.5,32.125"
+                    Point3="-53.5,36.125" />
+                  <mssgle:LineSegment
+                    End="-53.5,56.75" />
+>>>>>>> master
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

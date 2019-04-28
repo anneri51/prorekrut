@@ -1,0 +1,6 @@
+Candidate,run,Offer_No,Line_No,Type_no,latitude,longitude,description_en,description_de,description_type_en,description_type_de,exec_date
+1,10,4,1,2,48.2171,11.5127,'Verbr1: 0 km - Hausstr. 25, Bremen','Verbr1: 0 km - Hausstr. 25, Bremen','Candidate','Kandidat',0,'06.04.2019 08:17:12',
+1,10,4,2,3,48.2071,11.5127,'Verbr1: 0 km - Hausstr. 26, Bremen','Verbr1: 0 km - Hausstr. 26, Bremen','Company','Firma','0,06.04.2019 08:17:12',
+1,10,4,3,3,48.2371,11.8127,'Verbr1: 0 km - Hausstr. 27, Bremen','Verbr1: 0 km - Hausstr. 27, Bremen','Company','Firma',0,'06.04.2019 08:17:12',
+1,10,4,4,1,48.2471,11.5127,'Verbr1: 0 km - Hausstr. 28, Bremen','Verbr1: 0 km - Hausstr. 28, Bremen','Centre','Mittelpunkt',7000,'06.04.2019 08:17:12',
+1,10,4,3,3,48.2371,11.8127,'Verbr1: 0 km - Hausstr. 29, Bremen','Verbr1: 0 km - Hausstr. 29, Bremen','Company','Firma',0,'06.04.2019 08:17:12',

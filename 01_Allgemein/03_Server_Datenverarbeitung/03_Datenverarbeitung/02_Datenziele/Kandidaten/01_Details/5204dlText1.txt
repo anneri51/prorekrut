@@ -1,0 +1,1 @@
+5204 80634,Muenchen,Leonrodstrasse  18 ;; 48.15347,11.53621e

@@ -1,1 +1,0 @@
-4326 80687,Muenchen,Friedenheimer Str. 25;; 48.13969,11.51178e

@@ -15,19 +15,57 @@
     Get Coordinates to Company Adresses - Version 1.0 - 2019/04/05
   </title>
   <body>
-  
-    <h3>Applicants - Select Upload Range (Datensatz von / bis)</h3>
 
-    <input type="text" id="von"  />
-    <input type="text"  id="bis"  />
-    
-	<button type="submit" id="DownloadFile" onclick="start_get_geo()" >Get Geo</button>
+<input type="text" id="von"  />
+<input type="text"  id="bis"  />
+ <button type="submit" id="DownloadFile" onclick="start_get_geo()" >Get Geo</button>
 
 
   <div style="width: 640px; height: 480px" id="mapContainer">
     <input type="hidden" id="custId" name="custId" value="3487" id="a"> 
 	<table class="table table-condensed table-bordered table-striped volumes tabcenter" 
        style="align:center; margin:5px; width:98%">
+
+  <tbody>
+    <tr>
+      <td>
+        <div class="row">
+          <h1>Choose File Type</h1>
+          <label class="radio-inline">
+            <input name="radioGroup" id="radio1" value="option1" type="radio"> Binary Data
+          </label>
+          <label class="radio-inline">
+            <input name="radioGroup" id="radio2" value="option2" checked="" type="radio"> Json Data
+          </label>
+
+        </div>  
+      </td>
+
+      <td > 
+        <button type="submit" id="DownloadFile" >Download!</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+    <tr>
+        <td>Foo bar</td>
+        <td>123</td>
+        <td>
+            <form action="file:///D:/09_Firmen/10_ProRekrut/Ge02.txt" method="post">
+                <button type="submit" value="Download foo bar 123" />
+            </form>
+        </td>
+    </tr>
+
+    ... here come some other rows of the table ...
+</table>
+
+    <input type="file" style="display: none"  />
+    <button id="btn_save" value="tst">Open File Dialog</button>
+
+ 
+   
 
 
   
@@ -39,7 +77,7 @@
 var lineArr;
 var erg_g="";
 var erg_gc="";
-var str_file_name = "src_appl_part.txt";
+var str_file_name = "../01_src/src_appl_part.txt";
 
 function download(filename, text) {
   var element = document.createElement('a');

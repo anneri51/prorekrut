@@ -1,0 +1,62 @@
+SELECT 
+ ID,
+ TITLE, 
+ NAME, 
+ FIRSTNAME, 
+ STREET_PRIVATE, 
+ ZIP_PRIVATE,
+ CITY_PRIVATE, 
+ COUNTRY_PRIVATE, 
+ ADDRESS_POSITION_EW, 
+ ADDRESS_POSITION_NS
+FROM DBO.APPLICANTS
+
+SELECT --Anzeigedaten
+       ID,  
+       COMPANY, 
+       COMPANY2, 
+       COMPANY3,  
+       STREET, 
+       ZIP,
+       CITY, 
+       COUNTRY, 
+       ADDRESS_POSITION_EW, 
+       ADDRESS_POSITION_NS,
+    --Daten für Kenntniszuordnung
+     BusinessRelation,
+     Businesssector1,
+     Businesssector2,
+     branche,
+    
+FROM DBO.COMPANIES
+
+SELECT 
+--Spalten für Anzeige
+ ID,
+ TITLE, 
+ NAME, 
+ FIRSTNAME, 
+ STREET_PRIVATE, 
+ ZIP_PRIVATE,
+ CITY_PRIVATE, 
+ COUNTRY_PRIVATE, 
+ ADDRESS_POSITION_EW, 
+ ADDRESS_POSITION_NS,
+--Spalten für Zuordnung
+ Experience,
+ Bereich_Profession,
+ Branche,
+ Bilanzkenntnisse_Spezialisierung,
+ MIT,
+ BusinessRelation
+FROM DBO.APPLICANTS;
+
+select sqrt(power((ap.address_position_ns - cp.address_position_ns),2) + power((ap.address_position_ew - cp.address_position_ew),2)) * 100 abst, ap.id, firstname, name, company
+from 
+(select * from dbo.applicants where address_position_ns is not null) ap 
+,
+ (select * from dbo.companies where address_position_ns is not null) cp
+
+select id, title, name, firstname, Street_Private, ZIP_Private,City_Private, Country_Private, Address_Position_EW, Address_Position_NS
+from dbo.Applicants
+where address_position_ns is not null

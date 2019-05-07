@@ -1,0 +1,1 @@
+@[User::v_upd] +  @[User::v_table] + "set " +  @[User::v_adr_ns] + "=" +   [Koord_getr] + "," +  @[User::v_adr_ew] + " " +  [Koord_getr]  + " where ID =" + [ID] +";"

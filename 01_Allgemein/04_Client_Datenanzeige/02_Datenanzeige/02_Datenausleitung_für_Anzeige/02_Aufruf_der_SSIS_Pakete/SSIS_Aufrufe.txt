@@ -1,0 +1,36 @@
+dtexec /ISServer "C:\Users\crmt\Documents\Visual Studio 2017\GEO\GEO4\GEO4\02_Datenupload.dtsx"
+
+Declare @execution_id bigint
+EXEC [SSISDB].[catalog].[create_execution] @package_name=N'03_Abstandsermittlung 1.dtsx', @execution_id=@execution_id OUTPUT, @folder_name=N'Datenimport', @project_name=N'Datenimport', @use32bitruntime=False, @reference_id=Null, @runinscaleout=False
+Select @execution_id
+DECLARE @var0 smallint = 1
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id,  @object_type=50, @parameter_name=N'LOGGING_LEVEL', @parameter_value=@var0
+EXEC [SSISDB].[catalog].[start_execution] @execution_id
+GO
+
+
+Declare @execution_id bigint  
+EXEC [SSISDB].[catalog].[create_execution] @package_name=N'Child1.dtsx', @execution_id=@execution_id OUTPUT, @folder_name=N'TestDeply4', @project_name=N'Integration Services Project1', @use32bitruntime=False, @reference_id=Null  
+Select @execution_id  
+DECLARE @var0 sql_variant = N'Child1.dtsx'  
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=20, @parameter_name=N'Parameter1', @parameter_value=@var0  
+DECLARE @var1 sql_variant = N'Child2.dtsx'  
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=20, @parameter_name=N'Parameter2', @parameter_value=@var1  
+DECLARE @var2 smallint = 1  
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=50, @parameter_name=N'LOGGING_LEVEL', @parameter_value=@var2  
+EXEC [SSISDB].[catalog].[start_execution] @execution_id  
+GO  
+
+Declare @execution_id bigint  
+EXEC [SSISDB].[catalog].[create_execution] @package_name=N'03_Abstandsermittlung 1.dtsx', @execution_id=@execution_id OUTPUT, @folder_name=N'Datenimport', @project_name=N'Datenimport', @use32bitruntime=False, @reference_id=Null  
+Select @execution_id  
+DECLARE @var0 sql_variant = N'03_Abstandsermittlung 1.dtsx'  
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=20, @parameter_name=N'Parameter1', @parameter_value=@var0  
+DECLARE @var1 smallint = 3 --Personen Id 
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=20, @parameter_name=N'Parameter2', @parameter_value=@var1  
+DECLARE @var2 smallint = 5 --Umkreis in km
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=20, @parameter_name=N'Parameter3', @parameter_value=@var2 
+DECLARE @var3 smallint = 1  
+EXEC [SSISDB].[catalog].[set_execution_parameter_value] @execution_id, @object_type=50, @parameter_name=N'LOGGING_LEVEL', @parameter_value=@var3  
+EXEC [SSISDB].[catalog].[start_execution] @execution_id  
+GO  

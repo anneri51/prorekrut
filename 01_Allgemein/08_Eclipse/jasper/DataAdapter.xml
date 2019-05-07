@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>New Data Adapter 1</name><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><username>sa</username><password>Crmtest10</password><savePassword>true</savePassword><url>jdbc:sqlserver://localhost:1433;databaseName=combit_Recruiting2</url><database></database><serverAddress></serverAddress><classpath>C:\Users\crmt\Downloads\Microsoft JDBC Driver 7.2 for SQL Server\sqljdbc_7.2\enu\mssql-jdbc-7.2.2.jre11.jar</classpath></jdbcDataAdapter>

@@ -1,0 +1,19 @@
+USE [combit_Recruiting2]
+GO
+
+DECLARE @RC int
+DECLARE @p_appl_id nvarchar(400)
+DECLARE @p_comp_id nvarchar(400)
+DECLARE @p_rad int
+DECLARE @p_drop int
+
+-- TODO: Set parameter values here.
+set @p_rad =5 
+set @p_drop = 1
+
+EXECUTE @RC = [dbo].[cmbt_sp_get_dist_appl_comp] 
+   @p_appl_id
+  ,@p_comp_id
+  ,@p_rad
+  ,@p_drop
+GO

@@ -1,0 +1,3 @@
+Business Relation - Geschäftsbeziehung
+Business Sector1 - Branche1
+Userdefined1  - Zusatz1 enthält mit a b c

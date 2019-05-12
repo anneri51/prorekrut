@@ -1,0 +1,68 @@
+USE [combit_Recruiting2]
+GO
+
+/****** Object:  Table [dbo].[Companies]    Script Date: 12.05.2019 09:34:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Companies](
+	[ID] [uniqueidentifier] ROWGUIDCOL  NOT NULL,
+	[Company] [nvarchar](100) NULL,
+	[Company2] [nvarchar](100) NULL,
+	[Company3] [nvarchar](100) NULL,
+	[MatchCode] [nvarchar](50) NULL,
+	[Country] [nvarchar](3) NULL,
+	[ZIP] [nvarchar](9) NULL,
+	[City] [nvarchar](50) NULL,
+	[Street] [nvarchar](50) NULL,
+	[ZIPPOBox] [nvarchar](9) NULL,
+	[POBox] [nvarchar](30) NULL,
+	[Phone] [nvarchar](30) NULL,
+	[Fax] [nvarchar](30) NULL,
+	[Email] [nvarchar](60) NULL,
+	[Internet] [nvarchar](100) NULL,
+	[InstantMessagingProvider] [nvarchar](50) NULL,
+	[InstantMessaging] [nvarchar](50) NULL,
+	[Facebook] [nvarchar](50) NULL,
+	[Twitter] [nvarchar](50) NULL,
+	[XING] [nvarchar](50) NULL,
+	[ComPreference] [int] NULL,
+	[CustomerNo] [nvarchar](8) NULL,
+	[AccountMngr] [nvarchar](20) NULL,
+	[BusinessRelation] [int] NULL,
+	[BusinessSector1] [nvarchar](10) NULL,
+	[BusinessSector2] [nvarchar](10) NULL,
+	[Size] [nvarchar](20) NULL,
+	[InternetJobOpportunities] [nvarchar](100) NULL,
+	[Note] [nvarchar](max) NULL,
+	[Category] [nvarchar](160) NULL,
+	[UserDefined1] [nvarchar](100) NULL,
+	[UserDefined2] [nvarchar](100) NULL,
+	[branche] [nvarchar](100) NULL,
+	[erpsystem] [nvarchar](100) NULL,
+	[UserDefined5] [nvarchar](100) NULL,
+	[CreatedOn] [datetime] NULL,
+	[CreatedBy] [nvarchar](20) NULL,
+	[ModifiedOn] [datetime] NULL,
+	[ModifiedBy] [nvarchar](20) NULL,
+	[Z_Import_PK] [nvarchar](120) NULL,
+	[Z_Import_FK] [nvarchar](120) NULL,
+	[Status] [int] NULL,
+	[Akquise] [nvarchar](max) NULL,
+	[Kununu1] [nvarchar](100) NULL,
+	[Address_Position_NS] [float] NULL,
+	[Address_Position_EW] [float] NULL,
+ CONSTRAINT [PK_Companies] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Companies] ADD  CONSTRAINT [DF_Companies_ID]  DEFAULT (newid()) FOR [ID]
+GO
+
+

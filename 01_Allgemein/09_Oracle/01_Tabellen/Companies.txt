@@ -66,3 +66,4 @@ ALTER TABLE [dbo].[Companies] ADD  CONSTRAINT [DF_Companies_ID]  DEFAULT (newid(
 GO
 
 
+

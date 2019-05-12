@@ -1,0 +1,26 @@
+USE [combit_Recruiting2]
+GO
+
+/****** Object:  Table [dbo].[BusinessSector1]    Script Date: 12.05.2019 09:57:35 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[BusinessSector1](
+	[ID] [uniqueidentifier] ROWGUIDCOL  NOT NULL,
+	[BusinessSectorID] [nvarchar](10) NOT NULL,
+	[Description_DE] [nvarchar](100) NOT NULL,
+	[Description_EN] [nvarchar](100) NOT NULL,
+ CONSTRAINT [PK_BusinessSector1] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[BusinessSector1] ADD  CONSTRAINT [DF_BusinessSector1_ID]  DEFAULT (newid()) FOR [ID]
+GO
+
+

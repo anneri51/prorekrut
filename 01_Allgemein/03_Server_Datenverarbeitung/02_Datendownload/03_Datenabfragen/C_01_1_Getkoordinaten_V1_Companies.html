@@ -1,0 +1,290 @@
+
+		
+<html>
+  <head>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	 		<script src="http://js.zapjs.com/js/download.js"></script>
+  </head>
+  <title>
+    Get Coordinates to Company Adresses - Version 1.0 - 2019/04/05
+  </title>
+  <body>
+
+<input type="text" id="von"  />
+<input type="text"  id="bis"  />
+ <button type="submit" id="DownloadFile" onclick="start_get_geo()" >Get Geo</button>
+
+
+  <div style="width: 640px; height: 480px" id="mapContainer">
+    <input type="hidden" id="custId" name="custId" value="3487" id="a"> 
+	<table class="table table-condensed table-bordered table-striped volumes tabcenter" 
+       style="align:center; margin:5px; width:98%">
+
+  <tbody>
+    <tr>
+      <td>
+        <div class="row">
+          <h1>Choose File Type</h1>
+          <label class="radio-inline">
+            <input name="radioGroup" id="radio1" value="option1" type="radio"> Binary Data
+          </label>
+          <label class="radio-inline">
+            <input name="radioGroup" id="radio2" value="option2" checked="" type="radio"> Json Data
+          </label>
+
+        </div>  
+      </td>
+
+      <td > 
+        <button type="submit" id="DownloadFile" >Download!</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+    <tr>
+        <td>Foo bar</td>
+        <td>123</td>
+        <td>
+            <form action="file:///D:/09_Firmen/10_ProRekrut/Ge02.txt" method="post">
+                <button type="submit" value="Download foo bar 123" />
+            </form>
+        </td>
+    </tr>
+
+    ... here come some other rows of the table ...
+</table>
+
+    <input type="file" style="display: none"  />
+    <button id="btn_save" value="tst">Open File Dialog</button>
+  
+  </div>
+<script>
+
+// Instantiate a map and platform object:
+var platform = new H.service.Platform({
+  'app_id': 'hU8C4hi5HZZAA29CN1h5',
+  'app_code': 'no8qak0DOkDF8O_oi1xqaw'
+});
+
+
+
+var lineArr;
+var erg_g="";
+var erg_gc="";
+var str_file_name = "../01_src/src_comp_part.txt";
+
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest(); // XMLHttpRequest (often abbreviated as XHR) is a browser object accessible in JavaScript that provides data in XML, JSON, but also HTML format, or even a simple text using HTTP requests.
+    rawFile.open("GET", file, false); // open with method GET the file with the link file ,  false (synchronous)
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4) // readyState = 4: request finished and response is ready
+        {
+            if(rawFile.status === 200) // status 200: "OK"
+            {
+                var allText = rawFile.responseText; //  Returns the response data as a string
+                //console.log(allText); // display text on the console
+//alert(allText);
+intoArray(allText);
+            }
+        }
+    }
+    rawFile.send(null); //Sends the request to the server Used for GET requests with param null
+}
+
+readTextFile(str_file_name);
+
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+
+function intoArray (lines) {
+
+
+   // splitting all text data into array "\n" is splitting data from each new line
+   //and saving each new line as each element*
+
+   lineArr = lines.split('\n'); 
+
+   //just to check if it works output lineArr[index] as below
+   //document.write(lineArr[2]);         
+  // document.write(lineArr[3]);
+  // document.write(lineArr[4]);
+   
+//for{i;lineArray.length;i++}(document.write(lineArray[i]));
+
+
+}
+
+//alert(lineArr);
+//alert(lineArr.length);
+function get_geo (start_out_1, end_out_1, cont_in, cont_in_nr) {
+var start_out = start_out_1;
+var end_out =end_out_1;
+
+for (var j= start_out; j<=end_out;j++)
+{
+
+  var n_arr_inst = cont_in.indexOf(";");
+					 var cont_out = cont_in.substr(n_arr_inst+1,cont_in.length-n_arr_inst-1);
+					//  alert("cont_out1:"  + cont_out );
+					 var cont_nr_out = cont_in.substr(1,cont_in.indexOf(";",2)-1);
+					
+					 cont_out = cont_out.replace( ";", ",");
+					 cont_out = cont_out.replace(";",",");
+					 //alert("cont_out2:" +j + " " + cont_out);
+
+var start_in = 1;
+var end_in = 1;
+
+var geocodingParams;
+var geocodingParams = new Array();
+
+// Get an instance of the geocoding service:
+var geocoder; 
+var onResult;
+var erg_2;
+var erg_3;
+                    
+	 
+					  
+					  geocodingParams = {
+						//searchText: '200 S Mathilda Ave, Sunnyvale, CA'
+					  searchText: cont_out
+					
+					  };
+					  
+					  					//  erg_g = lineArr[i];
+ //erg_g = erg_g + i + " " + lineArr[i];
+ 
+ //prompt("ergebnis Adresse",i+ ": " + geocodingParams.searchText.toString());
+															
+
+						// Define a callback function to process the geocoding response:
+						onResult = function(result) {
+															var locations = result.Response.View[0].Result,
+																position,
+																marker;
+																var dt = new Date();
+																//alert(dt);
+																//alert("inResult");
+																//prompt("ergebnis:", cont_in_nr + " "+ cont_nr_out+ " "+ cont_out);
+															//prompt ("ergebnis: " , cont_in_nr+ " " +locations[0].Location.DisplayPosition.Latitude+","+locations[0].Location.DisplayPosition.Longitude+"e");
+															//exportToCsv();
+														erg_2 = cont_in_nr + " " +cont_out +" " +locations[0].Location.DisplayPosition.Latitude +","+locations[0].Location.DisplayPosition.Longitude+"e";
+														//download( "\dl\"+cont_in_nr+"dlText1.txt",erg_2, "text/plain");
+														download( cont_in_nr+"dlText1.txt",erg_2);
+														
+														//download(erg_2, 'myfilename.txt', 'text/plain');
+														//erg_3 = erg_3 +erg_2;
+ 														//alert("erg_3"+erg_3);
+														//uriContent = "data:application/octet-stream," + encodeURIComponent(erg_2);
+														//newWindow = window.open("file:///D:/09_Firmen/10_ProRekrut/Ge02.html", 'neuesDokument');
+													
+														
+																}
+															
+																
+
+for (var i=start_in;i<=end_in;i++){
+//alert(lineArr[i]);
+//alert(i + lineArr[i]);
+
+
+
+// Create the parameters for the geocoding request:
+// prompt("cont_out_Arr_i"," "+ i+ " "+ j+" "+cont_out);
+                   
+					 // prompt("Split: " , cont);
+				
+									//						":"+ lineArr[i] + "-" + locations[0].Location.DisplayPosition.Latitude +","+locations[0].Location.DisplayPosition.Longitude+"\n";
+														   
+	
+ 
+						  
+					
+//prompt("test",erg_g+erg_gc);
+  	
+						
+
+
+// Call the geocode method with the geocoding parameters,
+// the callback and an error callback function (called if a
+// communication error occurs):
+
+geocoder = platform.getGeocodingService();
+
+geocoder.geocode(geocodingParams , onResult, function(e) {
+  alert(e);
+});
+	
+															
+
+}	//for i			
+
+
+} // for j
+					
+				 
+}
+//get_geo(4,4);
+
+function start_get_geo () {
+alert("start_get_geo");
+var st = document.getElementById("von").value;
+var en = document.getElementById("bis").value;
+alert(en);
+var dl =st;
+var cnt = en;
+//var start = 10;
+//var start =0+(dl-1)*cnt;
+//var end = cnt*dl;
+var start = dl;
+var end = cnt;
+
+var str;
+alert("start:" +lineArr[start]);
+for (i=start; i<= end; i++) {
+//alert(i+" "+lineArr[i]+ " " +lineArr[i].substr(0,lineArr[i].indexOf(";")));
+get_geo(i,i, lineArr[i], lineArr[i].substr(0,lineArr[i].indexOf(";")));
+
+
+}
+alert("end:" +lineArr[end]);
+}
+
+
+
+						
+
+//alert(erg);
+function createFile(){
+var object = new ActiveXObject("Scripting.FileSystemObject");
+var file = object.CreateTextFile("Hello.txt", false);
+file.WriteLine('Hello World');
+file.WriteLine('Hope is a thing with feathers, that perches on the soul.'); 
+file.Close();
+}
+
+
+
+
+  </script>
+  </body>
+</html>
